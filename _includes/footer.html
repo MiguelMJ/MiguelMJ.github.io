@@ -1,0 +1,42 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h3 class="footer-heading">Contact me</h3>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>E-mail</li>
+          <li><a href="mailto:{{ site.data.contact.outlook }}">{{ site.data.contact.outlook }}</a></li>
+          <li><a href="mailto:{{ site.data.contact.gmail }}">{{ site.data.contact.gmail }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>Social</li>
+          <li>
+            {% include icon-github.html username=site.data.contact.github_username %}
+          </li>
+          <li>
+            {% include icon-linkedin.html username=site.data.contact.linkedin_username %}
+          </li>
+          <li>
+            {% include icon-stackoverflow.html username=site.data.contact.stackoverflow_username %}
+          </li>
+          <li>
+            {% include icon-dev.html username=site.data.contact.dev_username %}
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
