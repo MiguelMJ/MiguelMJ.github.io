@@ -4,8 +4,11 @@
     margin: 10px auto;
     padding: 2%;
     border: 1px solid #88A;
+    border-radius: 2%;
     width: 90%;
     display: block;
+    box-shadow:3px 2px 4px black;
+    background-image: linear-gradient(175deg, white, #EEE);
 }
 .projects-cell div{
     text-align: center;
@@ -31,51 +34,59 @@
     .projects-cell{
         margin: 5px 1%;
         width: 25%;
+        border-radius: 10%;
         display: static;
         float: left;
     }
-.projects-cell div{
-    position: relative;
-}
-.projects-cell .container p{
-    opacity: 0;
-    transition: .15s;
-}
-.projects-cell:hover .container p{
-    opacity: 1;
-}
-.overlay{
-    position: absolute;
-    max-width: 100%;
-    max-height: 100%;
-    margin: auto auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    opacity: 1;
-    transition: .15s;
-}
-.projects-cell:hover .overlay{
-    opacity: 0;
-}
-.projects-cell-link{
-    height: 25px;
-    overflow: hidden;
-    font-size: large;
-}
-.projects-cell:hover .projects-cell-link{
-    text-decoration: underline;
-}
-.projects-cell-slogan p{
-    overflow: hidden;
-    max-height:100%;
-}
-.projects-cell-slogan{
-    position: absolute;
-    bottom:0;
-    height: 80px;
-}
+    .projects-cell div{
+        position: relative;
+    }
+    .project-cell-slogan{   
+        padding-top:15px;
+    }
+    .projects-cell .container p{
+        opacity: 0;
+        transition: .15s;
+    }
+    .projects-cell:hover .container p{
+        opacity: 1;
+    }
+    .overlay{
+        position: absolute;
+        max-width: 100%;
+        max-height: 100%;
+        margin: auto auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 1;
+        transition: .15s;
+    }
+    .projects-cell:hover{
+        background-image: linear-gradient(175deg, white, #EEF);;
+    }
+    .projects-cell:hover .overlay{
+        opacity: 0;
+    }
+    .projects-cell-link{
+        height: 25px;
+        overflow: hidden;
+        font-size: large;
+    }
+    .projects-cell:hover .projects-cell-link{
+        text-decoration: underline;
+    }
+    .projects-cell-slogan p{
+        overflow: hidden;
+        max-height:100%;
+    }
+    .projects-cell-slogan{
+        position: absolute;
+        bottom:0;
+        height: 80px;
+        padding-top:10px;
+    }
 }
 
 /* Project layout */
