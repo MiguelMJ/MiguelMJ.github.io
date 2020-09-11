@@ -1,18 +1,48 @@
 /* Projects page */
 .projects-cell{
     position: relative;
-    margin: 2px 4px;
-    border: 2px solid #88A;
-    width: 30%;
-    float: left;
+    margin: 10px auto;
+    padding: 2%;
+    border: 1px solid #88A;
+    width: 90%;
+    display: block;
 }
 .projects-cell div{
-    position: relative;
     text-align: center;
     color: black;
 }
-.projects-cell:hover .container p{
+.overlay{
+    position: relative;
+    display: block;
+    max-width: 100%;
+    max-height: 80px;
+    margin: auto auto;
+}
+.projects-cell-link{
+    height: 25px;
+    overflow: hidden;
+    font-size: large;
+}
+.projects-cell-slogan{
+    min-height: 80px;
+}
+
+@media screen and (min-width: 600px){
+    .projects-cell{
+        margin: 5px 1%;
+        width: 25%;
+        display: static;
+        float: left;
+    }
+.projects-cell div{
+    position: relative;
+}
+.projects-cell .container p{
     opacity: 0;
+    transition: .15s;
+}
+.projects-cell:hover .container p{
+    opacity: 1;
 }
 .overlay{
     position: absolute;
@@ -23,32 +53,30 @@
     bottom: 0;
     right: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     transition: .15s;
 }
 .projects-cell:hover .overlay{
-    opacity: 1;
+    opacity: 0;
 }
 .projects-cell-link{
     height: 25px;
-    padding:5%;
     overflow: hidden;
     font-size: large;
 }
 .projects-cell:hover .projects-cell-link{
-/*     color: #00A; */
     text-decoration: underline;
 }
 .projects-cell-slogan p{
-    padding: 5%;
+    overflow: hidden;
+    max-height:100%;
 }
 .projects-cell-slogan{
     position: absolute;
     bottom:0;
     height: 80px;
-    padding: 5% 0;
 }
-
+}
 
 /* Project layout */
 .project-header{
