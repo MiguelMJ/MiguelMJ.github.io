@@ -1,24 +1,27 @@
-#avatar {
-
-    max-height: 90%;
-    height: auto;
-    object-fit:cover;
-    
-    margin: 0% 2%;
-    float: left;
-    
-    border-radius: 50%;
-    border: 2px solid #454545;
+@media screen and (min-width: 600px){
+    #presentation{
+        position: relative;
+    }
+    #avatar {
+        float: left;
+        padding-right:1px;
+    }
+}
+#presentation{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #BBB;
+}
+#presentation-text{
+    min-height: 160px;
+    text-align: center;
 }
 #presentation-text p{
     color: #555555;
 }
-#presentation{
-    height:160px;
-}
-.home div{
-    position: relative;
-}
-#presentation::after {
-    clear: both;
+#avatar{
+    display: block;
+    margin: auto;
+    max-height: 160px;
+    border-radius: 50%;
 }

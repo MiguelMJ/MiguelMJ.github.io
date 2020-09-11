@@ -6,9 +6,6 @@
     width: 30%;
     float: left;
 }
-.projects-cell:hover{
-/*     border-color: #00A; */
-}
 .projects-cell div{
     position: relative;
     text-align: center;
@@ -34,6 +31,7 @@
 }
 .projects-cell-link{
     height: 25px;
+    padding:5%;
     overflow: hidden;
     font-size: large;
 }
@@ -41,11 +39,14 @@
 /*     color: #00A; */
     text-decoration: underline;
 }
+.projects-cell-slogan p{
+    padding: 5%;
+}
 .projects-cell-slogan{
     position: absolute;
     bottom:0;
     height: 80px;
-    padding: 10% 0;
+    padding: 5% 0;
 }
 
 
