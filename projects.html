@@ -1,0 +1,33 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+---
+<div id="projects-list">
+{% for project in site.projects %}
+
+    {% capture logo_url %}{% if project.logo %}https://raw.githubusercontent.com/{{site.data.contact.github_username}}/{{project.github_repo}}/master/{{ project.logo }}{% endif %}{% endcapture %}
+    
+    <a href="{{ project.url | prepend: site.baseurl }}">
+    <div class="projects-cell">
+        <div class="projects-cell-link">
+            {{ project.title }}
+        </div>
+        {% if project.logo %}
+        <div class="projects-cell-slogan container">
+            <p>
+            {{ project.slogan }}
+            </p>
+            <img alt="logo" class="overlay" src="{{logo_url}}">
+        </div>
+        {% else %}
+        <div class="projects-cell-slogan">
+            <p>
+            {{ project.slogan }}
+            </p>
+        </div>
+        {% endif %}
+    </div>
+    </a>
+{% endfor %}
+</div>

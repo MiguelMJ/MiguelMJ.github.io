@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<article class="project">
+    {% if page.github_repo %}
+        {% capture github_url %}https://github.com/{{ site.data.contact.github_username }}/{{ page.github_repo }}{% endcapture %}
+        {% capture raw_github_url %}https://raw.githubusercontent.com/{{ site.data.contact.github_username }}/{{ page.github_repo }}/master{% endcapture %}
+    {% endif %}
+    
+    <header class="project-header">
+        {% if page.logo %}
+            <img alt="{{page.title}} logo" class="project-logo" src="{{raw_github_url}}/{{page.logo}}">
+        {% endif %}
+    
+        <h1 class="project-title">{{ page.title }}</h1>
+        <h2 class="project-slogan">{{ page.slogan }}</h2>
+        
+        {% if page.badges %}
+        <p class="project-badges">
+        {% for badge in page.badges %}
+            {%if badge.href%}<a href="{{badge.href}}">{%endif%}
+            <img alt="{{badge.alt}}" src="{{badge.src}}">
+            {%if badge.href%}</a>{%endif%}
+        {% endfor %}
+        </p>
+        {% endif %}
+        
+        {% if page.github_repo %}
+            <p class="project-github-link">
+            {% include icon-github.html username=site.data.contact.github_username %}/<a href="{{github_url}}">{{ page.github_repo }}</a>
+            </p>
+        {% endif %}
+    </header>
+    
+    <div class="project-content">
+        {{ content }}
+    </div>
+</article>
