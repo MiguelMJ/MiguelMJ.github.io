@@ -25,6 +25,12 @@ body {
     font-kerning: normal;
 }
 
+/**
+ * Font for headers
+ */
+h1, h2, h3, h4, h5, h6{
+    font-family: $h-font-family 
+}
 
 
 /**
@@ -94,9 +100,9 @@ a {
     color: $brand-color;
     text-decoration: none;
 
-    &:visited {
+    /*&:visited {
         color: darken($brand-color, 15%);
-    }
+    }*/
 
     &:hover {
         color: $text-color;
@@ -130,9 +136,9 @@ blockquote {
 pre,
 code {
     font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+/*     border: 1px solid $grey-color-light; */
+    border-radius: 2px;
+    background-color: darken($background-color,5%);
 }
 
 code {
@@ -200,7 +206,7 @@ pre {
         vertical-align: middle;
 
         path {
-            fill: $grey-color;
+            fill: $grey-color-light;
         }
     }
 }
