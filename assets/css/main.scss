@@ -29,7 +29,8 @@ $brand-color:      #2a7ae2;
 $grey-color:       #828282;*/
 $text-color:       $palete-B;
 $background-color: $palete-A;
-$brand-color:      $palete-C;
+/* $brand-color:      $palete-C; */
+$brand-color: darken($text-color,20%);
 
 // this one is custom
 $secondary-text-color:       darken($text-color,20%);
