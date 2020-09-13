@@ -6,7 +6,13 @@ permalink: /projects/
 <div id="projects-list">
 {% for project in site.projects %}
 
-    {% capture logo_url %}{% if project.logo %}https://raw.githubusercontent.com/{{site.data.contact.github_username}}/{{project.github_repo}}/master/{{ project.logo }}{% endif %}{% endcapture %}
+    {% capture logo_url %}
+    {% if project.logo %}
+        https://raw.githubusercontent.com/{{site.data.contact.github_username}}/{{project.github_repo}}/master/{{ project.logo }}
+    {% elsif project.logo_compact %}
+        https://raw.githubusercontent.com/{{site.data.contact.github_username}}/{{project.github_repo}}/master/{{ project.logo_compact }}
+    {% endif %}
+    {% endcapture %}
     
     <a href="{{ project.url | prepend: site.baseurl }}">
     <div class="projects-cell">
@@ -18,7 +24,7 @@ permalink: /projects/
             <p>
             {{ project.slogan }}
             </p>
-            <img alt="logo" class="overlay" src="{{logo_url}}">
+            <img alt="logo" class="project-logo overlay" src="{{logo_url}}">
         </div>
         {% else %}
         <div class="projects-cell-slogan">

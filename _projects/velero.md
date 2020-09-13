@@ -1,6 +1,7 @@
 ---
 layout: project
-logo: docs/logo_long.jpg
+logo: docs/logotype.svg
+logo_compact: docs/logosymbol.svg
 title: Velero Engine
 acronym: VE
 slogan: A C++ and SFML game engine
