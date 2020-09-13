@@ -8,9 +8,9 @@ permalink: /projects/
 
     {% capture logo_url %}
     {% if project.logo %}
-        https://raw.githubusercontent.com/{{site.data.contact.github_username}}/{{project.github_repo}}/master/{{ project.logo }}
+        {{ project.logo }}
     {% elsif project.logo_compact %}
-        https://raw.githubusercontent.com/{{site.data.contact.github_username}}/{{project.github_repo}}/master/{{ project.logo_compact }}
+        {{ project.logo_compact }}
     {% endif %}
     {% endcapture %}
     
