@@ -10,10 +10,7 @@
             <img src="/assets/img/avatar2.jpeg" id="avatar" alt="Avatar">
         </div>
         <div id="presentation-text">
-            <h1 >Welcome!</h1>
-            <p >
-            My name is Miguel, I'm a Computer Science student and programming is my passion. I love learning as much as I love teaching. Sharing knoledge is a high human value!
-            </p>
+            {{ content }}
         </div>
     </div>
     
@@ -21,7 +18,7 @@
         <div class="trigger">
             {% for my_page in site.pages %}
             {% if my_page.title %}
-            {% if my_page.lang == include.lang  %}
+            {% if my_page.lang == page.lang  %}
                 <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
             {% endif %}
             {% endif %}

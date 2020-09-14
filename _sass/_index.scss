@@ -15,7 +15,7 @@
     animation: fade-in 0.2s ease-in-out 0s 1 forwards;
 }
 #presentation{
-    padding: $spacing-unit 10% 0px;
+    padding: $spacing-unit 10%;
     margin: auto;
     position: relative;
 }
@@ -57,6 +57,9 @@
     }
 }
 @media screen and (min-width: 600px){
+    #presentation{
+        padding-bottom:  0px;
+    }
     #avatar {
         float: none;
         margin-right: $spacing-unit;
@@ -69,7 +72,7 @@
             display: inline;
         }
     }
-    .page-link + .page-link{
+    #presentation + .trigger .page-link + .page-link{
         margin-left: 2.5*$spacing-unit;
     }
     // Here for the lights
