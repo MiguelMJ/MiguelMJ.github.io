@@ -2,7 +2,7 @@
 layout: project
 logo: /JTASCHE/logo.svg
 title: JTASCHE
-documentation: /Velero-Engine
+documentation: /JTASCHE
 acronym: JTASCHE
 slogan: Java Text Adventure Simple Chatbot Engine
 github_repo: JTASCHE
