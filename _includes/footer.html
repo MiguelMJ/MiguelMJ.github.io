@@ -31,9 +31,10 @@
           
         </ul>
       </div>
-
+        
+      {% assign desc = site.description | where: "lang",include.lang | first%}
       <div class="footer-col footer-col-3">
-        <p>{{ site.description | markdownify }}</p>
+        <p>{{ desc.text | markdownify }}</p>
       </div>
     </div>
 

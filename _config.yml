@@ -7,13 +7,16 @@
 
 # Site settings
 title: Miguel MJ
-description: > # this means to ignore newlines until "baseurl:"
-  
+description:
+    - lang: "es"
+      text: "Esta página esta hecha con [Jekyll](jekyllrb.com) y alojada en [GitHub Pages](pages.github.com). Su código fuente está disponible en mi GitHub."
+    - lang: nil
+    - text: "This website is powered by [Jekyll](jekyllrb.com) and hosted by [GitHub Pages](pages.github.com). Its source code is available in my GitHub."
+    
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "MiguelMJ.github.io" # the base hostname & protocol for your site
 
-description: "This website is powered by [Jekyll](jekyllrb.com) and hosted by [GitHub Pages](pages.github.com). Its source code is available in my GitHub."
-
+    
 collections:
     projects:
         output: true

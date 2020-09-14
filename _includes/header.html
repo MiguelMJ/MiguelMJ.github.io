@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a class="site-title" href="{{ site.baseurl }}/{{page.lang}}">{{ site.title }}</a>
 
     <nav class="site-nav">
       <a href="#" class="menu-icon">
@@ -16,7 +16,9 @@
       <div class="trigger">
         {% for my_page in site.pages %}
           {% if my_page.title %}
+          {% if my_page.lang == include.lang  %}
           <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endif %}
           {% endif %}
         {% endfor %}
       </div>

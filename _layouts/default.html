@@ -4,16 +4,15 @@
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
+    {% include header.html lang=page.lang %}
+    
     <div class="page-content">
       <div class="wrapper">
         {{ content }}
       </div>
     </div>
 
-    {% include footer.html %}
+    {% include footer.html lang=page.lang %}
     
   </body>
 
