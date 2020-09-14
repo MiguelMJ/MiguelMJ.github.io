@@ -1,33 +1,131 @@
-@keyframes neon{
-    from {box-shadow: 0px 0px 0px $grey-color-light;}
-    to {box-shadow: 0px 0px 10px $grey-color-light;}
+@keyframes fade-in{
+    from { opacity: 0.15; }
+    to { opacity: 1; }
 }
-#avatar{
-    display: block;
-    margin: auto;
-    max-height: 160px;
-    border-radius: 50%;
-    border: 1px solid $grey-color;
-    animation: neon 1s ease-out 0s 1 forwards;
+@keyframes from-down{
+    from { margin-top: 2 * $spacing-unit; }
+    to { margin-top: $spacing-unit; }
+}
+@keyframes from-big{
+    from { font-size: 15px;}
+    to { font-size: 20px;}
+}
+.home{
+    position: relative;
+    animation: fade-in 0.2s ease-in-out 0s 1 forwards;
 }
 #presentation{
-    padding-bottom: $spacing-unit;
-    margin-bottom: $spacing-unit;
-    border-bottom: 1px solid $grey-color;
+    padding: $spacing-unit 10% 0px;
+    margin: auto;
+    position: relative;
+}
+.avatar-container{
+    position: relative;
+    margin: $spacing-unit auto;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    overflow:hidden;
+    box-shadow: 0px 0px 10px 0px $grey-color-light;
+    &:hover{
+        box-shadow: 0px 0px 10px 1px $brand-color;
+    }
+}
+.avatar{
+    position: absolute;
+    width: 100%;
+    transition: 0.2s;
+    &.overlay:hover{
+        opacity: 0;
+    }
 }
 #presentation-text{
-    min-height: 160px;
     text-align: center;
+    animation: from-down 0.3s linear 0s 1 forwards;
+    min-height: 160px;
 }
-#presentation-text p{
-    color: $secondary-text-color;
+#presentation + .trigger{
+    text-align: center;
+    & a{
+        animation: from-big 0.3s ease-out 0s 1 forwards;
+        color: $brand-color;
+        display:block;
+        width: 100%;
+        padding-bottom: $spacing-unit/2;
+        font-size: large;
+        font-family: $h-font-family
+    }
 }
 @media screen and (min-width: 600px){
-    #presentation{
-        position: relative;
-    }
     #avatar {
-        float: left;
-        padding-right:1px;
+        float: none;
+        margin-right: $spacing-unit;
+        margin-bottom: $spacing-unit;
+        margin-left: 0px;
+    }
+    #presentation + .trigger{
+        text-align: center;
+        & a{
+            display: inline;
+        }
+    }
+    .page-link + .page-link{
+        margin-left: 2.5*$spacing-unit;
+    }
+    // Here for the lights
+    @keyframes light-rot{
+        from{
+            transform: rotate(0deg)
+        }
+        to{
+            transform: rotate(360deg)
+        }
+    }
+    .lights{
+        display:block;
+        margin:  $spacing-unit*2 auto;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: relative;
+        animation: light-rot 5s linear 0s infinite forwards;
+        transition: 0.5s;
+        border-radius: 50%;
+        border: 1px solid $grey-color;
+        .trigger:hover + &{
+            border-color: $brand-color;
+        }
+    }
+    .lights::before, .lights::after{
+        content:"";
+        position: absolute;
+        width:5px;
+        height:5px;
+        border-radius:50%;
+        background-color: $grey-color-light;
+        box-shadow: 0px 0px 10px 3px $grey-color-light;
+        transition: 0.3s ease;
+        .trigger:hover + &{
+            background-color: $brand-color;
+            box-shadow: 0px 0px 10px 3px $brand-color;
+            
+        }
+    }
+    .lights::after{
+/*         bottom:0px; */
+        bottom:50%;
+        left:100%;
+    }
+    .lights::before{
+/*         top:0px; */
+        top:50%;
+        right:100%;
+    }
+    // From here for about page
+    .avatar-container.counter-aligned{
+        float: right;
+        margin-right: 0px;
+        margin-left: $spacing-unit;
+        margin-bottom: $spacing-unit/2;
     }
 }
