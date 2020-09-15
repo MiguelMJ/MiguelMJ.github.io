@@ -32,7 +32,7 @@
         </ul>
       </div>
         
-      {% assign desc = site.description | where: "lang",include.lang | first%}
+      {% assign desc = site.description | where: "lang",page.lang | first %}
       <div class="footer-col footer-col-3">
         <p>{{ desc.text | markdownify }}</p>
       </div>
