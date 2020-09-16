@@ -4,3 +4,22 @@
 .post-link a{
     font-size: 24px;
 }
+.wrapper > .series-list-container{
+    display:none;
+}
+@media screen and (min-width:1000px){
+    .series-list-container{
+        display: block;
+        position: absolute;
+        top: 62px;
+        right: 0;
+        height:100%;
+        width:18%;
+        padding: $spacing-unit/2;
+        
+    }
+    .series-list-content{
+        margin-top: $spacing-unit;
+        flex: 1 1 auto;
+    }
+}

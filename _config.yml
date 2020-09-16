@@ -20,6 +20,8 @@ url: "MiguelMJ.github.io" # the base hostname & protocol for your site
 collections:
     projects:
         output: true
+    series:
+        output: true
 
 # Build settings
 markdown: kramdown
