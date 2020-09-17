@@ -1,0 +1,71 @@
+---
+layout: page
+title: Clases Particulares
+lang: es
+---
+
+<script>
+show_hide = function(id){
+    el = document.getElementById(id)
+    if(el.classList.contains("more-info-hide")){
+        el.classList.remove("more-info-hide")
+        void el.offsetWidth // trigger reflow
+        el.classList.add("more-info-show")
+    }else{
+        el.classList.add("more-info-hide")
+        el.classList.remove("more-info-show")
+    }
+}
+</script>
+
+
+<div class="class-option" onclick="show_hide('mat')">
+    <h1>
+        Matemáticas
+    </h1>
+    <div class="icon-extend">
+    </div>
+</div>
+    
+<div class="more-info-hide" id="mat">
+<p>
+Te ayudaré con los conceptos más problemáticos, como las operaciones con fracciones, límites, sistemas de ecuaciones, geometría analítica, etc.<br> 
+Mi objetivo es hacerte comprensible la teoría para que adquieras soltura y seguridad con los ejercicios más habituales en los exámenes.
+<br><i>
+Modo: Online(Zoom, Skype, Hangouts...)
+</i>
+
+<div class="oferta"><p>Primera hora de clase gratuita</p><a href="mailto:miguelmejiajimenez@hotmail.com?subject=Sobre las clases de matemáticas&body=Me interesaría ponerme en contacto contigo por las clases de matemáticas."><div class="mailbutton">Contáctame sin compromiso</div></a></div>
+
+<table>
+<tr>
+    <td>ESO</td><td>8 €/h</td>
+</tr>
+<tr>
+    <td>Bachillerato</td><td>10 €/h</td>
+</tr>
+</table>
+
+</div>
+
+<div class="class-option" onclick="show_hide('prog')">
+    <h1>
+        Programación
+    </h1>
+    <div class="icon-extend">
+    </div>
+</div>
+    
+<div class="more-info-hide" id="prog">
+<p>
+Te enseñaré C, C++ o Java desde un nivel básico hasta uno intermedio/avanzado. Puedo ayudarte a entender los conceptos fundamentales de los algoritmos, las estructuras de datos y la programacioń orientada a objetos (POO).
+<br><i>
+Modo: Online(Zoom, Skype, Hangouts...)
+</i>
+
+<div class="oferta"><p>Primera hora de clase gratuita</p><a href="mailto:miguelmejiajimenez@hotmail.com?subject=Sobre las clases de programación&body=Me interesaría ponerme en contacto contigo por las clases de programación."><div class="mailbutton">Contáctame sin compromiso</div></a></div>
+
+<table>
+<tr><td>15 €/h</td></tr>
+</table>
+</div>

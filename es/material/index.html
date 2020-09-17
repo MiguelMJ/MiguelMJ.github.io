@@ -1,0 +1,37 @@
+---
+layout: page
+title: Material didáctico
+lang: es
+---
+<script>
+setPreview = function(path, title){
+    desc = title + '<p><a href="'+path+'" download>Descargar</p>'
+    document.querySelector('#preview-material p').innerHTML = desc
+    prev = document.getElementById('preview-material').querySelector("iframe")
+    prev.style.display = "";
+    prev.src = path
+}
+</script>
+<p><strong>Importante:</strong> Los materiales cuya versión no es definitiva se muestran en cursiva.</p>
+
+<div id="preview-material">
+    <h4>Vista previa</h4>
+    <p>Selecciona un fichero</p>
+    <iframe  style="display:none">
+    </iframe>
+</div>
+
+<ul id="materiales-list">
+    {% assign grupos = site.data.material | group_by:"group" %}
+    {% for grupo in grupos %}    
+        <li><h3>{{ grupo.name }}</h3></li>
+        <ul>
+        {% for file in grupo.items %}
+            <li>
+            <a href="#preview-material" class="material-link {% if file.estado %}{{file.estado}}{% endif %}" onclick="setPreview('{{file.url}}', '{{file.title}}')">{{file.title}}
+            </a>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endfor %}
+</ul>

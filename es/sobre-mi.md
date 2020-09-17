@@ -10,7 +10,7 @@ lang: es
 
 ## Quién soy
 
-**Mi nombre es Miguel Mejía Jiménez y soy estudiante de Ingeniería Informática en la Universidad de Málaga (Málaga, España)**. Lo que amo de programar es poner a prueba mis capacidades y conocimientos, para llevarlos más allá. Por eso, mi objetivo como desarrollador es _aprender de personas que me inspiren y hacer lo mismo por los demás.
+**Mi nombre es Miguel Mejía Jiménez y soy estudiante de Ingeniería Informática en la Universidad de Málaga (Málaga, España)**. Lo que amo de programar es poner a prueba mis capacidades y conocimientos, para llevarlos más allá. Por eso, mi objetivo como desarrollador es _aprender de personas que me inspiren y hacer lo mismo por los demás_.
 
 ## Qué hago
 
@@ -18,9 +18,11 @@ lang: es
 
 Entre otras, las principales asignaturas que enseño son matemáticas de secundaria, matemáticas para Pruebas de Acceso a la Universidad (PAU) y programación en C, C++ y Java.
 
+Para más detalles, visita la sección de [clases particulares](/es/clases-particulares).
+
 ### Como desarrollador
 
-En la **versión en inglés** de esta página web encontrarás mi blog de programación y la documentación de mis proyectos, la mayoría de los cuales encontrarás en GitHub. Trabajo principalmente con C++, SFML y tecnologías GNU/Linux, pero me gusta mantener algo de diversidad y actualmente estoy centrado en Java, R y desarrollo front-end.
+En la [versión en inglés](/) de esta página web encontrarás mi blog de programación y la documentación de mis proyectos, la mayoría de los cuales encontrarás en GitHub. Trabajo principalmente con C++, SFML y tecnologías GNU/Linux, pero me gusta mantener algo de diversidad y actualmente estoy centrado en Java, R y desarrollo front-end.
 
 ## ¡Hablemos!
 

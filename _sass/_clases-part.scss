@@ -1,0 +1,125 @@
+.class-option {
+    position: relative;
+    border: 5px outset $grey-color;
+    padding: $spacing-unit/2;
+    margin: $spacing-unit/2 0px;
+    &:hover{
+        border-style: inset;
+        & .icon-extend{
+            border-color: $brand-color;
+            transform: rotate(45deg);
+            transition: 0.3s;
+        }
+        & > h1{
+            color: $text-color;
+            text-decoration: underline;
+        }
+    }
+    & > h1 {
+        color:$brand-color;
+        margin: 0px;
+        text-align:center;
+    }
+}
+.icon-extend{
+    position: absolute;
+    right:$spacing-unit;
+    top:$spacing-unit/2;
+    width: $spacing-unit/2;
+    height: $spacing-unit/2;
+    border-bottom: 3px solid $grey-color;
+    border-right: 3px solid $grey-color;
+    transform: rotate(-135deg);
+}
+.more-info-hide{
+    display: none;
+}
+@keyframes grow{
+    from{height: 0px;}
+    to{height: 200px;}
+}
+.more-info-show{
+    position:relative;
+    overflow: hidden;
+    animation: grow 0.25s ease-in 0s 1 forwards;
+    padding: $spacing-unit/2;
+    border: 1px solid $grey-color;
+    & td{
+        padding: 0 $spacing-unit/2;
+        border-collapse: collapse;
+        border-spacing: 0px;
+    }
+    & table{
+        font-weight: bolder;
+    }
+    & .oferta{
+        position: absolute;
+        right: $spacing-unit;
+        bottom: $spacing-unit;
+        font-size: large;
+        color: $grey-color-light;
+        float: right;
+        text-align:center;
+        & .mailbutton{
+            border-radius:5px;;
+            border: 3px outset $grey-color;
+            padding: $spacing-unit/3;
+            &:hover{
+                border-style:inset;
+            }
+        }
+    }
+}
+@media screen and(max-width:800px){
+    .mailbutton{
+        display: none;
+    }
+    .more-info-show{
+        animation: none;
+    }
+    .class-option > h1{
+        margin-bottom: $spacing-unit/2;
+    }
+    .icon-extend{
+        display:block;
+        position:static;
+        margin: auto;
+    }
+}
+// material from here
+#preview-material{
+    border: 1px solid $text-color;
+    width:65%;
+    float:right;
+    text-align: center;
+    & p{
+        color: $grey-color-light
+    }
+    & h4{
+        margin: 0px auto;
+        padding: auto;
+        padding-top: $spacing-unit/3;
+    }
+    & iframe{
+        border:none;
+        width:100%;
+        height: 500px;
+        right:$spacing-unit;
+    }
+}
+.download-icon{
+    height:30px;
+    margin:0px;
+    filter:drop-shadow(0px 0px 2px $text-color);
+}
+.wip{
+    font-style:italic;
+}
+@media screen and(max-width:800px){
+    #preview-material{
+        display:none;
+        width:100%;
+        height:auto;
+        float:none;
+    }
+}
