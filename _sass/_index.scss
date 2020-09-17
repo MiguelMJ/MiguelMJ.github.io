@@ -35,8 +35,15 @@
     position: absolute;
     width: 100%;
     transition: 0.2s;
-    &.overlay:hover{
-        opacity: 0;
+    opacity:0;
+    &:hover{
+        opacity: 1;
+    }
+    &.overlay{
+        opacity: 1;
+        &:hover{
+            opacity: 0;
+        }
     }
 }
 #presentation-text{
@@ -60,7 +67,7 @@
     #presentation{
         padding-bottom:  0px;
     }
-    #avatar {
+    .avatar {
         float: none;
         margin-right: $spacing-unit;
         margin-bottom: $spacing-unit;
