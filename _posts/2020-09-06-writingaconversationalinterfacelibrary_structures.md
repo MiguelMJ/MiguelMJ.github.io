@@ -9,23 +9,16 @@ dev_url: https://dev.to/miguelmj/writing-a-conversational-interface-library-stru
 The classes we've got right now are `Pattern`, for matching input and producing output, and `Script` for checking and modifying the inner state of the CUI. With these two, we want to make a structure that:
 
 1. Receives user input.
-
-- Matches it against a pattern.
-
-- Checks a condition in the inner state.
-
-- If the input matches and the condition is satisfied, it either:
-
+2. Matches it against a pattern.
+3. Checks a condition in the inner state.
+4. If the input matches and the condition is satisfied, it either:
   - **a)** Produces some output and executes a change in the state. 
-
   - **b)** Processes the input further until it gets to produce an output or discard the response.
-
 
 
 #### Some notation
 
 - We will call **question** to the user input, that the `Response` tries to match.
-
 - Given a question, a `Response` is **valid** when the question matches the input pattern and the condition is satisfied.
 
 
