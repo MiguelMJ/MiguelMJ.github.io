@@ -12,7 +12,11 @@ description:
       text: "This website is powered by [Jekyll](jekyllrb.com) and hosted by [GitHub Pages](pages.github.com). Its source code is available in my GitHub."
     - lang: "es"
       text: "Esta página esta hecha con [Jekyll](jekyllrb.com) y alojada en [GitHub Pages](pages.github.com). Su código fuente está disponible en mi GitHub."
-    
+contactme:
+    - lang: ~
+      text: "Contact me"
+    - lang: "es"
+      text: "Contacto"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "MiguelMJ.github.io" # the base hostname & protocol for your site
 

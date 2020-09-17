@@ -2,7 +2,8 @@
 
   <div class="wrapper">
 
-    <h3 class="footer-heading">Contact me</h3>
+    {% assign contactme = site.contactme | where: "lang",page.lang | first %}
+    <h3 class="footer-heading">{{ contactme.text }}</h3>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
