@@ -3,13 +3,21 @@ layout: page
 title: Clases Particulares
 lang: es
 ---
-
+<style>
+    @keyframes appear{
+        from{opacity:0}
+        to{opacity:1}
+    }
+</style>
 <script>
 show_hide = function(id){
     el = document.getElementById(id)
     if(el.classList.contains("more-info-hide")){
         el.classList.remove("more-info-hide")
+        el.querySelector(".oferta").style = ""
         void el.offsetWidth // trigger reflow
+        el.querySelector(".oferta").style = 
+            "animation: appear 0.3s linear 0.2s 1 forwards"
         el.classList.add("more-info-show")
     }else{
         el.classList.add("more-info-hide")
