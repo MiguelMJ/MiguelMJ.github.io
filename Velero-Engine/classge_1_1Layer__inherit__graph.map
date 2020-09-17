@@ -1,5 +1,0 @@
-<map id="ge::Layer" name="ge::Layer">
-<area shape="rect" id="node2" href="$classge_1_1DynamicLayer.html" title="Layer that allows changes in it. " alt="" coords="5,299,175,450"/>
-<area shape="rect" id="node3" href="$classge_1_1LightingLayer.html" title="Layer for light sources. " alt="" coords="199,204,349,545"/>
-<area shape="rect" id="node4" href="$classge_1_1StaticLayer.html" title="Layer that doesn&#39;t allow changes. " alt="" coords="373,248,524,501"/>
-</map>
