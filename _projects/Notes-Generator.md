@@ -70,7 +70,7 @@ And this the body of the result document:
 <kbd>
 <img src="/assets/img/NOG/result-2.png">
 </kbd>
-To see more check the [examples folder](examples)
+To see more check the examples folder in the repository.
 
 ## Usage
 
