@@ -10,7 +10,7 @@ layout: default
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%b %-d, %Y" }}
         </time>
-        {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.dev_url %} • <span>Read <a href="{{page.dev_url}}">here</a> the original post</span>{% endif %}</p>
+        {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.dev_url %} • <span>Read the <a href="{{page.dev_url}}">original publication</a></span>{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -19,7 +19,7 @@ layout: default
 
   {% if page.dev_url %}
   <p class="post-meta">
-  This post is a reproduction of its <a href="{{page.dev_url}}">original</a> in dev.to
+  To leave a comment on this post, follow the link to my <a href="{{page.dev_url}}">original publication</a>.
   </p>
   {% endif %}
   
