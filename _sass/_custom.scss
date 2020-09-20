@@ -12,11 +12,15 @@
     display: block;
     margin:100%;
 }
+.float-right{
+    float:right;
+}
 .round-border{
     border-radius: 10px;
 }
 .circle{
     border-radius: 50%;
+    overflow: hidden;
 }
 .pressable-box{
     border: 5px outset $grey-color;
@@ -31,7 +35,12 @@
     background-color:darken($background-color,3%);
     padding:2.5%;
 }
-
+@mixin highlightable($from, $to){
+    box-shadow: 0px 0px 5px 1px $from;
+    &:hover{
+        box-shadow: 0px 0px 5px 1px $to;
+    }
+}
 @media screen and (min-width: 600px){
     @mixin overlay($from, $to){
         transition: .15s;

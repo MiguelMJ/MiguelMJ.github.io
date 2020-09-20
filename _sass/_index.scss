@@ -11,76 +11,44 @@
     to { font-size: 20px;}
 }
 .home{
-    position: relative;
     animation: fade-in 0.2s ease-in-out 0s 1 forwards;
 }
 #presentation{
+    @extend .centered-text;
+    @extend .centered-block;
     padding: $spacing-unit 10%;
-    margin: auto;
     position: relative;
-}
-.avatar-container{
-    position: relative;
-    margin: $spacing-unit auto;
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    overflow:hidden;
-    box-shadow: 0px 0px 10px 0px $grey-color-light;
-    &:hover{
-        box-shadow: 0px 0px 10px 1px $brand-color;
-    }
-}
-.avatar{
-    position: absolute;
-    width: 100%;
-    transition: 0.2s;
-    opacity:0;
-    &:hover{
-        opacity: 1;
-    }
-    &.overlay{
-        opacity: 1;
-        &:hover{
-            opacity: 0;
+    & + .trigger{
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        & a{
+            font-family: $h-font-family;
+            animation: from-big 0.3s ease-out 0s 1 forwards;
+            padding-bottom: $spacing-unit/2;
         }
     }
 }
+.avatar-container{
+    @extend .container;
+    @extend .circle;
+    @include highlightable($grey-color-light, $brand-color);
+    margin: $spacing-unit/2 auto;
+    height: 160px;
+    width: 160px;
+}
 #presentation-text{
-    text-align: center;
     animation: from-down 0.3s linear 0s 1 forwards;
     min-height: 160px;
 }
-#presentation + .trigger{
-    text-align: center;
-    & a{
-        animation: from-big 0.3s ease-out 0s 1 forwards;
-        color: $brand-color;
-        display:block;
-        width: 100%;
-        padding-bottom: $spacing-unit/2;
-        font-size: large;
-        font-family: $h-font-family
-    }
-}
 @media screen and (min-width: 600px){
     #presentation{
-        padding-bottom:  0px;
-    }
-    .avatar {
-        float: none;
-        margin-right: $spacing-unit;
-        margin-bottom: $spacing-unit;
-        margin-left: 0px;
-    }
-    #presentation + .trigger{
-        text-align: center;
-        & a{
-            display: inline;
+        //padding-bottom:  0px;
+        & + .trigger{
+            flex-direction: row;
+            align-items:center;
+            justify-content:space-evenly;
         }
-    }
-    #presentation + .trigger .page-link + .page-link{
-        margin-left: 2.5*$spacing-unit;
     }
     // Here for the lights
     @keyframes light-rot{
@@ -105,31 +73,29 @@
         .trigger:hover + &{
             border-color: $brand-color;
         }
-    }
-    .lights::before, .lights::after{
-        content:"";
-        position: absolute;
-        width:5px;
-        height:5px;
-        border-radius:50%;
-        background-color: $grey-color-light;
-        box-shadow: 0px 0px 10px 3px $grey-color-light;
-        transition: 0.3s ease;
-        .trigger:hover + &{
-            background-color: $brand-color;
-            box-shadow: 0px 0px 10px 3px $brand-color;
-            
+        &::before, &::after{
+            content:"";
+            position: absolute;
+            width:5px;
+            height:5px;
+            border-radius:50%;
+            background-color: $grey-color-light;
+            box-shadow: 0px 0px 10px 3px $grey-color-light;
+            transition: 0.3s ease;
+            .trigger:hover + &{
+                background-color: $brand-color;
+                box-shadow: 0px 0px 10px 3px $brand-color;
+                
+            }
         }
-    }
-    .lights::after{
-/*         bottom:0px; */
-        bottom:50%;
-        left:100%;
-    }
-    .lights::before{
-/*         top:0px; */
-        top:50%;
-        right:100%;
+        &::after{
+            bottom:calc(50% - 2px);
+            left:calc(100% - 2px);
+        }
+        &::before{
+            top:calc(50% - 2px);
+            right:calc(100% - 2px);
+        }
     }
     // From here for about page
     .avatar-container.counter-aligned{

@@ -5,10 +5,7 @@
 <div class="wrapper">
 <div class="home">
     <div id="presentation">
-        <div class="avatar-container">
-            <img src="/assets/img/avatar.jpg" class="avatar overlay">
-            <img src="/assets/img/avatar2.jpeg" class="avatar" alt="Avatar">
-        </div>
+        {% include changing-avatar.html %}
         <div id="presentation-text">
             {{ content }}
         </div>
@@ -16,13 +13,10 @@
     
     
         <div class="trigger">
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            {% if my_page.lang == page.lang  %}
+            {% assign lang_pages = site.pages | where: "lang", page.lang %}
+            {% for my_page in lang_pages %}{% if my_page.title %}
                 <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            {% endif %}
-            {% endif %}
-            {% endfor %}
+            {% endif %}{% endfor %}
         </div>
         <div class="lights"></div>
 </div>

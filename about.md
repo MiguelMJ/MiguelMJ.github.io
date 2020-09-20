@@ -2,10 +2,7 @@
 layout: page
 title: About
 ---
-<div class="avatar-container counter-aligned">
-<img class="avatar overlay" src="/assets/img/avatar.jpg">
-<img src="/assets/img/avatar2.jpeg" id="avatar" alt="Avatar">
-</div>
+{% include changing-avatar.html add_class="float-right" %}
 
 ## Who I am
 
