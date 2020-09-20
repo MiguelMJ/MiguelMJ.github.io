@@ -9,8 +9,7 @@ layout: default
     <p class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%b %-d, %Y" }}
-        </time>
-        {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}{% if page.dev_url %} • <span>Read the <a href="{{page.dev_url}}">original publication</a></span>{% endif %}</p>
+        </time> • {% include read-time.html content=post.content %} {% if page.dev_url %} • <span>Read the <a href="{{page.dev_url}}">original publication</a></span>{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
@@ -18,7 +17,7 @@ layout: default
   </div>
 
   {% if page.dev_url %}
-  <p class="post-meta">
+  <p class="note-box centered-text">
   To leave a comment on this post, follow the link to my <a href="{{page.dev_url}}">original publication</a>.
   </p>
   {% endif %}
