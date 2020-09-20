@@ -24,6 +24,13 @@
         border-style: inset;
     }
 }
+.note-box{
+    @extend .post-meta;
+    @extend .round-border;
+    border: 1px dotted $grey-color;
+    background-color:darken($background-color,3%);
+    padding:2.5%;
+}
 
 @media screen and (min-width: 600px){
     @mixin overlay($from, $to){
