@@ -8,5 +8,6 @@ posts:
   - /2020/08/21/writingaconversationalinterfacelibrary_regularexpressionsforio.html
   - /2020/08/27/writingaconversationaluserinterface_scriptinglanguageforinnerstate.html
   - /2020/09/06/writingaconversationalinterfacelibrary_structures.html
+  - /2020/09/20/writingaconversationalinterfacelibrary_serializationofthedialogueflow.html
 ---
 This series cover the development of <a href="/projects/JTASCHE">JTASCHE</a>.
