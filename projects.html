@@ -3,7 +3,7 @@ layout: page
 title: Projects
 permalink: /projects/
 ---
-<div id="projects-list">
+<div id="projects-display">
 {% for project in site.projects %}
 
     {% capture logo_url %}
@@ -16,18 +16,16 @@ permalink: /projects/
     
     <a href="{{ project.url | prepend: site.baseurl }}">
     <div class="projects-cell">
-        <div class="projects-cell-link">
-            {{ project.title }}
-        </div>
         {% if project.logo %}
-        <div class="projects-cell-slogan container">
-            <p>
+        <div class="container">
+            <h3 class="overlay-show">{{ project.title }}</h3>
+            <p class="slogan overlay-show">
             {{ project.slogan }}
             </p>
-            <img alt="logo" class="project-logo overlay" src="{{logo_url}}">
+            <img alt="logo" class="project-logo overlay-hide" src="{{logo_url}}">
         </div>
         {% else %}
-        <div class="projects-cell-slogan">
+        <div class="slogan">
             <p>
             {{ project.slogan }}
             </p>

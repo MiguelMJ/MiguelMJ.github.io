@@ -12,10 +12,10 @@ layout: default
         {% endif %}
     
         <h1 class="project-title">{{ page.title }}</h1>
-        <h2 class="project-slogan">{{ page.slogan }}</h2>
+        <h2 class="slogan">{{ page.slogan }}</h2>
         
         {% if page.badges %}
-            <p class="project-badges">
+            <p>
             {% for badge in page.badges %}
                 {%if badge.href%}<a href="{{badge.href}}">{%endif%}
                 <img class="badge" alt="{{badge.alt}}" src="{{badge.src}}">
@@ -25,12 +25,12 @@ layout: default
         {% endif %}
         
         {% if page.documentation %}
-            <span class="project-documentation-link">
+            <span class="centered-block">
             Documentation <a href="{{page.documentation}}">here</a>.
             </span>
         {% endif %}
         {% if page.github_repo %}
-            <p class="project-github-link">
+            <p>
             {% include icon-github.html username=site.data.contact.github_username %}/<a href="{{github_url}}">{{ page.github_repo }}</a>
             </p>
         {% endif %}
