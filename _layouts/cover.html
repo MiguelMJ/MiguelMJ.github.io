@@ -2,29 +2,36 @@
 ---
 {% include head.html %}
 
+
 <div class="wrapper">
+
 <div class="home">
+    
     <div id="presentation">
-        <div class="avatar-container">
-            <img src="/assets/img/avatar.jpg" class="avatar overlay">
-            <img src="/assets/img/avatar2.jpeg" class="avatar" alt="Avatar">
-        </div>
+        {% include changing-avatar.html %}
         <div id="presentation-text">
             {{ content }}
         </div>
     </div>
     
+    <div class="trigger">
+        {% for my_page in site.pages %}
+        {% if my_page.title %}
+        {% if my_page.lang == page.lang  %}
+            <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        {% endif %}
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div class="lights"></div>
     
-        <div class="trigger">
-            {% for my_page in site.pages %}
-            {% if my_page.title %}
-            {% if my_page.lang == page.lang  %}
-                <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-            {% endif %}
-            {% endif %}
-            {% endfor %}
+    <nav class="menu-desplegable right">
+        <h4>Language</h4>
+        <div class="desplegable-items">
+            <div id="es" class="lang"><a href="/es">Español</a></div>
+            <div id="en" class="lang"><a href="/">English</a></div>
         </div>
-        <div class="lights"></div>
+    </nav>
 </div>
     
 </div>

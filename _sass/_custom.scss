@@ -1,6 +1,9 @@
 .container{
     position: relative;
 }
+.home{
+    position: relative;
+}
 .centered-text{
     text-align:center;
 }
@@ -34,6 +37,30 @@
     border: 1px dotted $grey-color;
     background-color:darken($background-color,3%);
     padding:2.5%;
+}
+.menu-desplegable{
+    position: absolute;
+    top: $spacing-unit/2;
+    &.right{
+        right: $spacing-unit/2;
+    }
+    &.left{
+        left: $spacing-unit/2;
+    }
+    text-align:center;
+    color: $grey-color;
+    border: 1px solid $grey-color;
+    border-radius: 10px;
+    padding: $spacing-unit/2;
+    & h1,h2,h3,h4{
+        margin:0px;
+    }
+    &:hover .desplegable-items{
+        display: block;
+    }
+    & .desplegable-items{
+        display: none;
+    }
 }
 @mixin highlightable($from, $to){
     box-shadow: 0px 0px 5px 1px $from;
