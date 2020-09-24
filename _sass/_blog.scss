@@ -8,7 +8,10 @@
     display:none;
 }
 @media screen and (min-width:1000px){
-    .series-list-container{
+    .wrapper > .blog-nav-container{
+        display: block;
+    }
+    .blog-nav-container{
         display: block;
         position: absolute;
         top: 62px;
@@ -18,7 +21,7 @@
         padding: $spacing-unit/2;
         
     }
-    .series-list-content{
+    .blog-nav-content{
         margin-top: $spacing-unit;
         flex: 1 1 auto;
     }

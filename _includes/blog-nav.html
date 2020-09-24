@@ -1,0 +1,14 @@
+<div class="blog-nav-container">
+    <div class="blog-nav-content">
+        <p>Series</p>
+        <ul>
+        {% assign ordered_series = site.series | sort:"position" %}
+        {% for series in ordered_series  %}
+            <li>
+            <a href="{{ series.url | prepend: series.baseurl }}">{{ series.title }}</a>
+            </li>
+        {% endfor %}
+        </ul>
+        <small><p>Subscribe via the <a href="/feed.xml">RSS</a> feed</p></small>
+    </div>
+</div>
