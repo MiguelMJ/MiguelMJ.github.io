@@ -27,7 +27,7 @@ setPreview = function(path, title){
             <ul>
             {% for file in grupo.items %}
                 <li>
-                <a href="#materiales-list" class="material-link {% if file.estado %}{{file.estado}}{% endif %}" onclick="setPreview('{{file.url}}', '{{file.title}}')">{{file.title}}
+                <a href="#preview-material" class="material-link {% if file.estado %}{{file.estado}}{% endif %}" onclick="setPreview('{{file.url}}', '{{file.title}}')">{{file.title}}
                 </a>
                 </li>
             {% endfor %}
