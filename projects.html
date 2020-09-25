@@ -14,8 +14,7 @@ permalink: /projects/
     {% endif %}
     {% endcapture %}
     
-    <a href="{{ project.url | prepend: site.baseurl }}">
-    <div class="projects-cell">
+    <a class="projects-cell" href="{{ project.url | prepend: site.baseurl }}">
         {% if project.logo %}
         <div class="container">
             <h3 class="overlay-show">{{ project.title }}</h3>
@@ -31,7 +30,6 @@ permalink: /projects/
             </p>
         </div>
         {% endif %}
-    </div>
     </a>
 {% endfor %}
 </div>

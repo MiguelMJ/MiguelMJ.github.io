@@ -14,7 +14,8 @@
     #projects-display{
         display:grid;
         grid-template-columns: 31% 31% 31%;
-        justify-content: space-evenly;
+        grid-row-gap: $spacing-unit;
+        justify-content: center;
         & a:hover{
             text-decoration: none;
         }
