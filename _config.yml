@@ -7,11 +7,17 @@
 
 # Site settings
 title: Miguel MJ
-description:
+credit:
     - lang: ~
       text: "This website is powered by [Jekyll](jekyllrb.com) and hosted by [GitHub Pages](pages.github.com). Its source code is available in my GitHub."
     - lang: "es"
       text: "Esta página esta hecha con [Jekyll](jekyllrb.com) y alojada en [GitHub Pages](pages.github.com). Su código fuente está disponible en mi GitHub."
+description:
+    - lang: ~
+      text: "I'm a Computer Science student and programming is my passion. I love learning as much as I love teaching, sharing knowledge is a high human value!"
+    - lang: "es"
+      text: "Soy un estudiante de Ingeniería Informática apasionado por la programación. Aprender me gusta tanto como enseñar. ¡Compartir conocimiento es un gran valor humano!."
+
 contactme:
     - lang: ~
       text: "Contact me"

@@ -29,10 +29,13 @@
           <li>
             {% include icon-dev.html username=site.data.contact.dev_username %}
           </li>
+          <li>
+            {% include icon-twitter.html username=site.data.contact.twitter_username %}
+          </li>
           
         </ul>
       </div>
-      {% assign desc = site.description | where: "lang",page.lang | first%}
+      {% assign desc = site.credit | where: "lang",page.lang | first%}
       <div class="footer-col footer-col-3">
         <p>{{ desc.text | markdownify }}</p>
       </div>
