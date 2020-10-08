@@ -69,7 +69,7 @@ $(document).ready(function(){initNavTree('classge_1_1Entity.html','');});
 <p>Game objects, defined by the <a class="el" href="classge_1_1Component.html">components</a> that it contains.  
  <a href="classge_1_1Entity.html#details">More...</a></p>
 
-<p><code>#include &lt;EntityComponent.hpp&gt;</code></p>
+<p><code>#include &lt;Entity.hpp&gt;</code></p>
 <div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for ge::Entity:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -94,6 +94,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a615f3561c49625b4e8bb4b32f603df64"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classge_1_1Entity.html#a615f3561c49625b4e8bb4b32f603df64">notify</a> (const T &amp;event)</td></tr>
 <tr class="memdesc:a615f3561c49625b4e8bb4b32f603df64"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive an event and process it.  <a href="#a615f3561c49625b4e8bb4b32f603df64">More...</a><br /></td></tr>
 <tr class="separator:a615f3561c49625b4e8bb4b32f603df64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad91a7c4a72a2aaa7d6b001b176e194ac"><td class="memTemplParams" colspan="2">template&lt;class I &gt; </td></tr>
+<tr class="memitem:ad91a7c4a72a2aaa7d6b001b176e194ac"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classge_1_1Entity.html#ad91a7c4a72a2aaa7d6b001b176e194ac">apply</a> (const Effect&lt; <a class="el" href="classge_1_1Entity.html">Entity</a>, I &gt; &amp;effect)</td></tr>
+<tr class="memdesc:ad91a7c4a72a2aaa7d6b001b176e194ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies an Effect to the entity.  <a href="#ad91a7c4a72a2aaa7d6b001b176e194ac">More...</a><br /></td></tr>
+<tr class="separator:ad91a7c4a72a2aaa7d6b001b176e194ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56b4b7e7db0aa1d28a05758e9bca0e1d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classge_1_1Entity.html#a56b4b7e7db0aa1d28a05758e9bca0e1d">addComponentFromPtr</a> (const <a class="el" href="classge_1_1Component.html">Component</a> *component, bool active=true)</td></tr>
 <tr class="memdesc:a56b4b7e7db0aa1d28a05758e9bca0e1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a component and set its <em>active</em> flag.  <a href="#a56b4b7e7db0aa1d28a05758e9bca0e1d">More...</a><br /></td></tr>
 <tr class="separator:a56b4b7e7db0aa1d28a05758e9bca0e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,6 +283,46 @@ template&lt;class T &gt; </div>
 <p>This method overloads its more <a class="el" href="classge_1_1Entity.html#aee0f04e63e9d6f241680a2e2d36cabc6">general version</a> to be used outside the <a class="el" href="namespacege_1_1EventSystem.html" title="System to publish and listen to events. ">EventSystem</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">event</td><td>Object inheriting from <a class="el" href="classge_1_1Event.html">Event</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad91a7c4a72a2aaa7d6b001b176e194ac"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class I &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ge::Entity::apply </td>
+          <td>(</td>
+          <td class="paramtype">const Effect&lt; <a class="el" href="classge_1_1Entity.html">Entity</a>, I &gt; &amp;&#160;</td>
+          <td class="paramname"><em>effect</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Applies an Effect to the entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">I</td><td>Type of the information used by the effect. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">effect</td><td>to be applied. </td></tr>
   </table>
   </dd>
 </dl>
