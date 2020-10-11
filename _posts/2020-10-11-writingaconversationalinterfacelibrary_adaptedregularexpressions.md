@@ -43,30 +43,21 @@ Here's a table with the equivalences:
 
 
 | Adapted Expression | Regular Expression |
-
-| ------------------ | ------------------ |
-
+|------------------|------------------|
 | [text]             | (text)?            |
-
 | (a&#124;b&#124;c)  | (a&#124;b&#124;c)  |
-
 | @>id               | (?\<id>\w+ ?)      |
-
 | @>id{n}            | (?\<id>(\w+ ?){n}) |
-
 | #>id               | (?\<id>\d+ ?)      |
-
 | #>id{n}            | (?\<id>(\d+ ?){n}) |
-
 | $id                | $id                |
-
 
 
 _Note: `$id` variables doesn't belong to Regular Expressions, but to the extension we made in the last post_.
 
 
 
-## `RegexAdapter` class
+## RegexAdapter class
 
 
 
