@@ -22,7 +22,7 @@ Para más detalles, visita la sección de [clases particulares](/es/clases-parti
 
 ### Como desarrollador
 
-En la [versión en inglés](/) de esta página web encontrarás mi blog de programación y la documentación de mis proyectos, la mayoría de los cuales encontrarás en GitHub. Trabajo principalmente con C++, SFML y tecnologías GNU/Linux, pero me gusta mantener algo de diversidad y actualmente estoy centrado en Java, R y desarrollo front-end.
+En la [versión en inglés](/) de esta página web encontrarás mi blog de programación y la documentación de mis proyectos, la mayoría de los cuales encontrarás en GitHub. Trabajo principalmente con C++, SFML y tecnologías GNU/Linux, pero me gusta mantener algo de diversidad y actualmente estoy centrado en Java, Prolog y desarrollo web. También tengo experiencia con R, Octave y Linux.
 
 ## ¡Hablemos!
 

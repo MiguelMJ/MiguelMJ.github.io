@@ -12,7 +12,7 @@ title: About
 
 ### As a developer
 
-This is the **english version** of my website, where you can read my blog about programming and the documentation of my projects, most of which you will find in GitHub. I mainly work with C++, SFML and GNU/Linux techonologies, but I like to keep some diversity and I'm currently focused on Java, R and front-end development.
+This is the **english version** of my website, where you can read my blog about programming and the documentation of my projects, most of which you will find in GitHub. I mainly work with C++, SFML and GNU/Linux techonologies, but I like to keep some diversity and I'm currently focused on Java, Prolog and web development. I also have experience with R, Octave and Python.
 
 ### As a teacher
 
