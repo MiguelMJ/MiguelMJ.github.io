@@ -6,7 +6,7 @@ author: Miguel MJ
 tags: ['\n  -prolog', '\n  -declarative', '\n  -career', '\n  -improve']
 dev_url: https://dev.to/miguelmj/thoughts-on-declarative-programming-why-i-m-learning-prolog-43be
 ---
-> First of all I want to state that in this post I will use _declarative programming language_ to refer to purely functional (Haskell, Miranda) and logical (Prolog) programming. No query languages (SQL) nor markup languages (XML).
+First of all I want to state that in this post I will use _declarative programming language_ to refer to purely functional (Haskell, Miranda) and logical (Prolog) programming. No query languages (SQL) nor markup languages (XML).
 
 
 
@@ -14,11 +14,11 @@ Contents
 
 
 
-  - [Why is declarative programming less popular?](#Why-is-declarative-programming-less-popular?)
+  - [Why is declarative programming less popular?](#why-is-declarative-programming-less-popular)
 
-  - [Reasons to learn a declarative language](#Reasons-to-learn-a-declarative-language)
+  - [Reasons to learn a declarative language](#reasons-to-learn-a-declarative-language)
 
-  - [My personal experience - Why I choose Prolog](#My-personal-experience---Why-I-choose-Prolog)
+  - [My personal experience - Why I choose Prolog](#my-personal-experience-Why-I-choose-Prolog)
 
 
 
