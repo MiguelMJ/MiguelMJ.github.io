@@ -1,7 +1,7 @@
 ---
 layout: project
-logo: /Velero-Engine/logotype.svg
-logo_compact: /Velero-Engine/logosymbol.svg
+logo: /assets/img/Velero-Engine/logotype.svg
+logo_compact: /assets/img/Velero-Engine/logotype_compact.svg
 documentation: /Velero-Engine
 title: Velero Engine
 acronym: VE
