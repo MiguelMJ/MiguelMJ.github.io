@@ -12,7 +12,7 @@ github_repo: Velero-Engine
 
 Today there are two types of young developers: those who have been attracted at some point by video game development and those who will be. In my case, I started to learn Unity and C# one Chistmas and ended up discovering by summer that game development was not the only thing pulling me, but the design of the engine itself.
 
-I know what they say about creating a game engine: either you are doing it to learn or your game have some needs that would be better satisfied by a custom engine. For me, the first one was enough to begin. I was already familiar with [SFML](sfml-dev.org/), which I would use as starting point, but from there, the architecture of the engine has suffered a lot of changes, through several years of learning, failing and restarting.
+I know what they say about creating a game engine: either you are doing it to learn or your game have some needs that would be better satisfied by a custom engine. For me, the first one was enough to begin. I was already familiar with [SFML](https://sfml-dev.org/), which I would use as starting point, but from there, the architecture of the engine has suffered a lot of changes, through several years of learning, failing and restarting.
 
 ## Status
 
