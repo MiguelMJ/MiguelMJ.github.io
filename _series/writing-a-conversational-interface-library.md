@@ -1,7 +1,7 @@
 ---
 layout: series
 title: Writing a Conversational Interface Library
-position: 1
+position: 3
 posts:
   - /2020/08/12/writingaconversationalinterfacelibrary_theidea.html
   - /2020/08/19/writingaconversationalinterfacelibrary_thedesign.html
