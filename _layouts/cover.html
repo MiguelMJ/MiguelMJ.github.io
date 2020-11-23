@@ -9,6 +9,25 @@
     
     <div id="presentation">
         {% include changing-avatar.html %}
+        
+        <div id="icon-link-row">
+            <a href="https://github.com/{{site.data.contact.github_username}}">
+                <span class="icon32">{% include icon-github.svg %}</span>
+            </a>
+            <a href="https://linkedin.com/in/{{ site.data.contact.linkedin_username }}">
+                <span class="icon32">{% include icon-linkedin.svg %}</span>
+            </a>
+            <!--<a href="https://stackoverflow.com/users/{{site.data.contact.stackoverflow_username}}">
+                <span class="icon32">{% include icon-stackoverflow.svg %}</span>
+            </a>
+            <a href="https://dev.to/{{site.data.contact.dev_username}}">
+                <span class="icon32">{% include icon-dev.svg %}</span>
+            </a>-->
+            <a href="https://twitter.com/{{site.data.contact.twitter_username}}">
+                <span class="icon32">{% include icon-twitter.svg %}</span>
+            </a>
+        </div>
+        
         <div id="presentation-text">
             {{ content }}
         </div>

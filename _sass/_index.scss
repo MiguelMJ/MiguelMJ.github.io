@@ -42,6 +42,14 @@
     min-height: 160px;
 }
 @media screen and (min-width: 600px){
+    #icon-link-row{
+        margin: $spacing-unit auto; 
+        width:60%;
+        display:flex; 
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-evenly;
+    }
     #presentation{
         //padding-bottom:  0px;
         & + .trigger{

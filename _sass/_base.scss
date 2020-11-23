@@ -204,9 +204,18 @@ pre {
         width: 16px;
         height: 16px;
         vertical-align: middle;
-
         path {
             fill: $grey-color-light;
+        }
+    }
+}
+.icon32 {
+    @extend .icon;
+    > svg{
+        width: 32px;
+        height: 32px;
+        path {
+            fill: $grey-color;
         }
     }
 }
