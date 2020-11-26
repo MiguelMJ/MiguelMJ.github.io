@@ -9,7 +9,7 @@ layout: default
     <p class="post-meta">
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
         {{ page.date | date: "%b %-d, %Y" }}
-        </time> • {% include read-time.html content=post.content %} {% if page.dev_url %} • <span>Read the <a href="{{page.dev_url}}">original publication</a></span>{% endif %}</p>
+        </time> • {% include read-time.html content=content %} {% if page.dev_url %} • <span>Read the <a href="{{page.dev_url}}">original publication</a></span>{% endif %}</p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
