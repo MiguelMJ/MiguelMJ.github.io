@@ -5,7 +5,7 @@
         {% assign ordered_series = site.series | sort:"position" %}
         {% for series in ordered_series  %}
             <li>
-            <a href="{{ series.url | prepend: series.baseurl }}">{{ series.title }}</a>
+            <a href="{{ series.url | prepend: series.baseurl }}">{{ series.title }} ({{series.posts | size}})</a>
             </li>
         {% endfor %}
         </ul>
