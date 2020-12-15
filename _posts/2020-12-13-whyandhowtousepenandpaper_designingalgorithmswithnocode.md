@@ -26,10 +26,29 @@ With code, it happens like with mathematical language. Our brain knows how to in
 
 **Intersection of two sets**
 
-| Math | Image |
-| :---: | :---: |
-| {% katex %} A \cap B = \\{ x : x \in A, x \in B \\} {% endkatex %} | ![Intersection Wikimedia](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Set_intersection.svg/1280px-Set_intersection.svg.png)[*Source: Wikimedia*](https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Set_intersection.svg/1280px-Set_intersection.svg.png) |
 
+<table>
+<thead>
+<tr>
+<th>Math</th>
+<th>Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<link rel="stylesheet" media="screen" href="https://practicaldev-herokuapp-com.freetls.fastly.net/assets/katex-6f41bf4c7d7955a8a0ab8dbe4d991fcc559b0ab51dbea515f047458827da2b96.css">
+
+<div class="katex-element">
+  <span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∩</mo><mi>B</mi><mo>=</mo><mo stretchy="false">{</mo><mi>x</mi><mo>:</mo><mi>x</mi><mo>∈</mo><mi>A</mi><mo separator="true">,</mo><mi>x</mi><mo>∈</mo><mi>B</mi><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">A \cap B = \{ x : x \in A, x \in B \} </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∩</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">{</span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">A</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">x</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mclose">}</span></span></span></span></span>
+</div>
+</td>
+<td>
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--u_xu2eEZ--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Set_intersection.svg/1280px-Set_intersection.svg.png" alt="Intersection Wikimedia" loading="lazy"><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Set_intersection.svg/1280px-Set_intersection.svg.png"><em>Source: Wikimedia</em></a>
+</td>
+</tr>
+</tbody>
+</table>
 The process your mind takes to understand the image is much shorter than to understand the expression.
 
 ### That applies to programming too
