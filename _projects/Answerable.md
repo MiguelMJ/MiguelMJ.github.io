@@ -25,7 +25,7 @@ However, the activity is pretty constant, and it is easy to get lost in the amou
 
 ### Web scraping, APIs and RSS feeds
 
-Thanks to this project I got the excuse to practise more web scraping. The problem was that the amount of traffic it generated was too high for me to feel comfortable, specially if I followed [rules of ethical web scraping](https://stackapps.com/questions/8805/placeholder-answerable-a-recomendator-of-unanswered-questions) (respecting servers and administrator is important). 
+Thanks to this project I got the excuse to practise more web scraping. The problem was that the amount of traffic it generated was too high for me to feel comfortable, specially if I followed [rules of ethical web scraping](https://www.empiricaldata.org/dataladyblog/a-guide-to-ethical-web-scraping) (respecting servers and administrator is important). 
 
 So the next step was to learn about the two tools that would replace scraping and optimize the information retrieval: the Stack Exchange API and RSS feeds. I discovered that the Stack Exchange community has a dedicated place for apps made with their API, so [I posted mine there](https://stackapps.com/questions/8805/placeholder-answerable-a-recomendator-of-unanswered-questions) and spent some time learning about the minimal calls I needed.
 
