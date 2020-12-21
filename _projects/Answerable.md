@@ -2,7 +2,7 @@
 layout: project
 logo: /assets/img/Answerable/logo.svg
 title: Answerable
-slogan: Find questions on Stack Overflow suited for you.
+slogan: Stack Overflow unanswered questions recomendation system.
 github_repo: Answerable
 badges: # optional too
     - src: https://img.shields.io/badge/License-MIT-informational
