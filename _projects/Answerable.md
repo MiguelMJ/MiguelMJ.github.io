@@ -36,6 +36,8 @@ Once we have all the information we need from the web, it is necessary to build 
 
 This approach has not given the best results yet, but surely something. To complete it, I will have to do some more research in NLP. I'm not sure if I will use Prolog, learn Pandas or the NLP python toolkit. Maybe an ensemble of all of them? We'll see.
 
+Update: The first version was removed and I wrote a different recommender algorithm, adapted from the Content-Based recommender described in [this tutorial](https://www.datacamp.com/community/tutorials/recommender-systems-python), using sklearn. I still plan to try out new algorithms, but this one gives pretty decent results.
+
 ### Some Python auxiliar tools
 
 This is also the first project in which I use [Black](https://black.readthedocs.io/en/stable/) for style formatting and [Vulture](https://github.com/jendrikseipp/vulture) to clean unused code in Python. This way I get used to tools that optimize the process and produce faster results that improve the manual reviews.
