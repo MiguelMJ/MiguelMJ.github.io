@@ -4,6 +4,7 @@ logo: /assets/img/Answerable/logo.svg
 title: Answerable
 slogan: Stack Overflow unanswered questions recomendation system.
 github_repo: Answerable
+documentation: https://github.com/MiguelMJ/Answerable/wiki
 badges: # optional too
     - src: https://img.shields.io/badge/License-MIT-informational
       alt: License
@@ -11,8 +12,6 @@ badges: # optional too
       alt: repo-size
     - src: https://img.shields.io/badge/python-3.8-informational
       alt: Python3.8
-    - src: https://img.shields.io/badge/documentation-To_do-important
-      alt: Documentation-to-do
 ---
 
 ## Background
