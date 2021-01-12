@@ -34,7 +34,7 @@ This way, the API is called only to get the data that the model will use. Then, 
 
 Once we have all the information we need from the web, it is necessary to build a model to evaluate the answers of the user and make it classify the latest unanswered questions. The first version of this algorithm is pretty simple, making a study on the word frequency, pondered by the reputation associated to the answers and tags they appear in.
 
-This approch has not given the best results yet, but surely something. To complete it, I will have to do some more research in NLP. I'm not sure if I will use Prolog, learn Pandas or the NLP python toolkit. Maybe an ensemble of all of them? We'll see.
+This approach has not given the best results yet, but surely something. To complete it, I will have to do some more research in NLP. I'm not sure if I will use Prolog, learn Pandas or the NLP python toolkit. Maybe an ensemble of all of them? We'll see.
 
 ### Some Python auxiliar tools
 
