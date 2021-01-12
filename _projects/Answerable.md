@@ -36,6 +36,8 @@ Once we have all the information we need from the web, it is necessary to build 
 
 This approch has not given the best results yet, but surely something. To complete it, I will have to do some more research in NLP. I'm not sure if I will use Prolog, learn Pandas or the NLP python toolkit. Maybe an ensemble of all of them? We'll see.
 
+### Some Python auxiliar tools
+
+This is also the first project in which I use [Black](https://black.readthedocs.io/en/stable/) for style formatting and [Vulture](https://github.com/jendrikseipp/vulture) to clean unused code in Python. This way I get used to tools that optimize the process and produce faster results that improve the manual reviews.
+
 _The project is not finished yet, and it surely will have place for modifications for a long time after a functional version is released_. 
-
-
