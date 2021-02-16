@@ -88,7 +88,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aee020b03a79e9c80dbf038c2e1a85eed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
 <tr class="separator:aee020b03a79e9c80dbf038c2e1a85eed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4753c89d8598308a771c62923ae5cc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcandle_1_1RadialLight.html#ab4753c89d8598308a771c62923ae5cc7">castLight</a> (const EdgeVector::iterator &amp;begin, const EdgeVector::iterator &amp;end) override</td></tr>
-<tr class="memdesc:ab4753c89d8598308a771c62923ae5cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the polygon of the illuminated area with a raycasting algorithm.  <a href="classcandle_1_1RadialLight.html#ab4753c89d8598308a771c62923ae5cc7">More...</a><br /></td></tr>
+<tr class="memdesc:ab4753c89d8598308a771c62923ae5cc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the polygon of the illuminated area with a raycasting algorithm.  <a href="classcandle_1_1RadialLight.html#ab4753c89d8598308a771c62923ae5cc7">More...</a><br /></td></tr>
 <tr class="separator:ab4753c89d8598308a771c62923ae5cc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae587e8b69093fe52dd6759e04939079c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcandle_1_1RadialLight.html#ae587e8b69093fe52dd6759e04939079c">setBeamAngle</a> (float angle)</td></tr>
 <tr class="memdesc:ae587e8b69093fe52dd6759e04939079c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the range for which rays may be casted.  <a href="classcandle_1_1RadialLight.html#ae587e8b69093fe52dd6759e04939079c">More...</a><br /></td></tr>
@@ -135,7 +135,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classcandle_1_1LightSource.html" title="Interface for objects that emit light.">LightSource</a> that emits light from a single point. </p>
-<p>A <a class="el" href="classcandle_1_1RadialLight.html" title="LightSource that emits light from a single point.">RadialLight</a> is defined, mainly, by the origin of the rays, the range of the light, the beam angle and its aperture. To manipulate the position and the orientation of the light, you can change the position and rotation of the object as you would do with any sf::Transformable. The range can be manipulated as with other LightSources, with <a class="el" href="classcandle_1_1LightSource.html#a70fa0b021d3e30a5aa1eb1cd24ba483e">LightSource::setRange</a>, and the angle of the beam with <a class="el" href="classcandle_1_1RadialLight.html#ae587e8b69093fe52dd6759e04939079c">setBeamAngle</a>.</p>
+<p>A <a class="el" href="classcandle_1_1RadialLight.html" title="LightSource that emits light from a single point.">RadialLight</a> is defined, mainly, by the position, the orientation, the range of the light and the beam angle. To manipulate the position and the orientation of the light, you can change the position and rotation of the object as you would do with any sf::Transformable. The range can be manipulated as with other LightSources, with <a class="el" href="classcandle_1_1LightSource.html#a70fa0b021d3e30a5aa1eb1cd24ba483e">LightSource::setRange</a>, and the angle of the beam with <a class="el" href="classcandle_1_1RadialLight.html#ae587e8b69093fe52dd6759e04939079c">setBeamAngle</a>.</p>
 <table width="100%">
 <tr>
 <td align="center"><img src="radial_1.png" alt="" width="300px" class="inline"/> <br  />
@@ -177,8 +177,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Modifies the polygon of the illuminated area with a raycasting algorithm. </p>
-<p>The algorithm needs to know what edges to use to cast shadows. They are specified within a range of two iterators of a vector of edges of type <a class="el" href="structsfu_1_1Line.html">sfu::Line</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Modify the polygon of the illuminated area with a raycasting algorithm. </p>
+<p>The algorithm needs to know which edges to use to cast shadows. They are specified within a range of two iterators of a vector of edges of type <a class="el" href="structsfu_1_1Line.html">sfu::Line</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">begin</td><td>Iterator to the first <a class="el" href="structsfu_1_1Line.html" title="2D Line defined by an origin point and a direction vector.">sfu::Line</a> of the vector to take into account. </td></tr>
     <tr><td class="paramname">end</td><td>Iterator to the first <a class="el" href="structsfu_1_1Line.html" title="2D Line defined by an origin point and a direction vector.">sfu::Line</a> of the vector not to be taken into account. </td></tr>

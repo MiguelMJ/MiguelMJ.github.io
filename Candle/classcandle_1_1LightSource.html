@@ -113,7 +113,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a983d51a4fa63300052f1968d2efd159a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the range of the illuminated area.  <a href="classcandle_1_1LightSource.html#a983d51a4fa63300052f1968d2efd159a">More...</a><br /></td></tr>
 <tr class="separator:a983d51a4fa63300052f1968d2efd159a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a6e2a899ebc86948952d68f5fff0f7c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcandle_1_1LightSource.html#a9a6e2a899ebc86948952d68f5fff0f7c">castLight</a> (const EdgeVector::iterator &amp;begin, const EdgeVector::iterator &amp;end)=0</td></tr>
-<tr class="memdesc:a9a6e2a899ebc86948952d68f5fff0f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the polygon of the illuminated area with a raycasting algorithm.  <a href="classcandle_1_1LightSource.html#a9a6e2a899ebc86948952d68f5fff0f7c">More...</a><br /></td></tr>
+<tr class="memdesc:a9a6e2a899ebc86948952d68f5fff0f7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the polygon of the illuminated area with a raycasting algorithm.  <a href="classcandle_1_1LightSource.html#a9a6e2a899ebc86948952d68f5fff0f7c">More...</a><br /></td></tr>
 <tr class="separator:a9a6e2a899ebc86948952d68f5fff0f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -127,7 +127,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="textblock"><p>Interface for objects that emit light. </p>
 <p>LightSources use raycasting algorithms to compute the polygon illuminated by the light. The main difference between the implementations, <a class="el" href="classcandle_1_1RadialLight.html">RadialLight</a> and <a class="el" href="classcandle_1_1DirectedLight.html">DirectedLight</a>, is whether the constant is the origin or the direction of the rays.</p>
 <p>LightSources manage their colour separating the alpha value from the RGB . This is convenient to manipulate color of the light (interpreted as the RGB value) and intensity (interpreted as the alpha value) separately.</p>
-<p>By default, they use a sf::BlendAdd mode. This means that you can specify any other blend mode you want except sf::BlendAlpha, that will be converted to the additive mode. </p>
+<p>By default, they use a sf::BlendAdd mode. This means that you can specify any other blend mode you want, except sf::BlendAlpha, that will be changed to the additive mode. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a0ecb09b40144b306b18e8f34236d9a2f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0ecb09b40144b306b18e8f34236d9a2f">&#9670;&nbsp;</a></span>setIntensity()</h2>
@@ -377,8 +377,8 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 
-<p>Modifies the polygon of the illuminated area with a raycasting algorithm. </p>
-<p>The algorithm needs to know what edges to use to cast shadows. They are specified within a range of two iterators of a vector of edges of type <a class="el" href="structsfu_1_1Line.html">sfu::Line</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Modify the polygon of the illuminated area with a raycasting algorithm. </p>
+<p>The algorithm needs to know which edges to use to cast shadows. They are specified within a range of two iterators of a vector of edges of type <a class="el" href="structsfu_1_1Line.html">sfu::Line</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">begin</td><td>Iterator to the first <a class="el" href="structsfu_1_1Line.html" title="2D Line defined by an origin point and a direction vector.">sfu::Line</a> of the vector to take into account. </td></tr>
     <tr><td class="paramname">end</td><td>Iterator to the first <a class="el" href="structsfu_1_1Line.html" title="2D Line defined by an origin point and a direction vector.">sfu::Line</a> of the vector not to be taken into account. </td></tr>

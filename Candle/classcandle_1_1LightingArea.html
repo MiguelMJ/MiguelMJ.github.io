@@ -139,7 +139,7 @@ Public Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a7446bcc2f8a45056bb836cb2816c4069"><td class="memItemLeft" align="right" valign="top"><a id="a7446bcc2f8a45056bb836cb2816c4069"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcandle_1_1LightingArea.html#a7446bcc2f8a45056bb836cb2816c4069">draw</a> (sf::RenderTarget &amp;, sf::RenderStates) const override</td></tr>
-<tr class="memdesc:a7446bcc2f8a45056bb836cb2816c4069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to draw all the fog and the light sources. <br /></td></tr>
+<tr class="memdesc:a7446bcc2f8a45056bb836cb2816c4069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the object to the target. <br /></td></tr>
 <tr class="separator:a7446bcc2f8a45056bb836cb2816c4069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -154,7 +154,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <p>It can be used with a plain color or with another sf::Texture as base. If this is the case, such texture must exist and be managed externally during the life of the <a class="el" href="classcandle_1_1LightingArea.html" title="Object to manage ambient light and fog.">LightingArea</a>. All changes made to the color, opacity or texture of the area require a call to <a class="el" href="classcandle_1_1LightingArea.html#aa23279255ff869f1346c440e8e6818ae">clear</a> and <a class="el" href="classcandle_1_1LightingArea.html#ab92f568490d2e917b892d93ed885bdbc">display</a> to make effect.</p>
 <div align="center"> <img src="lightingArea04.png" alt="" width="300px" class="inline"/> <br  />
- <em><a class="el" href="classcandle_1_1LightingArea.html" title="Object to manage ambient light and fog.">LightingArea</a> in FOG mode with texture</em> </div><p>As the sf::RenderTexture may be a heavy resource to be creating, there is only two moments in which you are able to do so. The first one and most common is upon construction, where you can specify the size of the area, that will be the size of the sf::RenderTexture. The second one is upon the assignation of a texture (with <a class="el" href="classcandle_1_1LightingArea.html#abaaeb25e73800ea87993b9c0cc56cbf8">setAreaTexture</a>), on which the area is created again to match the size of the new texture.</p>
+ <em><a class="el" href="classcandle_1_1LightingArea.html" title="Object to manage ambient light and fog.">LightingArea</a> in FOG mode with texture</em> </div><p>As the sf::RenderTexture may be a heavy resource to be creating repeteadly, there are only two moments in which you are able to do so. The first one and most common is upon construction, where you can specify the size of the area, which will also be the size of the sf::RenderTexture. The second one is upon the assignment of a texture (with <a class="el" href="classcandle_1_1LightingArea.html#abaaeb25e73800ea87993b9c0cc56cbf8">setAreaTexture</a>), on which the area is created again to match the size of the new texture.</p>
 <p>There are two things to note about this:</p><ol type="1">
 <li>To change the size of a <a class="el" href="classcandle_1_1LightingArea.html" title="Object to manage ambient light and fog.">LightingArea</a> that has already been constructed, without changing the base texture, you have to scale it as you would do with any other sf::Transformable.</li>
 <li>If you change the texture of the area, its size might also be modified. So, if you want to change the texture and the size, you must change the texture first and scale it after that. </li>
@@ -175,7 +175,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Operation modes for a <a class="el" href="classcandle_1_1LightingArea.html" title="Object to manage ambient light and fog.">LightingArea</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classcandle_1_1LightingArea.html#ad0d7b3ea4cadacacf400cfbbd5a0ded3" title="Set the lighting mode.">setMode</a>, <a class="el" href="classcandle_1_1LightingArea.html#ab9ecdec05d84e64de434faeb152bf159" title="Set the lighting mode.">getMode</a> </dd></dl>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abb5e62e2a548ebce575541cdc42bf862a3b94a6b2924d20e02a2b96951c88f344"></a>FOG&#160;</td><td class="fielddoc"><p>In this mode, the area behaves like a mask through which is only possible to see by drawing light on it. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abb5e62e2a548ebce575541cdc42bf862a3b94a6b2924d20e02a2b96951c88f344"></a>FOG&#160;</td><td class="fielddoc"><p>In this mode, the area behaves like a mask through which it is only possible to see by drawing light on it. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abb5e62e2a548ebce575541cdc42bf862a33d5dacb5008b6c494d35d538d73b04a"></a>AMBIENT&#160;</td><td class="fielddoc"><p>Use the area as an extra layer of light. </p>
 </td></tr>

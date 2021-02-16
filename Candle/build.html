@@ -75,14 +75,14 @@ CMake</h1>
 <div class="line">cmake .. -DBUILD_DEMO=ON</div>
 <div class="line">cmake --build .</div>
 </div><!-- fragment --><p>This will generate <code>libCandle-s.a</code> or (<code>Candle-s.lib</code> on Windows) in <code>build/lib</code> folder and the <code>demo</code> program (or <code>demo.exe</code>) in <code>build/bin</code>.</p>
-<p>If it happens that CMake can't find the SFML files, you might need to set manually <code>SFML_ROOT</code> inside the <code>CMakeLists.txt</code> (uncomment and complete line 15).</p>
+<p>If CMake can't manage to find the SFML files, you might need to set <code>SFML_ROOT</code> inside the <code>CMakeLists.txt</code> manually (uncomment and complete line 15).</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Make</h1>
 <p>For Linux users, the old Candle build system is still available. You just have to</p>
 <div class="fragment"><div class="line">make release</div>
-</div><!-- fragment --><p>to build <code>libCandle-s.a</code> and the <code>demo</code> program inside the folder <code>release</code>. Alternatively, you can use</p>
+</div><!-- fragment --><p>to build <code>libCandle-s.a</code> and the <code>demo</code> program inside the <code>release</code> folder. Alternatively, you can use</p>
 <div class="fragment"><div class="line">make debug</div>
-</div><!-- fragment --><p>to build the debug version inside the folder <code>debug</code>. </p>
+</div><!-- fragment --><p>to build the debug version inside the <code>debug</code> folder. </p>
 </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->

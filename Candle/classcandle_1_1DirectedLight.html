@@ -84,7 +84,7 @@ $(document).ready(function(){initNavTree('classcandle_1_1DirectedLight.html','')
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a980304f72bbe1db4210d6f6cd174d121"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcandle_1_1DirectedLight.html#a980304f72bbe1db4210d6f6cd174d121">castLight</a> (const EdgeVector::iterator &amp;begin, const EdgeVector::iterator &amp;end) override</td></tr>
-<tr class="memdesc:a980304f72bbe1db4210d6f6cd174d121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modifies the polygon of the illuminated area with a raycasting algorithm.  <a href="classcandle_1_1DirectedLight.html#a980304f72bbe1db4210d6f6cd174d121">More...</a><br /></td></tr>
+<tr class="memdesc:a980304f72bbe1db4210d6f6cd174d121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Modify the polygon of the illuminated area with a raycasting algorithm.  <a href="classcandle_1_1DirectedLight.html#a980304f72bbe1db4210d6f6cd174d121">More...</a><br /></td></tr>
 <tr class="separator:a980304f72bbe1db4210d6f6cd174d121"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd61088f6fc08cddcdcd98ec8362ac26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcandle_1_1DirectedLight.html#acd61088f6fc08cddcdcd98ec8362ac26">setBeamWidth</a> (float width)</td></tr>
 <tr class="memdesc:acd61088f6fc08cddcdcd98ec8362ac26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the width of the beam.  <a href="classcandle_1_1DirectedLight.html#acd61088f6fc08cddcdcd98ec8362ac26">More...</a><br /></td></tr>
@@ -131,11 +131,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classcandle_1_1LightSource.html" title="Interface for objects that emit light.">LightSource</a> that emits light in a single direction. </p>
-<p>A <a class="el" href="classcandle_1_1DirectedLight.html" title="LightSource that emits light in a single direction.">DirectedLight</a> is defined, mainly, by the direction of the rays, the position of the source, the beam width and the range of the light. You can manipulate the two first transforming changing the rotation and position as you would do with any sf::Transformable. The range can be manipulated as with other LightSources, with <a class="el" href="classcandle_1_1LightSource.html#a70fa0b021d3e30a5aa1eb1cd24ba483e">LightSource::setRange</a>, and the beam width with <a class="el" href="classcandle_1_1DirectedLight.html#acd61088f6fc08cddcdcd98ec8362ac26">setBeamWidth</a>.</p>
+<p>A <a class="el" href="classcandle_1_1DirectedLight.html" title="LightSource that emits light in a single direction.">DirectedLight</a> is defined, mainly, by the direction of the rays, the position of the source, the beam width and the range of the light. You can manipulate the first two changing the rotation and position as you would with any sf::Transformable. The range can be manipulated as with other LightSources, with <a class="el" href="classcandle_1_1LightSource.html#a70fa0b021d3e30a5aa1eb1cd24ba483e">LightSource::setRange</a>, and the beam width with <a class="el" href="classcandle_1_1DirectedLight.html#acd61088f6fc08cddcdcd98ec8362ac26">setBeamWidth</a>.</p>
 <table width="100%">
 <tr>
 <td align="center"><img src="directed_1.png" alt="" width="300px" class="inline"/> <br  />
- <em>Variables schema</em>  </td><td align="center"><img src="directed_2.png" alt="" width="300px" class="inline"/> <br  />
+ <em>Variables diagram</em>  </td><td align="center"><img src="directed_2.png" alt="" width="300px" class="inline"/> <br  />
  <em>Demo example</em>   </td></tr>
 </table>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -173,8 +173,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Modifies the polygon of the illuminated area with a raycasting algorithm. </p>
-<p>The algorithm needs to know what edges to use to cast shadows. They are specified within a range of two iterators of a vector of edges of type <a class="el" href="structsfu_1_1Line.html">sfu::Line</a>. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Modify the polygon of the illuminated area with a raycasting algorithm. </p>
+<p>The algorithm needs to know which edges to use to cast shadows. They are specified within a range of two iterators of a vector of edges of type <a class="el" href="structsfu_1_1Line.html">sfu::Line</a>. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">begin</td><td>Iterator to the first <a class="el" href="structsfu_1_1Line.html" title="2D Line defined by an origin point and a direction vector.">sfu::Line</a> of the vector to take into account. </td></tr>
     <tr><td class="paramname">end</td><td>Iterator to the first <a class="el" href="structsfu_1_1Line.html" title="2D Line defined by an origin point and a direction vector.">sfu::Line</a> of the vector not to be taken into account. </td></tr>
@@ -204,7 +204,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Set the width of the beam. </p>
-<p>The width specifies the maximum distance allowed from the center of segment to cast a ray, along a segment normal to the ligh direction. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The width specifies the maximum distance allowed from the center of the segment to cast a ray, along a segment normal to the light direction. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">width</td><td>Width of the beam. </td></tr>
   </table>
