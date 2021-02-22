@@ -65,12 +65,10 @@ var NAVTREEINDEX0 =
 "functions_vars.html":[1,3,2],
 "hierarchy.html":[1,2],
 "index.html":[],
-"namespacecom.html":[0,0,0],
-"namespacecom.html":[1,0,0],
-"namespacecom_1_1github.html":[1,0,0,0],
-"namespacecom_1_1github.html":[0,0,0,0],
-"namespacecom_1_1github_1_1miguelmj.html":[1,0,0,0,0],
-"namespacecom_1_1github_1_1miguelmj.html":[0,0,0,0,0],
+"index.html#autotoc_md0":[0],
+"namespacecom_1_1github_1_1miguelmj.html":[0,0,1,0,0],
 "namespaces.html":[0,0],
-"pages.html":[]
+"pages.html":[],
+"":[0,0,1,0],
+"":[0,0,1]
 };

@@ -8,7 +8,7 @@ var classven_1_1Component =
     [ "handle", "classven_1_1Component.html#a18aed83538318de7a576dfa3b00ced4f", null ],
     [ "copy", "classven_1_1Component.html#a1b742ba85777c02a267427480547ff0b", null ],
     [ "to_string", "classven_1_1Component.html#aa986768ef0a92967351aba822fe2f13f", null ],
-    [ "getEntityPtr", "classven_1_1Component.html#a3886f38c7dd100635b72f6a2cd62147b", null ],
+    [ "getEntityPtr", "classven_1_1Component.html#af3ccd73d35c4ad9d7736aaf6c8276eac", null ],
     [ "m_ptrEntity", "classven_1_1Component.html#a5cddd92facd2d517c63954a458f0cf96", null ],
     [ "m_eventsHandled", "classven_1_1Component.html#aa525060ab3979380fcd7ea10a0f68506", null ],
     [ "m_channels", "classven_1_1Component.html#a1991fbbf6bb54d9754cb607858318000", null ]

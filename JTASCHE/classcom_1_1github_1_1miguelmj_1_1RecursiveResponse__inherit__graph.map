@@ -1,3 +1,4 @@
 <map id="RecursiveResponse" name="RecursiveResponse">
-<area shape="rect" id="node2" href="$classcom_1_1github_1_1miguelmj_1_1Response.html" title="Base class for responses. " alt="" coords="35,5,116,32"/>
+<area shape="rect" id="node1" title="Response that can evaluate multiple conditions." alt="" coords="5,80,145,107"/>
+<area shape="rect" id="node2" href="$classcom_1_1github_1_1miguelmj_1_1Response.html" title="Base class for responses." alt="" coords="35,5,116,32"/>
 </map>

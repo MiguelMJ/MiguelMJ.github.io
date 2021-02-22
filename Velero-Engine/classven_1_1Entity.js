@@ -10,6 +10,6 @@ var classven_1_1Entity =
     [ "removeComponents", "classven_1_1Entity.html#a0d4fd894f76be5970aa13b5105be6bb4", null ],
     [ "setActive", "classven_1_1Entity.html#ac252b842131e27910d73d75ba802f6fc", null ],
     [ "isActive", "classven_1_1Entity.html#a9033d6941cb27e9eaf25a5b9ca06ef1c", null ],
-    [ "getId", "classven_1_1Entity.html#a325f14414065b20b3118eebe53aaab9b", null ],
-    [ "getName", "classven_1_1Entity.html#acd5f07b670d2a38c4bb56fd7d0ad901b", null ]
+    [ "getId", "classven_1_1Entity.html#a2e321e8c18346b69eefa8adb1c1fbb59", null ],
+    [ "getName", "classven_1_1Entity.html#ad7164e92ed27302d3bcfa4ea4c519ca5", null ]
 ];
