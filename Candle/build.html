@@ -75,7 +75,7 @@ CMake</h1>
 <div class="line">cmake .. -DBUILD_DEMO=ON</div>
 <div class="line">cmake --build .</div>
 </div><!-- fragment --><p>This will generate <code>libCandle-s.a</code> or (<code>Candle-s.lib</code> on Windows) in <code>build/lib</code> folder and the <code>demo</code> program (or <code>demo.exe</code>) in <code>build/bin</code>.</p>
-<p>If CMake can't manage to find the SFML files, you might need to set <code>SFML_ROOT</code> inside the <code>CMakeLists.txt</code> manually (uncomment and complete line 15).</p>
+<p>If CMake can't manage to find the SFML files, you might need to use the option <code>-DSFML_ROOT="path/to/sfml"</code> or alternatively set <code>SFML_ROOT</code> inside the <code>CMakeLists.txt</code> manually (uncomment and complete line 15).</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Make</h1>
 <p>For Linux users, the old Candle build system is still available. You just have to</p>
