@@ -10,29 +10,97 @@
 
         <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
         <!--link rel="stylesheet" href="assets/css/main.css"-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
         
         <style>
-            #page { margin-left: 150px}
-            nav.w3-sidebar { width: 150px}
-            div.w3-card { height: 300px}
-            div.w3-card img { max-height: 180px; max-width: 90% }
-            a svg { height: 25px; fill: lightgray }
+            #page { 
+                display: flex;
+                flex-direction: column;
+                min-height: 100%;
+                margin-left: 150px;
+            }
+            footer {
+                width: 100%;
+                align-self: flex-end;
+            }
+            nav.w3-sidebar { 
+                width: 150px
+            }
+            a svg { 
+                height: 25px; 
+                fill: lightgray 
+            }
+            img.icon {
+                height: 16px !important
+            }
+            div.repolist {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            div.repo-card { 
+                margin: 10px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+            }
+            div.repo-card:hover, div.post-card:hover { 
+                box-shadow: 0px 0px 4px black;
+            }
+            a{
+                text-decoration: none;
+            }
+            div.repodetails { 
+                display: flex; 
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                height: 50%;
+            }
+            div.repodetails img{ 
+                height: 100%;
+                width: auto;
+            }
+            .vr {
+                border-right: solid gray 1pt;
+                margin: 5px;
+                height: 100%;
+            
+            }
+            div.repodetails div{ 
+                max-width: 200px;
+            }
+            div.repodetails img ~ div{ 
+                text-align: left;
+            }
+            table.repostats {
+                border-spacing: 5px;
+            }
         </style>
+
+        <script>
+            function changeSection(id){
+                let sections = document.getElementsByTagName("section")
+                for(let s of sections){
+                    s.style.display = "none"
+                    if(s.id == id) s.style.display = "block"
+                }
+            }
+        </script>
     </head>
 
-    <body class="w3-light-gray">
-        
+    <body class="w3-light-gray" onLoad="changeSection('projects')">
         <nav class="w3-sidebar w3-bar-block w3-dark-gray">
             <a href="/"><img class="w3-bar-item w3-circle" src="/assets/img/avatarB150.jpg"></a> 
-            <a href="#" class="w3-bar-item w3-button w3-hover-black">Blog</a>
-            <a href="#projects" class="w3-bar-item w3-button w3-hover-black">Projects</a>
+            <a href="#" onClick="changeSection('projects')" class="w3-bar-item w3-button w3-hover-black">Projects</a>
+            <a href="#" onClick="changeSection('blog')" class="w3-bar-item w3-button w3-hover-black">Blog</a>
             <hr>
-            <a href="https://twitter.com/MiguelMJdev" class="w3-margin-left w3-bar-item">
-                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
-            </a>
             <a href="https://github.com/MiguelMJ" class="w3-margin-left w3-bar-item">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+            </a>
+            <a href="https://twitter.com/MiguelMJdev" class="w3-margin-left w3-bar-item">
+                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Twitter</title><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
             </a>
             <a href="https://www.linkedin.com/in/miguel-mejía-jiménez/" class="w3-margin-left w3-bar-item">
                 <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
@@ -40,7 +108,7 @@
             
         </nav>
         
-        <div id="page"">
+        <div id="page">
                 
             <header class="w3-container w3-gray">
                 <h1>Miguel MJ</h1>
@@ -49,79 +117,19 @@
             
             <section id="blog" class="w3-container">
                 <h2>Blog</h2>
+
+                <a href="https://dev.to/miguelmj/hackathon-submission-idea-group-dynamics-analysis-13dd"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2022-04-08</span><h3>Hackathon submission - Idea: Group dynamics analysis</h3><p>#hackwithdg</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>10</td><td><img src="assets/img/comment.svg" class="icon"></td><td>2</td></table><span class="w3-margin-bottom w3-small w3-right">3 mins read</span></div></a><a href="https://dev.to/miguelmj/hackathon-submission-interactive-conversation-scripts-for-language-learning-110c"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2022-04-03</span><h3>Hackathon submission - Interactive conversation scripts for language learning</h3><p>#hackwithdg #showdev #python #opensource</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>7</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">3 mins read</span></div></a><a href="https://dev.to/miguelmj/hackathon-submission-an-audio-search-engine-powered-by-deepgram-3cf"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2022-03-28</span><h3>Hackathon submission - An audio search engine powered by Deepgram</h3><p>#hackwithdg #telegram #showdev #python</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>12</td><td><img src="assets/img/comment.svg" class="icon"></td><td>4</td></table><span class="w3-margin-bottom w3-small w3-right">3 mins read</span></div></a><a href="https://dev.to/miguelmj/how-to-get-answers-on-stackoverflow-3pp7"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2022-02-06</span><h3>How to get answers on StackOverflow</h3><p>#beginners #codenewbie #productivity</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>37</td><td><img src="assets/img/comment.svg" class="icon"></td><td>17</td></table><span class="w3-margin-bottom w3-small w3-right">5 mins read</span></div></a><a href="https://dev.to/miguelmj/custom-solution-for-fast-navigation-in-bash-12e1"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2022-01-24</span><h3>Custom solution for fast navigation in Bash</h3><p>#bash #tutorial #productivity #linux</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>3</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">2 mins read</span></div></a><a href="https://dev.to/miguelmj/building-and-using-markov-chains-ai-for-text-generation-part-ii-1172"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-09-26</span><h3>Building and using Markov chains - AI for text generation - Part II</h3><p>#ai #machinelearning #nlp</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>6</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/introduction-to-markov-chains-ai-for-text-generation-part-i-eha"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-07-09</span><h3>Introduction to Markov chains - AI for text generation - Part I</h3><p>#ai #machinelearning #nlp</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>4</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/take-full-advantage-of-high-order-functions-examples-in-javascript-4ibg"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-06-22</span><h3>Take full advantage of high order functions - Examples in Javascript</h3><p>#tutorial #javascript #functional</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>49</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/data-structures-in-prolog-where-to-start-53gm"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-06-15</span><h3>Data structures in Prolog - Where to start</h3><p>#prolog #datastructures #resources</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>8</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/make-your-python-program-highly-configurable-3blk"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-05-05</span><h3>Make your Python program highly configurable</h3><p>#python #todayilearned #productivity #tutorial</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>4</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">3 mins read</span></div></a><a href="https://dev.to/miguelmj/trucos-basicos-de-algebra-en-python-48mf"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-04-05</span><h3>Trucos básicos de álgebra en Python</h3><p>#spanish #python #tutorial</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>4</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">6 mins read</span></div></a><a href="https://dev.to/miguelmj/open-sourcing-a-python-project-tools-you-should-know-about-8bc"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-04-05</span><h3>Open sourcing a Python project? - Tools you should know about</h3><p>#beginners #python #codequality</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>8</td><td><img src="assets/img/comment.svg" class="icon"></td><td>5</td></table><span class="w3-margin-bottom w3-small w3-right">3 mins read</span></div></a><a href="https://dev.to/miguelmj/multidisciplinarity-what-s-there-besides-code-2en9"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-03-24</span><h3>Multidisciplinarity - What's there besides code?</h3><p>#gamedev #webdev #computerscience</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>8</td><td><img src="assets/img/comment.svg" class="icon"></td><td>8</td></table><span class="w3-margin-bottom w3-small w3-right">5 mins read</span></div></a><a href="https://dev.to/miguelmj/sobre-la-programacion-declarativa-por-que-estoy-aprendiendo-prolog-3o8c"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-03-24</span><h3>Sobre la programación declarativa - Por qué estoy aprendiendo Prolog</h3><p>#spanish #prolog #declarative #career</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>8</td><td><img src="assets/img/comment.svg" class="icon"></td><td>2</td></table><span class="w3-margin-bottom w3-small w3-right">5 mins read</span></div></a><a href="https://dev.to/miguelmj/escapar-correctamente-expresiones-regulares-dl2"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-02-21</span><h3>Escapar correctamente expresiones regulares</h3><p>#spanish #regex #begginers #tips</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>2</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">2 mins read</span></div></a><a href="https://dev.to/miguelmj/making-a-level-editor-with-sfml-c-part-1-2mm0"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-02-21</span><h3>Making a level editor with SFML (C++) - Part 1</h3><p>#cpp #sfml #gamedev</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>6</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">2 mins read</span></div></a><a href="https://dev.to/miguelmj/about-bilingual-writers-in-dev-1gn2"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-01-24</span><h3>About bilingual writers in DEV</h3><p>#meta #discuss</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>2</td><td><img src="assets/img/comment.svg" class="icon"></td><td>8</td></table><span class="w3-margin-bottom w3-small w3-right">1 mins read</span></div></a><a href="https://dev.to/miguelmj/i-made-a-recommendation-system-for-stack-overflow-unanswered-questions-280a"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2021-01-15</span><h3>I made a recommendation system for Stack Overflow unanswered questions</h3><p>#showdev #python #project</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>8</td><td><img src="assets/img/comment.svg" class="icon"></td><td>1</td></table><span class="w3-margin-bottom w3-small w3-right">1 mins read</span></div></a><a href="https://dev.to/miguelmj/how-to-make-an-ethical-crawler-in-python-4o1g"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-12-27</span><h3>How to make an ethical crawler in Python</h3><p>#python #tutorial #webscraping #web</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>11</td><td><img src="assets/img/comment.svg" class="icon"></td><td>4</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/are-one-liners-always-pythonic-552n"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-12-16</span><h3>Are one liners always pythonic?</h3><p>#discuss #python #codequality</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>6</td><td><img src="assets/img/comment.svg" class="icon"></td><td>19</td></table><span class="w3-margin-bottom w3-small w3-right">1 mins read</span></div></a><a href="https://dev.to/miguelmj/why-and-how-to-use-pen-and-paper-design-an-algorithm-11nn"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-12-13</span><h3>Why and how to use pen and paper - Designing algorithms with no code</h3><p>#beginners #codenewbie #productivity #codequality</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>7</td><td><img src="assets/img/comment.svg" class="icon"></td><td>3</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/writing-a-conversational-user-interface-library-full-series-3dc5"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-12-10</span><h3>Writing a Conversational User Interface Library - Full Series</h3><p>#closed</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>5</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">25 mins read</span></div></a><a href="https://dev.to/miguelmj/the-turing-machine-made-understandable-35po"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-12-08</span><h3>The Turing Machine made understandable</h3><p>#computerscience #algorithms #learn</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>8</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/5-tips-for-programming-and-cs-remote-teachers-1gg7"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-12-01</span><h3>5 Tips for programming and CS remote teachers</h3><p>#learning #online #tips #teaching</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>4</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/are-you-going-to-learn-that-ambiguity-of-programming-1kdj"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-11-26</span><h3>Are you going to learn that? - Ambiguity of "Programming"</h3><p>#career #learning #beginners #mentoring</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>11</td><td><img src="assets/img/comment.svg" class="icon"></td><td>3</td></table><span class="w3-margin-bottom w3-small w3-right">5 mins read</span></div></a><a href="https://dev.to/miguelmj/beginner-tips-to-do-algebra-in-python-477e"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-11-21</span><h3>Beginner tips to do Algebra in Python</h3><p>#python #tutorial #beginners #math</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>8</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">5 mins read</span></div></a><a href="https://dev.to/miguelmj/thoughts-on-declarative-programming-why-i-m-learning-prolog-43be"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-10-23</span><h3>Thoughts on declarative programming - Why I'm learning Prolog</h3><p>#prolog #declarative #career #improve</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>6</td><td><img src="assets/img/comment.svg" class="icon"></td><td>3</td></table><span class="w3-margin-bottom w3-small w3-right">4 mins read</span></div></a><a href="https://dev.to/miguelmj/candle-a-2d-lighting-library-for-sfml-2e1f"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-09-26</span><h3>Candle - A 2D lighting library for SFML</h3><p>#showdev #sfml #cpp #gamedev</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>4</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">1 mins read</span></div></a><a href="https://dev.to/miguelmj/neon-effect-in-text-and-svg-with-css-3dap"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-09-13</span><h3>Neon effect in text and SVG with CSS</h3><p>#css #webdev #html</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>5</td><td><img src="assets/img/comment.svg" class="icon"></td><td>2</td></table><span class="w3-margin-bottom w3-small w3-right">1 mins read</span></div></a><a href="https://dev.to/miguelmj/correctly-escaping-regular-expressions-27nc"><div class="w3-container w3-panel w3-card w3-round post-card"><span class="w3-tiny">2020-08-30</span><h3>Correctly escaping regular expressions</h3><p>#regex #tips #beginners</p><table class="w3-left w3-margin-bottom repostats"><td><img src="assets/img/heart.svg" class="icon"></td><td>5</td><td><img src="assets/img/comment.svg" class="icon"></td><td>0</td></table><span class="w3-margin-bottom w3-small w3-right">2 mins read</span></div></a>
+
             </section>
             <section id="projects" class="w3-container">
                 <h2>Projects</h2>
-                <div class="w3-row-padding">
-                    
-                    <div class="w3-third w3-margin-bottom">    
-                        <div class="w3-card w3-center">
-                            <h3 class="w3-dark-gray" w3-container>Candle</h3>
-                            <h4>2D lightning for SFML</h4>
-                            <img src="assets/img/Candle/logosymbol.svg" class="" alt="Candle logo">
-
-                        </div>
-                    </div>
-                    
-                    <div class="w3-third w3-margin-bottom">    
-                        <div class="w3-card w3-center">
-                            <h3 class="w3-dark-gray" w3-container>Answerable</h3>
-                            <h4>Recommendation system for Stack Overflow</h4>
-                            <img src="assets/img/Answerable/logo.svg" alt="Answerable logo">
-
-                        </div>
-                    </div>
-                    
-                    <div class="w3-third w3-margin-bottom">    
-                        <div class="w3-card w3-center w3-display">
-                            <h3 class="w3-dark-gray" w3-container>Make It Pixel</h3>
-                            <h4>Scripting language for image processing</h4>
-                            <img src="https://raw.githubusercontent.com/MiguelMJ/MakeItPixel/main/doc/logo.png" alt="MakeItPixel logo">
-
-                        </div>
-                    </div>
-                    
-                    <div class="w3-third w3-margin-bottom">    
-                        <div class="w3-card w3-center w3-display">
-                            <h3 class="w3-dark-gray" w3-container>Velero Engine</h3>
-                            <h4>Yet another WIP C++ & SFML game engine</h4>
-                            <img src="assets/img/Velero-Engine/logotype_compact.svg" alt="Velero logo">
-
-                        </div>
-                    </div>
-                    
-                    <div class="w3-third w3-margin-bottom">    
-                        <div class="w3-card w3-center w3-display">
-                            <h3 class="w3-dark-gray" w3-container>Notes Generator</h3>
-                            <h4>Take easy beautiful notes</h4>
-                            <img src="assets/img/NOG/logo.svg" alt="NOG logo">
-
-                        </div>
-                    </div>
-                    
-                    <div class="w3-third w3-margin-bottom">    
-                        <div class="w3-card w3-center w3-display">
-                            <h3 class="w3-dark-gray" w3-container>JTASCHE</h3>
-                            <h4>Java Text Adventure and Simple Chatbot Engine</h4>
-                            <img src="https://raw.githubusercontent.com/MiguelMJ/JTASCHE/master/logo.svg" alt="JTASCHE logo">
-                        </div>
-                    </div>
-                    
-                    <div class="w3-third w3-margin-bottom">    
-                        <div class="w3-card w3-center w3-display">
-                            <h3 class="w3-dark-gray" w3-container>TASCHE</h3>
-                            <h4>Text Adventure and Simple Chatbot Engine</h4>
-                            <img src="https://raw.githubusercontent.com/MiguelMJ/TASCHE/master/logo.jpg" alt="JTASCHE logo">
-                        </div>
-                    </div>
-                    
-
-                </div>
+                
+                <div class="repolist"><a href="https://github.com/MiguelMJ/Candle"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>Candle</h3><hr><div class="repodetails"><img src="assets/img/Candle/logo.svg" alt="Candle logo"><div class="vr"></div><div><h4>2D lighting for SFML</h4><table class="repostats"><tr><td><img src="assets/img/star.svg" class="icon"></td><td>75</td></tr><tr><td><img src="assets/img/code-fork.svg" class="icon"></td><td>5</td></tr></table></div></div></div></a><a href="https://github.com/MiguelMJ/Answerable"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>Answerable</h3><hr><div class="repodetails"><img src="assets/img/Answerable/logo.svg" alt="Answerable logo"><div class="vr"></div><div><h4>Recommendation system for Stack Overflow unanswered questions</h4><table class="repostats"><tr><td><img src="assets/img/star.svg" class="icon"></td><td>14</td></tr><tr><td><img src="assets/img/code-fork.svg" class="icon"></td><td>2</td></tr></table></div></div></div></a><a href="https://github.com/MiguelMJ/MakeItPixel"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>MakeItPixel</h3><hr><div class="repodetails"><div><h4>(WIP) Image processing language to make images look like pixel art</h4><table class="repostats"><tr><td><img src="assets/img/star.svg" class="icon"></td><td>3</td></tr></table></div></div></div></a><a href="https://github.com/MiguelMJ/Velero-Engine"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>Velero-Engine</h3><hr><div class="repodetails"><img src="assets/img/Velero-Engine/logo.svg" alt="Velero-Engine logo"><div class="vr"></div><div><h4>Yet another WIP C++ & SFML game engine.</h4><table class="repostats"><tr><td><img src="assets/img/star.svg" class="icon"></td><td>1</td></tr></table></div></div></div></a><a href="https://github.com/MiguelMJ/NotesGenerator"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>NotesGenerator</h3><hr><div class="repodetails"><div><h4>Flex, Bash and PDFLaTex to take easy beautiful notes.</h4><table class="repostats"><tr><td><img src="assets/img/star.svg" class="icon"></td><td>1</td></tr><tr><td><img src="assets/img/code-fork.svg" class="icon"></td><td>2</td></tr></table></div></div></div></a><a href="https://github.com/MiguelMJ/Scripter"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>Scripter</h3><hr><div class="repodetails"><div><h4>Create interactive scripts from recordings for language learning. Deepgram + DEV hackathon submission.</h4></div></div></div></a><a href="https://github.com/MiguelMJ/AudioSearchEngine"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>AudioSearchEngine</h3><hr><div class="repodetails"><div><h4>Search engine for audio files. Submission for Deepgram + DEV hackathon.</h4></div></div></div></a><a href="https://github.com/MiguelMJ/MarkovProlog"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>MarkovProlog</h3><hr><div class="repodetails"><div><h4>Generate text using markov chains.</h4></div></div></div></a><a href="https://github.com/MiguelMJ/sfml-games"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>sfml-games</h3><hr><div class="repodetails"><div><h4>Chess (local and LAN). Conway's Game of Life</h4></div></div></div></a><a href="https://github.com/MiguelMJ/JTASCHE"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>JTASCHE</h3><hr><div class="repodetails"><div><h4>Java Text Adventure and Simple Chatbot Engine</h4></div></div></div></a><a href="https://github.com/MiguelMJ/TASCHE"><div class="w3-round w3-card w3-container w3-center repo-card"><h3>TASCHE</h3><hr><div class="repodetails"><div><h4>Text Adventure and Simple CHatbot Engine</h4></div></div></div></a></div>
                 
             </section>
             
             <footer class="w3-container w3-padding w3-gray">
-                Consider supporting me: <a href="https://www.buymeacoffee.com/miguelmj">Buy me a coffee</a>
+                Consider supporting me: <a href="https://www.buymeacoffee.com/miguelmj">Buy me a coffee </a>
             </footer>
             
         </div>
