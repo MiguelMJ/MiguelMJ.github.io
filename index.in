@@ -91,7 +91,6 @@
             border-right: solid var(--dark-color) 1pt;
             margin: 5px;
             height: 100%;
-
         }
 
         div.repodetails div {
@@ -176,7 +175,7 @@
 
     <div class="w3-main" id="page">
 
-        <header class="w3-container w3-gray">
+        <header class="w3-container w3-gray w3-animate-top">
             <a class="w3-margin-top w3-margin-left w3-right" href="/"><img class="w3-bar-item w3-circle" id="avatar"
                     src="/assets/img/avatarB150.jpg"></a>
             <h1>Miguel MJ</h1>
@@ -185,16 +184,16 @@
             <button onClick="open_navbar()" class="w3-button w3-large w3-hide-large">&#9776;</button>
         </header>
 
-        <section id="blog" class="w3-container">
-            <h2>Blog</h2>
-
-            $blog
-
-        </section>
-        <section id="projects" class="w3-container">
+        <section id="projects" class="w3-container w3-animate-right">
             <h2>Projects</h2>
 
             $projects
+
+        </section>
+        <section id="blog" class="w3-container w3-animate-right">
+            <h2>Blog</h2>
+            <em class="w3-small">All links lead to DEV.to</em>
+            $blog
 
         </section>
 
