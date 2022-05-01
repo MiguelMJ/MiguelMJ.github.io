@@ -2,152 +2,27 @@
 <html>
 
 <head>
-    <title>Miguel MJ - Home</title>
-    <meta charser="UTF-8">
+    <title>Miguel MJ - $title</title>
+    <meta charset="UTF-8">
     <meta name="keywords" content="MiguelMJ, developer, programmer, portfolio, blog">
     <meta name="descrition" content="MiguelMJ's developer portfolio, blog and projects">
     <meta name="author" content="MiguelMJ">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
-    <!--link rel="stylesheet" href="assets/css/main.css"-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/solid.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
-    <style>
-        :root {
-            --dark-color: #063022;
-            --medium-color: #929292;
-            --light-color: #f0ca84;
-        }
-
-        #page {
-            display: flex;
-            flex-direction: column;
-            min-height: 100%;
-            margin-left: 150px;
-        }
-
-        #avatar {
-            max-height: 100px;
-            height: auto;
-        }
-
-        footer {
-            width: 100%;
-            align-self: flex-end;
-        }
-
-        nav.w3-sidebar {
-            width: 150px
-        }
-
-        a svg {
-            height: 25px;
-            fill: lightgray
-        }
-
-        img.icon,
-        iframe.icon {
-            height: 16px !important
-        }
-
-        div.repolist {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        div.repo-card {
-            margin: 10px;
-            height: 300px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        div.repo-card:hover,
-        div.post-card:hover {
-            box-shadow: 0px 0px 6px var(--dark-color);
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        div.repodetails {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-between;
-            height: 50%;
-        }
-
-        div.repodetails img {
-            height: 100%;
-            width: auto;
-        }
-
-        .vr {
-            border-right: solid var(--dark-color) 1pt;
-            margin: 5px;
-            height: 100%;
-        }
-
-        div.repodetails div {
-            max-width: 200px;
-        }
-
-        div.repodetails img~div {
-            text-align: left;
-        }
-
-        table.repostats {
-            border-spacing: 5px;
-        }
-
-        .w3-dark-gray {
-            background-color: var(--dark-color) !important;
-        }
-
-        .w3-gray {
-            background-color: var(--medium-color) !important;
-        }
-
-        body,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: Georgia, serif;
-        }
-    </style>
-
-    <script>
-        function changeSection(id) {
-            let sections = document.getElementsByTagName("section")
-            for (let s of sections) {
-                s.style.display = "none"
-                if (s.id == id) s.style.display = "block"
-            }
-        }
-        function open_navbar() {
-            document.getElementsByTagName("nav")[0].style.display = "block"
-        }
-        function close_navbar() {
-            document.getElementsByTagName("nav")[0].style.display = "none"
-        }
-    </script>
+    $head   
 </head>
 
-<body class="w3-light-gray" onLoad="changeSection('projects')">
+<body class="w3-light-gray">
     <nav class="w3-sidebar w3-bar-block w3-collapse w3-dark-gray w3-animate-left w3-padding-top">
         <div onClick="close_navbar()" class="w3-hide-large w3-xlarge w3-bar-item w3-button w3-hover-black w3-right">X
         </div>
-        <a href="#" onClick="changeSection('projects')"
+        <a href="/"
             class="w3-large w3-bar-item w3-button w3-hover-black">Projects</a>
-        <a href="#" onClick="changeSection('blog')" class="w3-large w3-bar-item w3-button w3-hover-black">Blog</a>
+        <a href="/blog.html" class="w3-large w3-bar-item w3-button w3-hover-black">Blog</a>
         <hr>
         <a href="https://github.com/MiguelMJ" class="w3-bar-item">
             <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -176,7 +51,7 @@
     <div class="w3-main" id="page">
 
         <header class="w3-container w3-gray w3-animate-top">
-            <a class="w3-margin-top w3-margin-left w3-right" href="/"><img class="w3-bar-item w3-circle" id="avatar"
+            <a class="w3-right" href="/"><img class="w3-bar-item w3-circle" id="avatar"
                     src="/assets/img/avatarB150.jpg"></a>
             <h1>Miguel MJ</h1>
             <p>I'm a Computer Science graduate, programming is my passion and learning and teaching inspires me. Sharing
@@ -185,19 +60,13 @@
         </header>
 
         <section id="projects" class="w3-container w3-animate-right">
-            <h2>Projects</h2>
+            <h2>$title</h2>
 
-            $projects
-
-        </section>
-        <section id="blog" class="w3-container w3-animate-right">
-            <h2>Blog</h2>
-            <em class="w3-small">All links lead to DEV.to</em>
-            $blog
+            $content
 
         </section>
 
-        <footer class="w3-container w3-padding w3-gray">
+        <footer class="w3-container w3-padding w3-gray w3-animate-bottom">
             Consider supporting me: <a class="w3-tag w3-round-small w3-dark-gray w3-hover-black"
                 href="https://www.buymeacoffee.com/miguelmj">Buy me a coffee <img class="icon"
                     src="assets/img/buymeacoffee.svg"></a>
