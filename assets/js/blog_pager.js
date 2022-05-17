@@ -7,7 +7,7 @@ function set_blog_page(page){
     let posts = document.getElementsByClassName("post-card")
     for(let i = 0; i < posts.length; i++){
         let x = i - posts_per_page * (page-1)
-        if(x > 0 && x < posts_per_page){
+        if(x >= 0 && x < posts_per_page){
             posts[i].style.display = "block"
         }else{
             posts[i].style.display = "none"
