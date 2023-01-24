@@ -16,17 +16,20 @@
     <style>
         [data-theme="light"],
         :root:not([data-theme="dark"]) {
-            --primary: #00897b;
+            --primary: #0aa394;
+            --muted-color: white;
         }
-
+        
         @media only screen and (prefers-color-scheme: dark) {
-        :root:not([data-theme="light"]) {
-            --primary: #00897b;
+            :root:not([data-theme="light"]) {
+                --primary: #0aa394;
+                --muted-color: white;
         }
         }
 
         [data-theme="dark"] {
-            --primary: #00897b;
+            --primary: #0aa394;
+            --muted-color: white;
         }
 
         :root {
@@ -35,6 +38,9 @@
         svg {
             width: 32px;
             fill: var(--primary)
+        }
+        hgroup > h1 + h2 {
+            font-style: italic;
         }
         article {
             padding-top: var(--spacing);
@@ -121,9 +127,9 @@
                     <h2>Candle</h2>
                     <h3>2D Lightning for SFML</h3>
                 </hgroup>
-                <span><img alt="star icon" src="assets/img/star.svg" width="16px" class="icon"> 88</span>
+                <span><img alt="star icon" src="assets/img/star.svg" width="16px" height="16px" class="icon"> 88</span>
                 &nbsp;
-                <span><img alt="fork icon" src="assets/img/code-fork.svg" width="16px" class="icon"> 7</span>
+                <span><img alt="fork icon" src="assets/img/code-fork.svg" width="16px" height="16px" class="icon"> 7</span>
                 <br/>
                 <strong style="float: right"><a href="https://github.com/miguelmj/Candle">Source >></a></strong>
             </article>
@@ -132,9 +138,9 @@
                     <h2>Answerable</h2>
                     <h3>StackOverflow<br/>recommendation system</h3>
                 </hgroup>
-                <span><img alt="star icon" src="assets/img/star.svg" width="16px" class="icon"> 13</span>
+                <span><img alt="star icon" src="assets/img/star.svg" width="16px" height="16px" class="icon"> 13</span>
                 &nbsp;
-                <span><img alt="fork icon" src="assets/img/code-fork.svg" width="16px" class="icon"> 2</span>
+                <span><img alt="fork icon" src="assets/img/code-fork.svg" width="16px" height="16px" class="icon"> 2</span>
                 <br/>
                 <strong style="float: right"><a href="https://github.com/miguelmj/Answerable">Source >></a></strong>
             </article>
@@ -143,9 +149,9 @@
                     <h2>MakeItPixel</h2>
                     <h3>Make images look<br/>like pixel art</h3>
                 </hgroup>
-                <span><img alt="star icon" src="assets/img/star.svg" width="16px" class="icon"> 23</span>
+                <span><img alt="star icon" src="assets/img/star.svg" width="16px" height="16px" class="icon"> 23</span>
                 &nbsp;
-                <span><img alt="fork icon" src="assets/img/code-fork.svg" width="16px" class="icon"> 5</span>
+                <span><img alt="fork icon" src="assets/img/code-fork.svg" width="16px" height="16px" class="icon"> 5</span>
                 <br/>
                 <strong style="float: right"><a href="https://github.com/miguelmj/MakeItPixel">Source >></a></strong>
             </article>
@@ -154,9 +160,9 @@
                     <h2>Milua</h2>
                     <h3>Lua microframework<br/>for web development</h3>
                 </hgroup>
-                <span><img alt="star icon" src="assets/img/star.svg" width="16px" class="icon"> 12</span>
+                <span><img alt="star icon" src="assets/img/star.svg" width="16px" height="16px" class="icon"> 12</span>
                 &nbsp;
-                <span><img alt="fork icon" src="assets/img/code-fork.svg" width="16px" class="icon"> 2</span>
+                <span><img alt="fork icon" src="assets/img/code-fork.svg" width="16px" height="16px" class="icon"> 2</span>
                 <br/>
                 <strong style="float: right"><a href="https://github.com/miguelmj/Milua">Source >></a></strong>
             </article>
