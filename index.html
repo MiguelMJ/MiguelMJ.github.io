@@ -14,8 +14,22 @@
     <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.classless.min.css">
 
     <style>
-        :root {
+        [data-theme="light"],
+        :root:not([data-theme="dark"]) {
             --primary: #00897b;
+        }
+
+        @media only screen and (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+            --primary: #00897b;
+        }
+        }
+
+        [data-theme="dark"] {
+            --primary: #00897b;
+        }
+
+        :root {
             --font-family: "Lucida Console", "Courier New", monospace;
         }
         svg {
