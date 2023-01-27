@@ -15,10 +15,10 @@
     --primary: #0aa394;
     --muted-color: white;
 }
-
+/*
 :root {
     --font-family: "Lucida Console", "Courier New", monospace;
-}
+}*/
 svg {
     width: 32px;
     fill: var(--primary)
@@ -30,6 +30,25 @@ article {
     padding-top: var(--spacing);
     padding-bottom: var(--spacing);
 }
+
+summary h2 {
+    --font-size: 1.25rem;
+    --typography-spacing-vertical: 1rem;
+}
+
+h3 {
+    --font-size: 1.2rem;
+    --typography-spacing-vertical: 0.5rem;
+}
+
+:not([open]) summary * {
+    color: var(--primary)
+}
+
+[open] summary * {
+    color: var(--contrast)
+}
+
 #highlight-blog article {
     margin-top: var(--spacing);
     margin-bottom: var(--spacing);
