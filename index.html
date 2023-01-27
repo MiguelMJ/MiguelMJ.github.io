@@ -12,76 +12,14 @@
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
 
     <link rel="stylesheet" href="/assets/css/pico.classless.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-    <style>
-        [data-theme="light"],
-        :root:not([data-theme="dark"]) {
-            --primary: #0aa394;
-            --muted-color: #111;
-        }
-        
-        @media only screen and (prefers-color-scheme: dark) {
-            :root:not([data-theme="light"]) {
-                --primary: #0aa394;
-                --muted-color: white;
-        }
-        }
-
-        [data-theme="dark"] {
-            --primary: #0aa394;
-            --muted-color: white;
-        }
-
-        :root {
-            --font-family: "Lucida Console", "Courier New", monospace;
-        }
-        svg {
-            width: 32px;
-            fill: var(--primary)
-        }
-        hgroup > h1 + h2 {
-            font-style: italic;
-        }
-        article {
-            padding-top: var(--spacing);
-            padding-bottom: var(--spacing);
-        }
-        #highlight-blog article {
-            margin-top: var(--spacing);
-            margin-bottom: var(--spacing);
-        }
-        #highlight-blog h2 {
-            margin-bottom: var(--spacing);
-        }
-        .flexcon {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: left;
-            align-content: space-between;
-        }
-        .flexcon > * {
-            padding: var(--spacing);
-            margin:var(--spacing);
-        }
-        [data-theme=dark] .icon {
-            filter: invert(0.9)
-        }
-    </style>
-    <script>
-        function switchTheme(){
-            let root = document.body.parentElement;
-            if(root.getAttribute('data-theme')=="light"){
-                root.setAttribute('data-theme', 'dark')
-            }else{
-                root.setAttribute('data-theme', 'light')
-            }
-        }
-    </script>
+    <script src="switchTheme"></script>
 
 </head>
 
 
-<body style="text-align:left">
+<body>
     <header>
         <img width="80px" height="80px" alt="MiguelMJ avatar" title="MiguelMJ" src="assets/img/avatarB160.jpg" style="border-radius:50%;margin-bottom:var(--spacing)"/>
         <input aria-label="switch theme" style="float:right" type="checkbox" role="switch" onchange="switchTheme()"/>

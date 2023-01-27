@@ -1,0 +1,52 @@
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+    --primary: #0aa394;
+    --muted-color: #111;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        --primary: #0aa394;
+        --muted-color: white;
+}
+}
+
+[data-theme="dark"] {
+    --primary: #0aa394;
+    --muted-color: white;
+}
+
+:root {
+    --font-family: "Lucida Console", "Courier New", monospace;
+}
+svg {
+    width: 32px;
+    fill: var(--primary)
+}
+hgroup > h1 + h2 {
+    font-style: italic;
+}
+article {
+    padding-top: var(--spacing);
+    padding-bottom: var(--spacing);
+}
+#highlight-blog article {
+    margin-top: var(--spacing);
+    margin-bottom: var(--spacing);
+}
+#highlight-blog h2 {
+    margin-bottom: var(--spacing);
+}
+.flexcon {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-content: space-between;
+}
+.flexcon > * {
+    padding: var(--spacing);
+    margin:var(--spacing);
+}
+[data-theme=dark] .icon {
+    filter: invert(0.9)
+}
