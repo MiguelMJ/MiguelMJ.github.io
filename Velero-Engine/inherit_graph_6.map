@@ -1,4 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classge_1_1Renderable.html" title="Abstract base class for objects that can be drawn in the render system. " alt="" coords="5,5,116,32"/>
-<area shape="rect" id="node2" href="$classge_1_1LightSource.html" title="Object that emits light within a lighting layer. " alt="" coords="164,5,277,32"/>
-</map>
