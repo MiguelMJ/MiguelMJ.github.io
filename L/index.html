@@ -1,0 +1,37 @@
+---
+title: MiguelMJ
+layout: main
+---
+
+<dialog>
+    <article style="overflow: visible; text-align: center;">
+        <h3>
+            You followed the misterious goat
+        </h3>
+        <span style="font-size: xx-large;">🐐</span>
+        <footer>
+            <a role="button" href="#" onclick="this.parentElement.parentElement.parentElement.close()">OK</a>
+        </footer>
+    </article>
+</dialog>
+<script>
+    if(document.referrer != "" && ! document.referrer.includes("/L/")){
+       document.getElementsByTagName("dialog")[0].showModal() 
+    }
+</script>
+
+<main>
+    <section>
+        <a role="button" href="/">Go back</a>
+    </section>
+    <article>
+        <h2>Textos ES</h2>
+        <details>
+            <summary><h3>Divagaciones sobre mitos, filosofía y ciencias de la computación</h3></summary>
+            <ul>
+                <li><a href="./divagaciones/0">Prólogo</a></li>
+                <li><a href="./divagaciones/1">I</a></li>
+            </ul>
+        </details>
+    </article>
+</main>

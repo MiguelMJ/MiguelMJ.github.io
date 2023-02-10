@@ -1,0 +1,20 @@
+
+#toc li, #toc ul {
+    margin: 0;   
+}
+body > header {
+    padding-bottom: 0
+}
+body > main {
+    padding-top: 0
+}
+body > footer, body > header, body > main {
+	max-width: 1024px;
+}
+body > main figure img, 
+body > main figure figcaption {
+    display: block;
+    margin: auto;
+    max-width: 80%;
+    font-size: smaller;
+}

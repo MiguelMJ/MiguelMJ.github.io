@@ -1,0 +1,41 @@
+---
+layout: main
+extra_css: "/assets/css/post.css"
+---
+
+
+<header>
+    
+    {% if page.cover_image and page.cover_image != nil and page.cover_image != "" %}
+    <img style="width: 100%; border-radius: 5px; max-width:1024px; max-height: 576; display: block; margin: auto" src="{{ page.cover_image }}" alt="{{ page.title }}">
+    {% if page.cover_attribution and page.cover_attribution != nil and page.cover_attribution != "" %}
+        <section><small><em>Imágen de portada: {{ page.cover_attribution }}</em></small></section>
+    {% endif %}
+    {% endif %}
+    
+    {% if page.subtitle and page.subtitle != nil and page.subtitle != "" %}
+    <hgroup>
+        <h1>{{ page.title }}</h1>
+        <h2>{{ page.subtitle }}</h2>
+    </hgroup>
+    {% else %}
+    <h1>{{ page.title }}</h1>
+    {% endif %}
+
+    {% include avatar.html size="32px" %}
+    <span style="margin-left: 8px"><small>MiguelMJ - <date>{{ page.date }}</date></small></span>
+    
+    
+</header>
+
+
+<main>
+    <aside>
+        <article id="toc">
+            <h3>Índice</h3>
+            {% include toc.html html=content h_min=2 h_max=3 %}
+        </article>
+
+    </aside>
+    {{ content }}
+</main>
