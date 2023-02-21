@@ -1,4 +1,14 @@
 <figure>
-    <img title="{{include.title}}" src="{{include.src}}" alt="{{include.title}}" width="{{ include.width }}" height="{{ include.height }}">
-    <figcaption><span style="color: var(--contrast)"><em>"{{include.title}}"</em>. {{include.attribution}}.</span> <span style="color: var(--color)">{{include.caption}}</span></figcaption>
+    <a href="{{include.href}}"><img title="{{include.title}}" src="{{include.src}}" alt="{{include.title}}" width="{{ include.width }}" height="{{ include.height }}"/></a>
+    <figcaption>
+        <span style="color: var(--contrast)">
+            {{include.author}}.
+            <em>{{include.title}}</em>.
+            {% if include.time %}{{include.time}}.{%endif%}
+            {{include.attribution}}.
+        </span> 
+        <span style="color: var(--color)">
+            {{include.caption}}
+        </span>
+    </figcaption>
 </figure>
