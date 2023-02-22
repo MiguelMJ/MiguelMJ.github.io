@@ -69,3 +69,10 @@ h3 {
 [data-theme=dark] .icon {
     filter: invert(0.9)
 }
+
+.goback {
+    border-radius: 50%;
+    font-weight: bold;
+    width: 48px;
+    height: 48px;
+}
