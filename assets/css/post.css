@@ -1,6 +1,10 @@
 
 #toc li, #toc ul {
-    margin: 0;   
+    margin: 0;      
+}
+#toc li {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 body > header {
     padding-bottom: 0
@@ -18,6 +22,15 @@ body > main figure figcaption {
     max-width: 80%;
     font-size: smaller;
 }
-body > main figure a & img:hover {
-    background-color: red;
+body > main figure img {
+    background-color: rgba(255, 235, 205, 0.75);
+}
+q {
+    font-style: italic;
+}
+sup[role="doc-noteref"]::before {
+    content: ' ['
+}
+sup[role="doc-noteref"]::after {
+    content: ']'
 }
