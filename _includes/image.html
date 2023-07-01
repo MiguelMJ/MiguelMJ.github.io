@@ -1,4 +1,4 @@
-<figure>
+<figure {% if include.float %} style="max-width: 50%;float: {{include.float}}" {% endif %} >
     <a href="{{include.href}}"><img title="{{include.title}}" src="{{include.src}}" alt="{{include.title}}" width="{{ include.width }}" height="{{ include.height }}"/></a>
     <figcaption>
         {{include.author}}.

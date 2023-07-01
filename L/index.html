@@ -3,6 +3,13 @@ title: MiguelMJ
 layout: main
 ---
 
+<style>
+    /* remove weird overriding */
+    ol li {
+        list-style: unset;
+    }
+</style>
+
 <dialog>
     <article style="overflow: visible; text-align: center;">
         <h3>
@@ -26,7 +33,7 @@ layout: main
     </nav>
     <article>
         <h2>Textos ES</h2>
-        <details open>
+        <details>
             <summary><h3>Divagaciones sobre mitos, filosofía y ciencias de la computación</h3></summary>
             <p>
                 Textos que no encajan en mi <a href="https://blog.miguelmj.dev">blog</a>, por no estar directamente relacionados con el software y la programación. Aquí escribo sobre distintos temas relacionados con la historia y la filosofía de las matemáticas y las ciencias de la computación, su presencia en el arte y la cultura, etc.
@@ -34,6 +41,28 @@ layout: main
             <ul>
                 <li><a href="./divagaciones/0" data-tooltip="Introducción a las divagaciones">Prólogo</a></li>
                 <li><a href="./divagaciones/1" data-tooltip="Repaso de la filosofía e historia del optimismo matemático">Los límites de lo formal y la sustancia matemática</a></li>
+            </ul>
+        </details>
+        <details open>
+            <summary><h3>Comentarios de videojuegos</h3></summary>
+            <p>
+                Interpretaciones a fondo sobre la estética de los videojuegos, con especial interés por los conceptos centrales en su diseño y como se comunican a través de la experiencia de jugador y sus elementos narrativos.
+            </p>
+            <ul>
+                <li><a href="./videojuegos/0" data-tooltip="Introducción a mi método de comentario">Prólogo</a></li>
+                <li>
+                    <details open>
+                        <summary>Dark Souls I</summary>
+                        <ol>
+                            <li><a href="./videojuegos/1" data-tooltip="Raíces de la filosofía de Dark Souls">Dark Souls I - Introducción</a></li>
+                            <li><a href="./videojuegos/2" data-tooltip="Heráclito, la disparidad y el fuego">Dark Souls I - Cosmogonía</a></li>
+                            <li><a href="./videojuegos/3" data-tooltip="Demócrito, los átomos del alma y la cremación">Dark Souls I - Alma, energía divina y nigromancia</a></li>
+                            <li><a href="./videojuegos/4" data-tooltip="Demócrito, los átomos de humanidad y el canibalismo">Dark Souls I - Humanidad, Abismo y Caos</a></li>
+                            <li><a href="./videojuegos/5" data-tooltip="Más implicaciones de la fisicalidad del alma y la humanidad">Dark Souls I - Hogueras, huecos y las maldiciones</a></li>
+                            <li><a href="./videojuegos/6" data-tooltip="Nietzsche y la momificación de la vida">Dark Souls I - Inteligencia y Fe</a></li>
+                        </ol>
+                    </details>
+                </li>
             </ul>
         </details>
     </article>
