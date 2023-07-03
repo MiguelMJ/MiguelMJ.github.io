@@ -39,6 +39,7 @@ summary h2 {
 h3 {
     --font-size: 1.2rem;
     --typography-spacing-vertical: 0.5rem;
+    line-height: 1.2
 }
 
 :not([open]) summary * {
