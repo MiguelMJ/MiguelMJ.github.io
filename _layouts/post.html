@@ -10,7 +10,7 @@ extra_css: "/assets/css/post.css"
         </nav>
     </section>
     {% if page.cover_image and page.cover_image != nil and page.cover_image != "" %}
-    <img style="width: 100%; border-radius: 5px; max-width:1024px; max-height: 576; display: block; margin: auto" src="{{ page.cover_image }}" alt="{{ page.title }}">
+    <img width="1204" height="576" style="border-radius: 5px;" src="{{ page.cover_image }}" alt="{{ page.title }}">
     {% if page.cover_attribution and page.cover_attribution != nil and page.cover_attribution != "" %}
         <small><em>Imágen de portada: {{ page.cover_attribution }}</em></small>
     {% endif %}

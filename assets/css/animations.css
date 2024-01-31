@@ -1,0 +1,53 @@
+@keyframes fadeup {
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes fadedown {
+    from {
+        transform: translateY(-1rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeleft {
+    from {
+        transform: translateX(-1rem);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    } 
+}
+
+@keyframes scalein {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    } 
+}
+
+main {
+    animation: fadeup .75s;
+}
+article, [alt='MiguelMJ avatar'] {
+    animation: scalein 1s;
+}
+
+footer {
+    animation: fadedown .5s;
+}
