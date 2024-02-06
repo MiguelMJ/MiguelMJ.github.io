@@ -41,10 +41,10 @@
     } 
 }
 
-main {
+article, main {
     animation: fadeup .75s;
 }
-article, [alt='MiguelMJ avatar'] {
+[alt='MiguelMJ avatar'] {
     animation: scalein 1s;
 }
 
