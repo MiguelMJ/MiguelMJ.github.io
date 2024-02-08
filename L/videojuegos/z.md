@@ -45,3 +45,13 @@ Imágenes interesantes
 https://www.reddit.com/r/Games/comments/1nt9q6/so_i_was_playing_pop_sands_of_time_and_i_found/?utm_name=androidcss
 
 https://i.imgur.com/OT1LGqe.jpg
+
+Comentario de Alma del Guerrero
+En los primeros 5 minutos vemos cómo pierde casi la totalidad:
+- Ya no es una narración
+- Los personajes y el ambiente tienen otro tono
+  - Sexualización
+  - Diálogo menos realista
+- Agujeros de guión
+  - Amuleto de Farah
+  - Uso de las arenas del tiempo en el pasado
