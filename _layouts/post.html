@@ -3,30 +3,32 @@ layout: main
 extra_css: "/assets/css/post.css"
 ---
 
-<header>
-    <section>
-        <nav>
-            <a role="button" href="../" class="goback"><<</a>
-        </nav>
-    </section>
-    {% if page.cover_image and page.cover_image != nil and page.cover_image != "" %}
-    <img width="1204" height="576" style="border-radius: 5px;" src="{{ page.cover_image }}" alt="{{ page.title }}">
-    {% if page.cover_attribution and page.cover_attribution != nil and page.cover_attribution != "" %}
-        <small><em>Imágen de portada: {{ page.cover_attribution }}</em></small>
-    {% endif %}
-    {% endif %}
-    <hr/>
+<header style="padding-top: 2rem">
+    <nav aria-label="breadcrumb">
+        <ul>
+          <li><a href="../../">MiguelMJ</a></li>
+          <li><a href="../">Notebook</a></li>
+        </ul>
+      </nav>
+    </nav>
     {% if page.subtitle and page.subtitle != nil and page.subtitle != "" %}
     <hgroup>
         <h1>{{ page.title }}</h1>
         <h2>{{ page.subtitle }}</h2>
     </hgroup>
+    {% include avatar.html size="32px" %}
+    <span style="margin-left: 8px"><small>MiguelMJ - <date>{{ page.date }}</date></small></span>
     {% else %}
     <h1>{{ page.title }}</h1>
     {% endif %}
-
-    {% include avatar.html size="32px" %}
-    <span style="margin-left: 8px"><small>MiguelMJ - <date>{{ page.date }}</date></small></span>
+    <hr/>
+    {% if page.cover_image and page.cover_image != nil and page.cover_image != "" %}
+    <img width="1204" height="576" style="border-radius: 5px;" src="{{ page.cover_image }}" alt="{{ page.title }}">
+        {% if page.cover_attribution and page.cover_attribution != nil and page.cover_attribution != "" %}
+            <small><em>Imágen de portada: {{ page.cover_attribution }}</em></small>
+        {% endif %}
+    <br>
+    {% endif %}
     
     
 </header>
