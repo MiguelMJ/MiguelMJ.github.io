@@ -1,3 +1,8 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+  }
 [data-theme="light"],
 :root:not([data-theme="dark"]) {
     --primary: #0aa394;
@@ -5,12 +10,14 @@
     background-color: hsl(206, 29%, 91%);
 }
 
-@media only screen and (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) {
+@media only screen and (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
         --primary: #0aa394;
-        --muted-color: white;
+        --muted-color: white
         background-image: linear-gradient(to top,#2e4352, #11191f);
+        background-color: #2e4352;
         background-attachment:fixed ;
+        background-size: cover;
     }
 }
 
@@ -18,7 +25,9 @@
     --primary: #0aa394;
     --muted-color: white;
     background-image: linear-gradient(to top,#2e4352, #11191f);
-    background-attachment:fixed ;
+    background-color: #2e4352;
+    background-attachment: fixed;
+    background-size: cover;
 }
 :root {
     /*
@@ -61,12 +70,21 @@ h3 {
     color: var(--contrast)
 }
 
-#highlight-blog article {
+#highlight-blog article, #other-activity article {
     margin-top: var(--spacing);
     margin-bottom: var(--spacing);
 }
-#highlight-blog h2 {
+#highlight-blog h2, #other-activity h2 {
     margin-bottom: var(--spacing);
+}
+article:has(> .card-link) {
+    position: relative;
+    padding-bottom: calc(var(--font-size) * 2.5);
+}
+.card-link {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 .flexcon {
     display: flex;
@@ -75,6 +93,7 @@ h3 {
     align-content: space-between;
 }
 .flexcon > * {
+    flex: 1 1 25%;
     padding: var(--spacing);
     margin:var(--spacing);
 }
@@ -98,7 +117,7 @@ tr > td {
 .flex-container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 hr {
     border-bottom: 1px solid #777;

@@ -21,6 +21,20 @@
     {% endif %}
 
     <script src="/assets/js/switchTheme.js"></script>
+    <script>
+        function onopensection(summary){
+            let details = summary.parentNode
+            let target = "#" + details.id
+            if(target){
+                if(!details.open){
+                    window.location.hash = target
+                }else if(target == window.location.hash){
+                    window.location.hash = ""
+                }
+            }
+            summary.scrollIntoView()
+        }
+    </script>
 
 </head>
 
@@ -37,5 +51,17 @@
     </footer>
 
 </body>
+
+<script>
+    let target = window.location.href.split("#")[1]
+    if(target){
+        let element = document.getElementById(target)
+        if(element && element.tagName == "details"){
+        }
+        element.open = true
+        element.scrollIntoView()
+        console.log(target, element)
+    }
+</script>
 
 </html>
