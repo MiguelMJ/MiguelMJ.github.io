@@ -104,33 +104,27 @@ layout: main
     <p>
         From time to time I also like to write about things I learn. This blog is dedicated to computer science and software development. The following are a mix of my most impactful articles and some personal favorites.
     </p>
-    <article>
-        <h3>My blogging journey until now - I'm moving to Hashnode</h3>
-        <span>Jan 19, 2023 | 7 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/my-blogging-journey-until-now-im-moving-to-hashnode">Read >></a></strong>
-    </article>
-    <article>
-        <h3>JavaScript is not an untyped language</h3>
-        <span>Jun 24, 2022 | 6 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/javascript-is-not-an-untyped-language">Read >></a></strong>
-    </article>
-    <article>
-        <h3>Data structures in Prolog - Where to start</h3>
-        <span>Jun 15, 2021 | 4 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/data-structures-in-prolog-where-to-start">Read >></a></strong>
-    </article>
-    <article>
-        <h3>Why and how to use pen and paper - Designing algorithms with no code</h3>
-        <span>Dic 13, 2020 | 4 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/why-and-how-to-use-pen-and-paper-designing-algorithms-with-no-code">Read >></a></strong>
-    </article>
-    <article>
-        <h3>Beginner tips to do Algebra in Python</h3>
-        <span>Nov 21, 2020 | 6 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/beginner-tips-to-do-algebra-in-python">Read >></a></strong>
-    </article>
-    <article style="text-align: center; padding: 1rem;">
-        <strong><a href="https://blog.miguelmj.dev"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Hashnode</title><path d="M22.351 8.019l-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906 3.953 3.953 0 0 1 0 7.906z"/></svg><br>See all articles >></a></strong>
-    </article>
     <!-- Follow me -->
     <style>
+        @keyframes walk {
+            0% {
+                transform: translateY(10px) scaleX(1);
+            }
+            49% {
+                transform: translateY(0px) scaleX(1);
+            }
+            50% {
+                transform: translateY(0px) scaleX(-1);
+            }
+            100% {
+                transform: translateY(10px) scaleX(-1);
+            }
+        }
         #followme a{
             display: none;
+        }
+        #followme a img{
+            animation: walk 1s infinite ease-in-out;
         }
         #followme:hover a{
             text-decoration: none
@@ -155,6 +149,29 @@ layout: main
         )
     </script>
     <!-- Follow me -->
+    <article>
+        <h3>My blogging journey until now - I'm moving to Hashnode</h3>
+        <span>Jan 19, 2023 | 7 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/my-blogging-journey-until-now-im-moving-to-hashnode">Read >></a></strong>
+    </article>
+    <article>
+        <h3>JavaScript is not an untyped language</h3>
+        <span>Jun 24, 2022 | 6 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/javascript-is-not-an-untyped-language">Read >></a></strong>
+    </article>
+    <article>
+        <h3>Data structures in Prolog - Where to start</h3>
+        <span>Jun 15, 2021 | 4 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/data-structures-in-prolog-where-to-start">Read >></a></strong>
+    </article>
+    <article>
+        <h3>Why and how to use pen and paper - Designing algorithms with no code</h3>
+        <span>Dic 13, 2020 | 4 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/why-and-how-to-use-pen-and-paper-designing-algorithms-with-no-code">Read >></a></strong>
+    </article>
+    <article>
+        <h3>Beginner tips to do Algebra in Python</h3>
+        <span>Nov 21, 2020 | 6 min read</span><strong style="float:right" ><a href="https://blog.miguelmj.dev/beginner-tips-to-do-algebra-in-python">Read >></a></strong>
+    </article>
+    <article style="text-align: center; padding: 1rem;">
+        <strong><a href="https://blog.miguelmj.dev"><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Hashnode</title><path d="M22.351 8.019l-6.37-6.37a5.63 5.63 0 0 0-7.962 0l-6.37 6.37a5.63 5.63 0 0 0 0 7.962l6.37 6.37a5.63 5.63 0 0 0 7.962 0l6.37-6.37a5.63 5.63 0 0 0 0-7.962zM12 15.953a3.953 3.953 0 1 1 0-7.906 3.953 3.953 0 0 1 0 7.906z"/></svg><br>See all articles >></a></strong>
+    </article>
 </details>
 <!--details id="other-activity">
     <summary onclick="onopensection(this)"><h2>Miscelaneous</h2></summary>
@@ -221,3 +238,15 @@ layout: main
 
 </main>
 
+<script>
+
+document.addEventListener('selectionchange', function() {
+  var selection = document.getSelection();
+  var selectedText = selection ? selection.toString() : null;
+
+  if (selectedText == "experiment") {
+    window.location.hash = ""
+    window.location.pathname = "/L/lab"
+  }
+});
+</script>
