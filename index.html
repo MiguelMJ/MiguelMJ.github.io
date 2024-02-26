@@ -6,7 +6,7 @@ layout: main
 ---
 
 <main>
-<div class="flex-container">
+<div class="flex-container"  style="justify-content: center;">
     <div style="margin: 0 3rem;">
         {% include avatar.html size="100px" %}
     </div>
@@ -104,7 +104,7 @@ layout: main
     <p>
         From time to time I also like to write about things I learn. This blog is dedicated to computer science and software development. The following are a mix of my most impactful articles and some personal favorites.
     </p>
-    <!-- Follow me -->
+    <!-- LOOKING FOR SOME EASTER EGGS? TRY TYPING 'README' -->
     <style>
         @keyframes walk {
             0% {
@@ -238,15 +238,27 @@ layout: main
 
 </main>
 
+<!-- LOOKING FOR SOME EASTER EGGS? TRY TYPING 'README' -->
 <script>
-
 document.addEventListener('selectionchange', function() {
   var selection = document.getSelection();
   var selectedText = selection ? selection.toString() : null;
 
   if (selectedText == "experiment") {
     window.location.hash = ""
-    window.location.pathname = "/L/lab"
+    window.location.pathname = "WL"
+  }else if(selectedText == "languages"){
+    window.location.hash = ""
+    window.location.pathname = "languages"
   }
+});
+
+let pressedkeys = ""
+document.addEventListener('keypress', function(event) {
+    let key = event.key
+    pressedkeys += key
+    if(pressedkeys.toUpperCase().endsWith("README")){
+        window.location.href="https://github.com/MiguelMJ/MiguelMJ.github.io/tree/master#my-personal-website"
+    }
 });
 </script>
