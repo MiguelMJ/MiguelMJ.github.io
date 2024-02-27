@@ -256,8 +256,8 @@ document.addEventListener('selectionchange', function() {
 let pressedkeys = ""
 document.addEventListener('keypress', function(event) {
     let key = event.key
-    pressedkeys += key
-    if(pressedkeys.toUpperCase().endsWith("README")){
+    pressedkeys += key.toLocaleUpperCase()
+    if(pressedkeys.endsWith("README")){
         window.location.href="https://github.com/MiguelMJ/MiguelMJ.github.io/tree/master#my-personal-website"
     }
 });

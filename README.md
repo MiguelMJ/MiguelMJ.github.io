@@ -1,9 +1,10 @@
 ## My personal website
 
-Have you come to see the source code of my website? It's not much, just an ordinary Jekyll site, like countless portfolios out there. I guess you are a curious person if you came here. As a reward I'll tell you one thing: not all the content of my site is directly accessible from the main page, some of it I've hidden as easter eggs.
+Have you come to see the source code of my website? It's not much, just an ordinary Jekyll site, like countless portfolios out there. I guess you are a curious person if you came here. As a reward I'll tell you one thing: not all the content of my site is directly accessible from the main page, some of it I've hidden as **easter eggs**.
 
 Obviously, being open source, you can look directly into the files of the page (what you probably came here to do) and find it all... but the truth is that very few of you usually do things like that. I'll save you the trouble of digging through my questionable code: here is the list of all the easter eggs hidden in my web page:
 
+🐇🥚
 <ul>
 <li><details>
 <summary>README</summary>
