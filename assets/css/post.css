@@ -34,3 +34,7 @@ sup[role="doc-noteref"]::before {
 sup[role="doc-noteref"]::after {
     content: ']'
 }
+p {
+    text-align:justify;
+    text-justify: inter-word;
+}
