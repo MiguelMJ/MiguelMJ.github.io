@@ -1,5 +1,5 @@
 ---
-title: MiguelMJ
+title: Notebook
 layout: page
 ---
 
@@ -33,16 +33,24 @@ layout: page
     </article>
 </dialog>
 <script>
-    if(document.referrer != "" && ! document.referrer.includes("/L/")){
+    let urlParams = new URLSearchParams(window.location.search)
+    let fromGoat = urlParams.get("goat") != null
+    if(fromGoat){
+        UrlSearchParams.delete("goat")
        document.getElementsByTagName("dialog")[0].showModal() 
     }
 </script>
 
 <main>
+    <hgroup style="text-align: center;">
+        <h1>Cuadernos</h1>
+        <h2>Aquí escribo por placer</h2>
+    </hgroup>
+
     <details id="divagaciones">
-        <summary onclick="onopensection(this)"><h3>Divagaciones sobre mitos, filosofía y ciencias de la computación</h3></summary>
+        <summary onclick="onopensection(this)"><h2>Mito y autómata</h2></summary>
         <p>
-            Estos textos no están en mi <a href="https://blog.miguelmj.dev">blog</a> por no estar directamente relacionados con el software y la programación, y estar escritos en español. Aquí hablo sobre distintos temas relacionados con la historia y la filosofía de las matemáticas y las ciencias de la computación, su presencia en el arte y la cultura, etc.
+            Divagaciones sobre distintos temas relacionados con la historia y filosofía de las matemáticas, y las ciencias de la computación, su presencia en el arte y la cultura, etc.
         </p>
         <article>
             <h3>Prólogo</h3>
@@ -62,7 +70,7 @@ layout: page
         </article-->
     </details>
     <details id="videojuegos">
-        <summary onclick="onopensection(this)"><h3>Comentarios de videojuegos</h3></summary>
+        <summary onclick="onopensection(this)"><h2>Comentarios de videojuegos</h2></summary>
         <p>
             Interpretaciones a fondo sobre la estética de los videojuegos, con especial interés por los elementos míticos y filosóficos que aparecen en su narrativa y la experiencia del jugador.
         </p>
@@ -71,6 +79,10 @@ layout: page
             <span>Introducción a mi método de comentario</span><a href="./videojuegos/0">Leer >></a>
         </article>
         <article>
+            <h3>Dark Souls I</h3>
+            <span>Filosofía de Dark Souls</span><a href="./videojuegos/ds1">Leer >></a>
+        </article>
+        <!--article>
             <details>
                 <summary><h3>Dark Souls I</h3></summary>
                     <article>
@@ -103,6 +115,6 @@ layout: page
                     </article>
                 </ol>
             </details>
-        </article>
+        </article-->
     </details>
 </main>

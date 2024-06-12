@@ -21,7 +21,7 @@
 
 @keyframes fadeleft {
     from {
-        transform: translateX(-1rem);
+        transform: translateX(1rem);
         opacity: 0;
     }
     to {

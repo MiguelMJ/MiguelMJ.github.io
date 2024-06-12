@@ -6,6 +6,7 @@ layout: main
 ---
 
 <main>
+<!-- EXTRAER A UN INCLUDE PARA UNIFICAR CON EL INDEX DEL CUADERNO --->
 <div class="flex-container"  style="justify-content: center;">
     <div style="margin: 0 3rem;">
         {% include avatar.html size="100px" %}
@@ -131,7 +132,7 @@ layout: main
         }
         </style>
     <aside id="followme" style="text-align: right; margin: 24px">
-        <a data-tooltip="..." href="/L/">
+        <a data-tooltip="..." href="/L?goat">
             <img width="40" height="45" alt="goat" src="/assets/img/goat_1f410.png"/>
         </a>
     </aside>
@@ -256,9 +257,20 @@ document.addEventListener('selectionchange', function() {
 let pressedkeys = ""
 document.addEventListener('keypress', function(event) {
     let key = event.key
-    pressedkeys += key.toLocaleUpperCase()
-    if(pressedkeys.endsWith("README")){
-        window.location.href="https://github.com/MiguelMJ/MiguelMJ.github.io/tree/master#my-personal-website"
+    pressedkeys += key.toLocaleLowerCase()
+    let hasTyped = (x) => pressedkeys.endsWith(x)
+    let travelto = (x) => window.location.href = x
+    let map = {
+        "readme": () => travelto("https://github.com/MiguelMJ/MiguelMJ.github.io/tree/master#my-personal-website"),
+        "light": switchTheme,
+        "notebook": () => travelto("/L")
+    }
+
+    for(let text in map){
+        if(hasTyped(text)){
+            map[text]()
+            break
+        }
     }
 });
 </script>

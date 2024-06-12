@@ -3,12 +3,19 @@ layout: main
 extra_css: "/assets/css/post.css"
 ---
 
+<style>
+    main h1 {
+        border-bottom: 1px solid var(--secondary);
+    }
+</style>
+
 <header style="padding-top: 2rem">
     <nav aria-label="breadcrumb">
         <ul>
           <li><a href="../../">MiguelMJ</a></li>
           <li><a href="../">Notebook</a></li>
         </ul>
+      </nav>
     </nav>
     {% if page.subtitle and page.subtitle != nil and page.subtitle != "" %}
     <hgroup>
@@ -37,7 +44,7 @@ extra_css: "/assets/css/post.css"
     <aside>
         <article id="toc">
             <h3>Índice</h3>
-            {% include toc.html html=content h_min=2 h_max=3 %}
+            {% include toc.html html=content h_min=1 h_max=3 %}
         </article>
     </aside>
     {{ content | markdownify }}
