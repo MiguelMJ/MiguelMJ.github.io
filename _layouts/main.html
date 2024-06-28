@@ -41,7 +41,7 @@
 
 <body>
     <span class="themeicon" style="position: absolute; right: 20%; top: 2em;">
-        <input aria-label="switch theme" type="checkbox" onchange="switchTheme()"/>
+        <input id="lightbulb" aria-label="switch theme" type="checkbox" onmousedown="startEEcounter()" onmouseup="endEEcounter()"/>
     </span>
     {{ content}}
     <footer>
@@ -51,6 +51,18 @@
     </footer>
 
 </body>
+
+<style>
+    .noto {
+        font-family: system-ui,-apple-system,"Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    }
+    .darwin {
+        font-family: "DarwinSerifRegular";
+    }
+    .courier {
+        font-family: "Courier New", monospace;
+    }
+</style>
 
 <script>
     let target = window.location.href.split("#")[1]
@@ -62,6 +74,37 @@
         element.scrollIntoView()
         console.log(target, element)
     }
+
+    let eventTimerId = null
+    
+    let startEEcounter = function(){
+        eventTimerId = setTimeout(function(){
+            eefonts.open = true
+            eventTimerId = null
+        }, 3000)
+    }
+    let endEEcounter = function(justClear){
+        if(eventTimerId != null){
+            switchTheme()
+        }
+        clearTimeout(eventTimerId)
+        eventTimerId = null
+
+    }
+    let choosefont = function(elem){
+        eefonts.open = false
+        console.log(elem)
+        document.documentElement.style.setProperty("--font-family", getComputedStyle(elem).fontFamily)
+    }
 </script>
+<dialog id="eefonts">
+    <article>
+        <h3>Choose a font</h3>
+        <hr>
+        <button class="noto" onclick="choosefont(this)">Noto sans</button>
+        <button class="darwin" onclick="choosefont(this)">Darwin</button>
+        <button class="courier" onclick="choosefont(this)">Courier</button>
+    </article>
+</dialog>
 
 </html>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'DarwinSerifRegular';
+    src: url('/assets/font/DarwinSerif-Regular.ttf');
+}
+
 body {
     margin: 0px;
     padding: 0px;
@@ -13,11 +18,13 @@ body {
 @media only screen and (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
         --primary: #0aa394;
-        --muted-color: white
-        background-image: linear-gradient(to top,#2e4352, #11191f);
+        --muted-color: white;
+        background-image: linear-gradient(to top, transparent, #2e4352), url("data:image/svg+xml,%3Csvg viewBox='0 0 1200 800' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        background-blend-mode: multiply, multiply;
         background-color: #2e4352;
         background-attachment:fixed ;
         background-size: cover;
+        background-repeat: repeat;
     }
 }
 
@@ -31,6 +38,7 @@ body {
 }
 :root {
     /*
+    font-family: "DarwinSerifRegular"
     --font-family: "Lucida Console", "Courier New", monospace;
     */
 }
