@@ -1,28 +1,9 @@
-## My personal website
+This is a personal webpage to organize and share my work and other activity; a professional curriculum, personal open source projects, learning materials, blog posts or anything else.
 
-Have you come to see the source code of my website? It's not much, just an ordinary Jekyll site, like countless portfolios out there. I guess you are a curious person if you came here. As a reward I'll tell you one thing: not all the content of my site is directly accessible from the main page, some of it I've hidden as **easter eggs**.
+This website has had different iterations that have reflected my relationship with design and web technologies, culminating in the current version, which is guided more by a philosophy than a design style. Said philosophy combines [indieweb](https://indieweb.org) principles and [brutalist web design](https://brutalist-web.design/) and intends to align with a deeper attitude towards technology that advocates the need for [free open source software](https://en.wikipedia.org/wiki/Free_and_open-source_software) and [permacomputing](https://permacomputing.net/Principles/). I have therefore opted for a static, content-focused design.
 
-Obviously, being open source, you can look directly into the files of the page (what you probably came here to do) and find it all... but the truth is that very few of you usually do things like that. I'll save you the trouble of digging through my questionable code: here is the list of all the easter eggs hidden in my web page:
+The site is generated with [Jekyll](https://jekyllrb.com/), using the [jekyll-minifier](https://github.com/digitalsparky/jekyll-minifier) plugin with default settings.
 
-🐇🥚
-<ul>
-<li><details>
-<summary>README</summary>
+The font used is CMU Sans Serif, part of the CMU distribution of the [Computer Modern](https://en.wikipedia.org/wiki/Computer_Modern) font family by Donald Knuth. The font files are retreived from a copy kept in this very site and fall back to the system sans-serif font.
 
-If you type  <kbd>r</kbd> <kbd>e</kbd> <kbd>a</kbd> <kbd>d</kbd> <kbd>m</kbd> <kbd>e</kbd> in homepage you'll be automatically redirected here.
-</details></li>
-<li><details>
-<summary>Hidden blog</summary>
-If you click at least 5 times anywhere in the <b>Highlighted articles</b> section (for example closing and opening it) a misterious goat will appear to guide you to a secret blog (<i>only in spanish for now!</i>).
-
-You can skip the goat step if you just type  <kbd>n</kbd> <kbd>o</kbd> <kbd>t</kbd> <kbd>e</kbd> <kbd>b</kbd> <kbd>o</kbd> <kbd>o</kbd> <kbd>k</kbd> in the homepage
-</details></li>
-<li><details>
-<summary>On programming languages</summary>
-If you higlight the word "languages" anywhere on the site (like the <b>Higlighted projects</b> description) you will be automatically redirected to a hidden page titled <b>On programming languages</b>.
-</details></li>
-<li><details>
-<summary>Select font</summary>
-If you hold down the left mouse button for several seconds on the light bulb icon to change the theme, a selector to change the page font will open instead.</b>.
-</details></li>
-</ul>
+The source code of this site is hosted in [GitHub](https://github.com/MiguelMJ/miguelmj.github.io) and deployed on GitHub Pages.

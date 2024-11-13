@@ -1,12 +1,10 @@
-<figure {% if include.float %} style="max-width: 50%;float: {{include.float}}" {% endif %} >
-    <a href="{{include.href}}"><img title="{{include.title}}" src="{{include.src}}" alt="{{include.title}}" width="{{ include.width }}" height="{{ include.height }}" loading="lazy"/></a>
+<figure {% if include.float %} style="max-width: 50%;float: {{ include.float }}" {% endif %} >
+    <img {% if include.class %} class="{{include.class}}" {%endif%} title="{{include.title}}" src="{{include.src}}" alt="{{include.title}}" width="{{ include.width }}" height="{{ include.height }}" loading="lazy"/>
     <figcaption>
-        {{include.author}}.
-        <em>{{include.title}}</em>.
+        {% if include.author %}{{include.author}}.{%endif%}
+        <a href="{{include.href}}"><em>{{include.title}}</em>.</a>
         {% if include.time %}{{include.time}}.{%endif%}
-            {{include.attribution}}.
-        <span style="color: var(--color)">
-            {{include.caption}}    
-        </span>
+        {% if include.attribution %}{{include.attribution}}.{%endif%}
+        {{include.caption}}
     </figcaption>
 </figure>
