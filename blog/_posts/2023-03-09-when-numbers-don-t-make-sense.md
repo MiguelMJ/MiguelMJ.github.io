@@ -3,6 +3,9 @@ layout: post
 title: When numbers don't make sense
 date: 2023-03-09
 highlight: true
+links:
+    Hashnode: https://miguelmj.hashnode.dev/when-numbers-dont-make-sense
+    DEV.to: https://dev.to/miguelmj/when-numbers-dont-make-sense-10gi
 ---
 
 ## Introduction

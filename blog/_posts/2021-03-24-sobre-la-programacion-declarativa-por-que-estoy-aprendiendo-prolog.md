@@ -3,6 +3,8 @@ title: Sobre la programación declarativa
 subtitle: Por qué estoy aprendiendo Prolog
 date: 2021-03-24
 layout: post
+links:
+   DEV.to: https://dev.to/miguelmj/sobre-la-programacion-declarativa-por-que-estoy-aprendiendo-prolog-3o8c
 ---
 
 Antes de nada, quiero dejar claro que en adelante usaré _lenguaje de programación declarativa_ para referirme a programación puramente funcional (Haskell, Miranda) y lógica (Prolog). No para lenguajes de consulta (SQL) o de marcado (XML).

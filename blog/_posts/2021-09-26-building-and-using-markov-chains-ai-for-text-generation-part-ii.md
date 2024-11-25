@@ -4,6 +4,9 @@ title: Building and using Markov chains
 subtitle: AI for text generation - Part II
 date: "2021-09-26"
 highlight: true
+links:
+    Hashnode: https://blog.miguelmj.dev/building-and-using-markov-chains-ai-for-text-generation-part-ii
+    DEV.to: https://dev.to/miguelmj/building-and-using-markov-chains-ai-for-text-generation-part-ii-1172
 ---
 In the [previous post](https://dev.to/miguelmj/introduction-to-markov-chains-ai-for-text-generation-part-i-eha) we saw some theory behind Markov chains. In this one we're going to define the datastructures and the process involved in the creation and usage of one.
 

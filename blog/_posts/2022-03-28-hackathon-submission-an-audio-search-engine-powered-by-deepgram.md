@@ -4,6 +4,9 @@ subtitle: Hackathon submission
 date: 2022-03-28
 layout: post
 highlight: true
+links:
+  Hashnode: https://blog.miguelmj.dev/hackathon-submission-an-audio-search-engine-powered-by-deepgram
+  DEV.to: https://dev.to/miguelmj/hackathon-submission-an-audio-search-engine-powered-by-deepgram-3cf
 ---
 
 ### Overview of My Submission

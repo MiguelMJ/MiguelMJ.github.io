@@ -2,6 +2,9 @@
 layout: post
 title: My blogging journey until now - I'm moving to Hashnode
 date: 2023-01-19
+links:
+    Hashnode: https://miguelmj.hashnode.dev/my-blogging-journey-until-now-im-moving-to-hashnode
+    DEV.to: https://dev.to/miguelmj/my-blogging-journey-until-now-im-moving-to-hashnode-496b
 ---
 
 ## 2020 - Starting a blog
@@ -74,4 +77,4 @@ https://miguelmj.hashnode.dev/
 
 My first step has been to migrate there a curated list of my posts and polish them a bit. The canonical URLs will still point to the original posts, nonetheless. I will keep publishing in DEV everything, for the readers I already have here, but I will make Hashnode my main target.
 
-I guess that, as a lifelong student and an eventual teacher I will always have something to write for beginners. However, I want to try a different level of writing and even different types of content. I don't know how my blog might evolve, but, of course, that's the exciting part! 
+I guess that, as a lifelong student and an eventual teacher I will always have something to write for beginners. However, I want to try a different level of writing and even different types of content. I don't know how my blog might evolve, but, of course, that's the exciting part!

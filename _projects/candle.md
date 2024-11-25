@@ -6,9 +6,5 @@ links:
     GitHub: https://github.com/MiguelMJ/Candle
     Docs: https://miguelmj.dev/Candle
 position: 1
+category: featured
 ---
-Esto es un extracto.
-
-Esto es el texto completo. Ahora con una imagen.
-
-![imagen](https://github.com/MiguelMJ/Candle/raw/master/doc/img/demo.gif)

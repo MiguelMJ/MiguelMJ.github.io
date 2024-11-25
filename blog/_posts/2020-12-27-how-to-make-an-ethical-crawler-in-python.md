@@ -3,6 +3,9 @@ layout: post
 title: How to make an ethical crawler in Python
 date: 2020-12-27
 highlight: true
+links:
+    Hashnode: https://blog.miguelmj.dev/how-to-make-an-ethical-crawler-in-python
+    DEV.to: https://dev.to/miguelmj/how-to-make-an-ethical-crawler-in-python-4o1g
 ---
 **Web crawling** or **web scraping** is the automation of the access to one or more websites, in order to extract (scrape) data from them. With a high level language like Python, it can even be done easily, but there are some considerations to be taken into account.
 

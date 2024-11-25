@@ -3,6 +3,8 @@ title: Open sourcing a Python project?
 subtitle: Tools you should know about
 date: 2021-04-05
 layout: post
+links: 
+    DEV.to: https://dev.to/miguelmj/open-sourcing-a-python-project-tools-you-should-know-about-8bc
 ---
 At the moment I'm writing, I have no work experience, so my only way to practically learn about software development is via open source projects. Some time ago, I released the first version of Answerable, my first open source Python project.
 

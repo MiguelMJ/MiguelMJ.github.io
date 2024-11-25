@@ -3,6 +3,9 @@ title: Multidisciplinarity
 subtitle: What's there besides code?
 date: 2021-03-24
 layout: post
+links:
+    Hashnode: https://blog.miguelmj.dev/multidisciplinarity-whats-there-besides-code
+    DEV.to: https://dev.to/miguelmj/multidisciplinarity-what-s-there-besides-code-2en9
 ---
 The first thing that comes to most people's minds when they think of software development is *programming*. This is natural; software is built on code. However, in a increasingly technologized world, software affects and is affected by all sort of human activities. As a developer, you should look for synergies with these fields and understand how they relate to your work.
 

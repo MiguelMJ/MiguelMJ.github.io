@@ -2,6 +2,8 @@
 layout: post
 title: Making a level editor with SFML (C++) - Part 1
 date: 2021-02-21
+links:
+  DEV.to: https://dev.to/miguelmj/making-a-level-editor-with-sfml-c-part-1-2mm0
 ---
 
 A level editor is something that I've wanted to do for a long time in SFML, but has always been delayed. Fortunately, my last project (Candle, a library for 2D lighting), made me dive entirely into SFML again, so when I finished it, the natural thing was to start with the editor project right ahead.

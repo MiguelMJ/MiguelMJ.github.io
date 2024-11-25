@@ -3,6 +3,9 @@ title: "Idea: Group dynamics analysis"
 subtitle: Hackathon submission
 date: 2022-04-08
 layout: post
+links:
+    Hashnode: https://blog.miguelmj.dev/hackathon-submission-idea-group-dynamics-analysis
+    DEV.to: https://dev.to/miguelmj/hackathon-submission-idea-group-dynamics-analysis-13dd
 ---
 
 ### Introduction

@@ -2,6 +2,9 @@
 layout: post
 title: Programming mathematical objects
 date: 2023-01-26
+links:
+    Hashnode: https://miguelmj.hashnode.dev/programming-mathematical-objects
+    DEV.to: https://dev.to/miguelmj/programming-mathematical-objects-1n3n
 ---
 
 ## Introduction

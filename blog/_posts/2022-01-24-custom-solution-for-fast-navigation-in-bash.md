@@ -3,6 +3,9 @@ title: Custom solution for fast navigation in Bash
 date: 2022-01-24
 layout: post
 highlight: true
+links:
+  Hashnode: https://blog.miguelmj.dev/custom-solution-for-fast-navigation-in-bash
+  DEV.to: https://dev.to/miguelmj/custom-solution-for-fast-navigation-in-bash-12e1
 ---
 Using the console, you have to `cd` your way through all your directories, which thanks to autocompletion, can be a relatively fast. However, sometimes you have to work with very deep folder structures, with not autocompletion-friendly folder groups and processes that require you to navigate them a lot. As this has been my case for the last few months, I finally decided to make a tool to solve this and reduce the amount of keystrokes spent in `cd` navigation.
 

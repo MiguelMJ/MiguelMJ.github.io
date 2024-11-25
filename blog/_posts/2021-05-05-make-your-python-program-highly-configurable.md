@@ -3,6 +3,9 @@ title: Make your Python program highly configurable
 date: 2021-05-05
 layout: post
 highlight: true
+links:
+    Hashnode: https://blog.miguelmj.dev/make-your-python-program-highly-configurable
+    DEV.to: https://dev.to/miguelmj/make-your-python-program-highly-configurable-3blk
 ---
 The more complex a program is, the more parameters it tends to accept in order to tune it's behavior. **A configurable program is easier to adapt to the needs of the user** (and your own) and reduces the amount of code you have to modify if you want to change certain things.
 

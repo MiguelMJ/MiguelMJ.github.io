@@ -3,6 +3,9 @@ title: Introduction to Markov chains
 subtitle: AI for text generation - Part I
 date: 2021-07-09
 layout: post
+links:
+    Hashnode: https://blog.miguelmj.dev/introduction-to-markov-chains-ai-for-text-generation-part-i
+    DEV.to: https://dev.to/miguelmj/introduction-to-markov-chains-ai-for-text-generation-part-i-eha
 ---
 I've always found generative AI one of the most interesting branches in Computer Science. As in any other AI subfield, the range of complexity for the algorithms under this name is very wide. That's why I like Markov chains so much; while they have really simple logic behind, the results can be very interesting and funny.
 

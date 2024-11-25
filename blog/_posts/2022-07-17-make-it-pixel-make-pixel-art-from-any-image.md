@@ -3,6 +3,9 @@ layout: post
 title: Make It Pixel!
 subtitle: Make pixel art from any image
 date: 2022-07-17
+links:
+    Hashnode: https://miguelmj.hashnode.dev/make-it-pixel-make-pixel-art-from-any-image
+    DEV.to: https://dev.to/miguelmj/make-it-pixel-make-pixel-art-from-any-image-2o4n
 ---
 There are several options out there for generating pixel art from images. However, none has all the things I would like to have at the same time, so I decided to make my own.
 

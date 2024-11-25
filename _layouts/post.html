@@ -12,7 +12,8 @@ layout: main
         
         <h1>{{ page.title }}</h1>
         <h2 class="subtitle">{{ page.subtitle }}</h2>
-        <small>MiguelMJ - <date>{{ page.date | date: "%Y-%m-%d" }}</date></small>
+        {% assign postdate = page.date | date: "%Y-%m-%d" %}
+        <small>MiguelMJ - <date>{{ page.pseudodate | default: postdate }}</date></small>
     </header>
     <nav role="doc-index" id="toc" class="card">
         {% include toc.html html=content h_min=page.toc_min h_max=3 %}
@@ -24,48 +25,7 @@ layout: main
     {% if page.links %}
     <hr/>
     <footer>
-    <p>Syndicated at {%for link in page.links%} : <a href="{{page.links[link.first]}}">{{link.first}}</a>{%endfor%}</p>
+    <p>Syndicated at {%for link in page.links%}<a href="{{page.links[link.first]}}">{{link.first}}</a>{%if forloop.last%}{%else%}, {%endif%}{%endfor%}</p>
     </footer>
     {% endif %}
 </article>
-
-
-<style>
-    #gototop {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        cursor: pointer;
-        border-radius: 50%;
-        width: auto;
-        aspect-ratio: 1 / 1;
-    }
-
-    #gototop i {
-        border: solid white;
-        border-width: 0 2px 2px 0;
-        display: inline-block;
-        padding: 8px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-    }
-</style>
-
-<span id="gototop"><i></i></span>
-
-<script>
-    const gototop = document.getElementById("gototop")
-    gototop.onclick = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    window.onscroll = () => {
-        if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
-            gototop.style.display = "block";
-        } else {
-            gototop.style.display = "none";
-        }
-    }
-</script>

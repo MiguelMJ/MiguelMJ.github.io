@@ -2,6 +2,9 @@
 layout: post
 title: Programming as a conversation
 subtitle: How the communicative scheme is also applied in the written code itself
+links:
+    Hashnode: https://miguelmj.hashnode.dev/programming-as-a-conversation
+    DEV.to: https://dev.to/miguelmj/programming-as-a-conversation-how-the-communicative-scheme-is-also-applied-in-the-written-code-itself-5378
 ---
 Coding conventions, documentation practices and nomenclature styles are commonly subject of strong opinions among developers. In my case, I really thought for years that the best way to write software had to exist, even if it was not mine. And, surely, there are objective criteria that make code better, from the best use of idioms to the readability-performance tradeoffs. However, I've come to think that **understanding code as a conversation where subjectivity takes a role** might be the most valuable approach to write software, rather than one that assumes universal metrics.
 

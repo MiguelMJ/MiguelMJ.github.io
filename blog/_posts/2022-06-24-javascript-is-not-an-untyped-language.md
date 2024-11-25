@@ -2,6 +2,9 @@
 layout: post
 title: JavaScript is not an untyped language
 date: 2022-06-24
+links:
+    Hashnode: https://miguelmj.hashnode.dev/javascript-is-not-an-untyped-language
+    DEV.to: https://dev.to/miguelmj/javascript-is-not-an-untyped-language-1jkg
 ---
 ## JavaScript's popularity
 

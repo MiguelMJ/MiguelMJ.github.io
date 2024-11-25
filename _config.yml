@@ -2,6 +2,9 @@ collections:
   projects:
     output: true
     sort_by: position
+  texts:
+    output: true
+    sort_by: position
 
 permalink: /:categories/:title
 

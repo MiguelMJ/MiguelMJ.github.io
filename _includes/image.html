@@ -1,4 +1,4 @@
-<figure {% if include.float %} style="max-width: 50%;float: {{ include.float }}" {% endif %} >
+<figure {% if include.float %} style="margin: 0 0.5rem; max-width: 50%;float: {{ include.float }}" {% endif %} >
     <img {% if include.class %} class="{{include.class}}" {%endif%} title="{{include.title}}" src="{{include.src}}" alt="{{include.title}}" width="{{ include.width }}" height="{{ include.height }}" loading="lazy"/>
     <figcaption>
         {% if include.author %}{{include.author}}.{%endif%}

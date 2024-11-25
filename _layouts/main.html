@@ -27,9 +27,7 @@
 
 
 <body>
-
     {% include breadcrumbs.html %}
-    
     <main>
         {{ content}}
     </main>
@@ -51,11 +49,28 @@
                 <ul>    
                     <li><a href="/colophon">Colophon</a></li>
                 </ul>
+                
         </nav>
         <small>
             This page is <a href="https://github.com/MiguelMJ/MiguelMJ.github.io">open source</a> and licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY NC 4.0</a>. Learn more <a href="/colophon">about this website</a>.
         </small>
     </footer>
-
+    <i id="gototop"></i>
 </body>
+
+<script>
+    const gototop = document.getElementById("gototop")
+    gototop.onclick = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+    window.onscroll = () => {
+        if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
+            gototop.style.display = "block";
+        } else {
+            gototop.style.display = "none";
+        }
+    }
+</script>
+
 </html>

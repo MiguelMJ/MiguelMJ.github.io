@@ -3,6 +3,9 @@ title: Interactive conversation scripts for language learning
 subtitle: Hackathon submission
 date: 2022-04-03
 layout: post
+links:
+    Hashnode: https://blog.miguelmj.dev/hackathon-submission-interactive-conversation-scripts-for-language-learning
+    DEV.to: https://dev.to/miguelmj/hackathon-submission-interactive-conversation-scripts-for-language-learning-110c
 ---
 
 ## Overview of My Submission

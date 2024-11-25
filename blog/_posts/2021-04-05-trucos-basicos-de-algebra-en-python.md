@@ -3,6 +3,8 @@ title: Trucos básicos de álgebra en Python
 date: 2021-04-05
 layout: post
 highlight: true
+links:
+    Hashnode: https://dev.to/miguelmj/trucos-basicos-de-algebra-en-python-48mf
 ---
 Hay dos tipos de personas con una dificultad común a la hora de empezar a usar Python: las que aprenden los fundamentos de programación directamente en este lenguaje y quienes vienen de programar en un lenguaje de más bajo nivel.
 

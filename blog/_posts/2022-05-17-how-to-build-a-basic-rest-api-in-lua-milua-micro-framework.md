@@ -4,6 +4,9 @@ subtitle: Milua micro framework
 date: 2022-05-17
 layout: post
 highlight: true
+links:
+    Hashnode: https://blog.miguelmj.dev/how-to-build-a-basic-rest-api-in-lua-milua-micro-framework
+    DEV.to: https://dev.to/miguelmj/how-to-build-a-basic-rest-api-in-lua-milua-micro-framework-332h
 ---
 
 ## Prelude

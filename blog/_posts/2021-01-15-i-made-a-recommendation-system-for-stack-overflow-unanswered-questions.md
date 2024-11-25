@@ -2,6 +2,9 @@
 layout: post
 title: I made a recommendation system for Stack Overflow unanswered questions
 date: 2021-01-15
+links:
+    Hashnode: https://blog.miguelmj.dev/i-made-a-recommendation-system-for-stack-overflow-unanswered-questions
+    DEV.to: https://dev.to/miguelmj/i-made-a-recommendation-system-for-stack-overflow-unanswered-questions-280a
 ---
 ## Background
 

@@ -3,6 +3,9 @@ title: How to get answers on StackOverflow
 date: 2022-02-06
 layout: post
 highlight: true
+links:
+    Hashnode: https://miguelmj.hashnode.dev/how-to-get-answers-on-stackoverflow
+    DEV.to: https://dev.to/miguelmj/how-to-get-answers-on-stackoverflow-3pp7
 ---
 Talking about Questions And Answers in software development is talking about stackoverflow.com (SO from now on). There's a bad experience shared among many beginners in this site and that's a shame. Instead of taking a gatekeeping attitude, my intention here is to explain several common errors and misconceptions that lead to this bad experience in SO and how to avoid them to get the most out of that great community.
 

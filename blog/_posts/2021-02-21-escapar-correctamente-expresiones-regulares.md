@@ -3,6 +3,8 @@
 layout: post
 title: Escapar correctamente expresiones regulares
 date: 2021-02-21
+links:
+     DEV.to: https://dev.to/miguelmj/escapar-correctamente-expresiones-regulares-dl2
 ---
 Las expresiones regulares suelen ser difíciles de entender y aún más de escribir. Probablemente uno de los aspectos más confusos al principio son los caracteres de escape.
 

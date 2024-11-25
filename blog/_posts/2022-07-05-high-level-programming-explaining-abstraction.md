@@ -3,6 +3,9 @@ title: High level programming
 subtitle: Explaining abstraction
 date: 2022-07-05
 layout: post
+links:
+    Hashnode: https://miguelmj.hashnode.dev/high-level-programming-explaining-abstraction
+    DEV.to: https://dev.to/miguelmj/high-level-programming-explaining-abstraction-4ko
 ---
 When designing our programs, we make use of abstraction while also providing it. In this post I want to analyze the concept of abstraction in the context of programming and software development.
 

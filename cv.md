@@ -31,7 +31,7 @@ Mis áreas principales de interés son el aprendizaje automático, la teoría y 
 ### Eventos y actividades de interés
 
 |Oct 2024|**Malackathon 1ª Ed.**, Universidad de Málaga<br/> Parte del OktoberTec en la ETSI Informática. Reto: Visualización de datos sobre embalses en España para la gestión sostenible del agua.<br/>***Participante***|
-|Abr 2022|**Hackathon Deepgram+DEV**, DEV.to<br/>Organizada por Deepgram y DEV.to. Reto: Aplicaciones innovadoras para el reconocimiento de voz automático.<br/>***Participante<br/>2º puesto***|
+|Abr 2022|**Hackathon Deepgram+DEV**, DEV.to<br/>Organizada por Deepgram y DEV.to. Reto: Aplicaciones innovadoras para el reconocimiento de voz automático.<br/>***Participante - 2º puesto***|
 |Oct 2020|**Hackathon BBVA 2020**, BBVA<br/>Organizada por BBVA Open Innovation. Reto: Evaluación de PyMEs susceptibles de crédito.<br/>***Participante***|
 |Sep 2019|**HAIckathon**, Universidad de Málaga<br/>Parte del AI Monday organizado en el Polo Digital de Málaga. Reto: Descubrimiento de potenciales empleados para empresas tecnológicas  finlandesas.<br/>***Participante***|
 
@@ -49,7 +49,7 @@ Mis áreas principales de interés son el aprendizaje automático, la teoría y 
 
 ### Idiomas
 - **Inglés**: Conversación fluida. Dominio para la comunicación especializada en ingeniería del software.
-  - B2<br/>Cambridge First Certificate
-  - C1<br/>Sin certificar
+  - B2 (*Cambridge First Certificate*)
+  - C1 (Sin certificar)
 - **Alemán**: Comprensión lectora básica.
-  - A2<br/>Sin certificar
+  - A2 (Sin certificar)
