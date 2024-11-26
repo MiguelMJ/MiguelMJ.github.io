@@ -1,11 +1,12 @@
 ---
 layout: post
 title: El Huevo del Ángel
-date: 2024
+pseudodate: 2024
 subtitle: Comentario
 keywords: El Huevo del Ángel, Angel's egg, anime, crítica, reseña
 description: Comentario sobre El Huevo del Ángel, el OVA (Original Video Animation) de Mamoru Oshii y Yoshitaka Amano de 1985.
 cover_image: /assets/img/L/ehda1.png
+position: 2
 ---
 
 > **Aviso**: El texto contiene detalles sobre la trama y el final de la historia.

@@ -12,7 +12,7 @@ I'm a computer science graduate and programming is my passion. I work on open so
 
 ## What I do
     
-I make open source [projects](./projects) to learn, experiment with different techonologies and languages and, if possible, contribute to the community. Then, from time to time I also like to write in a [blog](./blog) about things I learn. Sometimes I write about other issues outside of the blog, in the [personal](./personal) section (mostly in spanish).
+I make open source [projects](./projects) to learn, experiment with different techonologies and languages and, if possible, contribute to the community. Then, from time to time I also like to write in a [blog](./blog) about things I learn. Sometimes I write about other issues outside of the blog, in the [personal](./personal) section.
 
 ## Contact me
 
@@ -20,4 +20,8 @@ In the [social](./social) section you'll find how to reach me online. If you wan
     
 ## Professional experience
     
-You will also find my [*curriculum vitae*](/cv) (also spanish) here.
+You will also find my [*curriculum vitae*](/cv) here.
+
+***
+
+Most of the content of this website is in English, but the professional section and parts of the personal section are in Spanish only.

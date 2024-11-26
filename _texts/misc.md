@@ -1,6 +1,9 @@
 ---
 title: Misceláneo
 layout: main
+category: index
+permalink: /personal/misc
+position: 99
 ---
 
 # Miscelaneo

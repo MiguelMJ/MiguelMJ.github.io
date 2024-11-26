@@ -5,7 +5,7 @@ date: 2021-06-15
 layout: post
 highlight: true
 links: 
-    Hashnode: https://blog.miguelmj.dev/data-structures-in-prolog-where-to-start
+    Hashnode: https://miguelmj.hashnode.dev/data-structures-in-prolog-where-to-start
     DEV.to: https://dev.to/miguelmj/data-structures-in-prolog-where-to-start-53gm
 ---
 

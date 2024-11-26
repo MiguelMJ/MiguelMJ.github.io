@@ -4,7 +4,7 @@ subtitle: Designing algorithms with no code
 date: "2020-12-13"
 layout: post
 links:
-    Hashnode: https://blog.miguelmj.dev/why-and-how-to-use-pen-and-paper-designing-algorithms-with-no-code
+    Hashnode: https://miguelmj.hashnode.dev/why-and-how-to-use-pen-and-paper-designing-algorithms-with-no-code
     DEV.to: https://dev.to/miguelmj/why-and-how-to-use-pen-and-paper-design-an-algorithm-11nn
 ---
 It's a common thing to see programming students staring silently at their code editor, with a blank look in their eyes, not knowing where to start when they are given an assignment. Although most teachers say _"pick up pen and paper before programming"_, there is a reason why some just don't do it: mostly because they don't know why or how.

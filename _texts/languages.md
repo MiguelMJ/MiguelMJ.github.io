@@ -1,9 +1,18 @@
 ---
 title: On programming languages
 subtitle: Thoughts and experience with PLs
-layout: post
+description: Thoughts and experience with PLs
+layout: main
+category: index
+permalink: /personal/on-programming-languages
+position: 1
 ---
+# On programming languages
+
+{% capture text %}
+
 As programming languages theory is one of my main interests, I try to learn as much as I can about different languages and complete projects with them, to better understand their strengths and weaknesses. This way I intend to substantiate my own opinion on the design of programming languages. In this section I collect my experiences and opinions with different languages.
+
 ## Bash
             
 I started writing Bash scripts when I switched to Linux during university. My feelings towards Bash are complicated. In one hand, it is so convenient to work directly with processes, executables, files, output redirection... It's a shell language after all, and for some reason it's the default language in most common Linux consoles. However, its syntax feels hacky as hell. I have read one million times when to use <code>$*</code>, <code>$@</code>, <code>"$*"</code> and <code>"$@"</code> but I always need to check again. The same goes with <code><()</code> and <code><<<()</code>. Also, variable expansion is super useful but only with a cheatsheet at hand. Writing complex boolean conditions might become also confusing, as well as trying to work with arrays and dictionaries. 
@@ -20,7 +29,7 @@ Specifically about the syntax I have not much to say. Given that C-like language
 Currently, C++ is considered a memory insecure language (and it is) and other more recent languages, especially Rust, are presented as alternatives. In my opinion (already established as biased), I think security is an important layer desirable in most contexts, but not something unachievable in C++ and certainly not something required while learning. Being familiar with an unsafe tool is also a (good?) way to adopt better practices and to get used to consider side effects even before writing code.
 Another thing I'd like to say it's about it's OOP approach. I worked for years with Java for university subjects and professionally with Kotlin for some time now, but I have never liked the differentiation between interfaces and abstract classes these languages make. I feel like it's only purpose is to allow multiple interface implementation while preventing multiple class inheritance. Of course, I'm aware of the diamond problem, but C++ allows you to call a function from a specific parent, allowing as a result to solve the problem with a single one-line function override. Anyway, that might be the only advantage I personally find in C++ OOP. Polymorphy only working naturally on pointers forces you to work with them in contexts where otherwise wouldn't be necessary and that alone sets a very, very low bar for a language to be more suited for every day OOP. 
         
-## GDScipt
+## GDScript
 
 WIP
 
@@ -56,3 +65,12 @@ WIP
 
 WIP
 
+{% endcapture %}
+
+{% assign texthtml = text | markdownify %}
+
+<nav role="doc-index" id="toc" class="card">
+    {% include toc.html html=texthtml h_min=2 %}
+</nav>
+
+{{ texthtml }}

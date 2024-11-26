@@ -5,7 +5,7 @@ date: 2021-06-22
 layout: post
 highlight: true
 links:
-    Hashnode: https://blog.miguelmj.dev/take-full-advantage-of-high-order-functions-examples-in-javascript
+    Hashnode: https://miguelmj.hashnode.dev/take-full-advantage-of-high-order-functions-examples-in-javascript
     DEV.to: https://dev.to/miguelmj/take-full-advantage-of-high-order-functions-examples-in-javascript-4ibg
 ---
 Functions are more than just a way to avoid repetition in your code. The powerful concepts of functions as objects that can be manipulated and altered in runtime will improve the flexibility and scalability of your applications. Learn to use and write high order functions to raise the quality of your work.

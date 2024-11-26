@@ -3,8 +3,8 @@ layout: post
 title: Prólogo - Mito y autómata
 pseudodate: 2023
 subtitle: Introducción a la serie
-category: mito_y_automata
-permalink: /personal/mito_y_automata/prologo
+category: mito-y-automata
+permalink: /personal/mito-y-automata/prologo
 position: 0
 ---
 ## Motivación
