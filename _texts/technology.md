@@ -3,7 +3,7 @@ title: On technology
 description: Summary of my views on technology
 layout: main
 category: index
-permalink: /personal/on-technology
+permalink: /reflections/on-technology
 position: 0
 ---
 
@@ -23,7 +23,8 @@ I believe there is a need to localise technology, reduce its high energy demands
 
 ## Relevant links
 
-- [Free Open Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software)
-- [Permacomputing](https://permacomputing.net/Principles/)
 - [Critical Engineering](https://criticalengineering.org/)
+- [Permacomputing](https://permacomputing.net/Principles/)
+- [Guidelines for Brutalist Web Design](https://brutalist-web.design/)
+- [Free Open Source Software](https://en.wikipedia.org/wiki/Free_and_open-source_software)
 - [Right to Repair](https://en.wikipedia.org/wiki/Right_to_repair)

@@ -3,9 +3,33 @@ title: Blog
 layout: main
 ---
 
+{% assign lastyear = '' %}
+
 # Blog
 
-Posts about programming and computer science.
+[RSS feed](/feed.xml)
+
+<table class="simple">
+<tbody>
+{% for post in site.posts %}
+{% assign year = post.date | date: "%Y" %}
+{% if year != lastyear %}
+</tbody>
+</table>
+<h2>{{year}}</h2>
+<table class="simple">
+<tbody>
+{% endif %}
+<tr><td><date>{{post.date | date: "%Y-%m-%d" }}</date></td><td><a href="{{post.url}}">
+    {{ post.title }}
+{%if post.subtitle%} - {{post.subtitle}}{%endif%}
+</a></td></tr>
+{% assign lastyear = year %}
+{% endfor %}
+</tbody>
+</table>
+
+<!--
 <ul class="nobullet">
 {% for post in site.posts %}
 <li class="card"><p>
@@ -29,3 +53,4 @@ Posts about programming and computer science.
 </li>
 {% endfor %}
 </ul>
+-->

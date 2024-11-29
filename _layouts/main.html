@@ -27,32 +27,26 @@
 
 
 <body>
+    <nav id="navbar">
+            <ul  class="nobullet">
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects">Projects</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/reflections">Reflections</a></li>
+                <li><a href="/social">Social</a></li>
+                <li><a href="/cv">CV</a></li>
+                <li><a href="/colophon">Colophon</a></li>
+            </ul>
+            
+    </nav>
     {% include breadcrumbs.html %}
     <main>
         {{ content}}
     </main>
     <hr/>
     <footer>
-        <nav id="navbar">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                </ul>
-                <ul>
-                    <li><a href="/projects">Projects</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/personal">Personal</a></li>
-                    </ul>
-                <ul>
-                    <li><a href="/social">Social</a></li>
-                    <li><a href="/cv">Professional</a></li>
-                </ul>
-                <ul>    
-                    <li><a href="/colophon">Colophon</a></li>
-                </ul>
-                
-        </nav>
         <small>
-            This page is <a href="https://github.com/MiguelMJ/MiguelMJ.github.io">open source</a> and licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY NC 4.0</a>. Learn more <a href="/colophon">about this website</a>.
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY NC 4.0</a>
         </small>
     </footer>
     <i id="gototop"></i>

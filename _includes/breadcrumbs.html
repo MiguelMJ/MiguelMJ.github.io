@@ -1,5 +1,6 @@
-<nav id="breadcrumbs">
 {% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+{% if crumbs.size > 0 %}
+<nav id="breadcrumbs">
 <a href="/"><strong>MiguelMJ</strong></a>
 {% for crumb in crumbs offset: 1 %}
   {% if forloop.last %}
@@ -9,3 +10,4 @@
   {% endif %}
 {% endfor %}
 </nav>
+{% endif %}

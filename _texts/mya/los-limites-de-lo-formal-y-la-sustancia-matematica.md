@@ -7,7 +7,7 @@ layout: post
 keywords: "ciencias de la computacion, matemáticas, filosofía, representación, mitos, historia"
 pseudodate: 2023
 category: mito-y-automata
-permalink: /personal/mito-y-automata/los-limites-de-lo-formal-y-la-sustancia-matematica
+permalink: /reflections/mito-y-automata/los-limites-de-lo-formal-y-la-sustancia-matematica
 position: 1
 ---
 
