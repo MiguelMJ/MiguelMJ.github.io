@@ -2,8 +2,8 @@
 layout: post
 title: Interfaces para la desvirtualización
 pseudodate: 2025
-category: misc
-permalink: /reflections/misc/sobre-la-virtualidad
+category: draft
+position: 50
 ---
 
 ## Introducción

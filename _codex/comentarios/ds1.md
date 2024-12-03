@@ -6,7 +6,7 @@ pseudodate: 2023-2024
 subtitle: Filosofía de Dark Souls
 category: comentarios
 position: 1
-permalink: /reflections/comentarios/dark-souls-1
+permalink: /wiki/comentarios/dark-souls-1
 ---
 
 <div class="card">
@@ -19,11 +19,7 @@ permalink: /reflections/comentarios/dark-souls-1
 
 ## Inspiración
 
-Este análisis sobre Dark Souls está motivado, en parte, por el vídeo <em>Philosophical Analysis of Dark Souls</em> de The Gemsbok, en YouTube. Hace tiempo que quería escribir mi propio comentario, y al ver este video-ensayo que usaba la experiencia de juego del Dark Souls y los elementos de su narrativa para realizar una introducción a la filosofía existencialista, me propuse escribir mi propio análisis y tratar no sólo los temas que ya tenía en mente, sino algunos que el video propone al final. Si bien no es necesario ver el video de The Gemsbok para leer mi análisis, recomiendo al lector que lo haga en algún momento.
-
-<div style="text-align: center; overflow: hidden;">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xpf3KQBIoCY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+Este análisis sobre Dark Souls está motivado, en parte, por el vídeo [Philosophical Analysis of Dark Souls](https://www.youtube.com/embed/xpf3KQBIoCY) de The Gemsbok, en YouTube. Hace tiempo que quería escribir mi propio comentario, y al ver este video-ensayo que usaba la experiencia de juego del Dark Souls y los elementos de su narrativa para realizar una introducción a la filosofía existencialista, me propuse escribir mi propio análisis y tratar no sólo los temas que ya tenía en mente, sino algunos que el video propone al final. Si bien no es necesario ver el video de The Gemsbok para leer mi análisis, recomiendo al lector que lo haga en algún momento.
 
 ## Método de este análisis
 

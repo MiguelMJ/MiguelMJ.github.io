@@ -7,6 +7,8 @@ layout: main
 
 # Blog
 
+I generally write about software development here.
+
 [RSS feed](/feed.xml)
 
 <table class="simple">

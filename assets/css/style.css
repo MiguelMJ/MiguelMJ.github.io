@@ -1,35 +1,19 @@
 /* typesetting */
 
-@font-face {
-  font-family: 'CMU Sans Serif';
-  font-weight: normal;
-  font-style: normal;
-  src: url(/assets/font/cmu/cmunss.ttf);
-}
-@font-face {
-  font-family: 'CMU Sans Serif';
-  font-weight: normal;
-  font-style: italic;
-  src: url(/assets/font/cmu/cmunsi.ttf);
-}
-@font-face {
-  font-family: 'CMU Sans Serif';
-  font-weight: bold;
-  font-style: normal;
-  src: url(/assets/font/cmu/cmunsx.ttf);
-}
-@font-face {
-  font-family: 'CMU Sans Serif';
-  font-weight: bold;
-  font-style: italic;
-  src: url(/assets/font/cmu/cmunso.ttf);
+
+
+body { 
+  font-family: 'Source Serif 4', serif;
+  font-size: 20px;
 }
 
-body { font-family: 'CMU Sans Serif', sans-serif; }
+code {
+  font-family: 'Courier New', monospace;
+}
 
 .subtitle {
   font-style: italic;
-  font-size: large;
+  font-size: 20px;
 }
 
 article {
@@ -60,7 +44,7 @@ blockquote {
     filter: invert();
   }
   :root {
-    --color: #222;
+    --color: #001818;
     --background-color: white;
     --color-intense: black;
     --color-low: gray;
@@ -114,12 +98,23 @@ a[href^="https://"]::after
   padding-right: 11px; /* sizing */
 }
 
+a:link, a:visited, summary { 
+  text-decoration: underline; 
+  text-decoration-color: var(--color-low);
+}
+
 ul.nobullet > li { list-style-type: none;  }
 
 .card {
-  border: 1pt solid var(--color-intense);
+  border: 1pt solid var(--color-low);
   padding: 0.5rem 1rem;
   margin: 0.5rem 0;
+}
+h1, hr {
+  border-bottom: 3px double var(--color-low);
+}
+h2:not(.subtitle) {
+  border-bottom: 1px solid var(--color-low)
 }
 i {
   border: 1px solid var(--color-intense);
@@ -134,7 +129,7 @@ i {
 }
 
 table:not(.simple) td {
-  border: 1px solid var(--color-intense);
+  border: 1px solid var(--color-low);
   border-collapse: collapse;
 }
 article cite::before {
@@ -142,9 +137,6 @@ article cite::before {
 }
 article cite::after {
   content: ')';
-}
-summary {
-  text-decoration: underline;
 }
 blockquote{ 
   border-left: 8px solid var(--color-low);
@@ -187,19 +179,15 @@ i {
   font-size: xx-large;
   font-weight: bold;
 }
+.card {
+  overflow: scroll
+}
 
 /* layout and spacing */
 
 body {
-  padding-top: 1rem;
-  font-size: 20px;
-}
-body > footer {
-  margin-top: 1rem;
-}
-body {
   width: 868px;
-  margin: 0 1rem;
+  padding: 1rem;
 }
 @media (max-width: 992px) {
   nav#navbar ul li{
@@ -213,27 +201,25 @@ body {
     margin: 1rem 0;
     padding-bottom: 1rem;
   }
-  nav#navbar ul {
-    margin: 0;
-    padding: 0;
-  }
 }
 @media (min-width: 992px) {
   nav#navbar {
     position: absolute;
-    top: 64;
+    top: 1rem;
     left: calc(868px - -2rem);
     width: 124px;
   }
 }
 @media (max-width: 991.98px) {
-  body { width: 98%; }
+  body { width: auto; }
 }
 @media (max-width: 767.98px) {
-  body { width: 98%; }
 }
 @media (max-width: 575.98px) {
-  body { width: 98%; }
+}
+nav#navbar ul {
+  margin: 0;
+  padding: 0;
 }
 ul.nobullet { padding-left: 0; }
 h1 + .subtitle {

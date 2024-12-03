@@ -6,8 +6,7 @@ cover_attribution: 'O. Von Corven. <a href="https://commons.wikimedia.org/wiki/F
 layout: post
 keywords: "ciencias de la computacion, matemáticas, filosofía, representación, mitos, historia"
 pseudodate: 2023
-category: mito-y-automata
-permalink: /reflections/mito-y-automata/los-limites-de-lo-formal-y-la-sustancia-matematica
+category: mito-y-autómata
 position: 1
 ---
 

@@ -1,21 +1,11 @@
 ---
-title: Misceláneo
+title: Externo
 layout: main
 category: index
-permalink: /reflections/misc
 position: 99
 ---
 
-
-{% assign textos = site.texts | where: 'category', 'misc' %}
-
-# Miscelaneo
-
-{% for text in textos %} 
-- [{{text.title}}]({{text.permalink}}). {{text.subtitle}}
-{% endfor %}
-
-## Externo
+# Externo
 
 - [¿A qué edad hay que aprender a programar?](https://theconversation.com/a-que-edad-hay-que-aprender-a-programar-176205) (Coautor).
 

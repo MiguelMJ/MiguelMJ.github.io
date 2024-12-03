@@ -1,12 +1,12 @@
+permalink: /:categories/:title
+
 collections:
   projects:
     output: true
     sort_by: position
-  texts:
+  codex:
     output: true
     sort_by: position
-
-permalink: /:categories/:title
 
 plugins:
   - jekyll-minifier

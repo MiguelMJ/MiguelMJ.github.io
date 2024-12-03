@@ -5,7 +5,7 @@ subtitle: Introducción a mi método de comentario
 pseudodate: 2023
 category: comentarios
 position: 0
-permalink: /reflections/comentarios/prologo
+permalink: /wiki/comentarios/prologo
 ---
 
 ## Introducción

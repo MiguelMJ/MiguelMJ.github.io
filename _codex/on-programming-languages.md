@@ -4,7 +4,6 @@ subtitle: Thoughts and experience with PLs
 description: Thoughts and experience with PLs
 layout: main
 category: index
-permalink: /reflections/on-programming-languages
 position: 1
 ---
 # On programming languages

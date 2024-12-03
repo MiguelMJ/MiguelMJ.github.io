@@ -7,7 +7,7 @@ cover_image: "/assets/img/L/cover_3.jpg"
 cover_attribution: 'Ismail Al-Jazari. <a href="https://commons.wikimedia.org/wiki/File:Syria,_Damascus,_Mamluk_Period,_14th_Century_-_Peacock-shaped_Hand_Washing_Device_(recto);_Text_Page,_Arabic_Prose_(verso)_-_1945.383_-_Cleveland_Museum_of_Art.tif"> 	
 Peacock-shaped Hand Washing Device</a> (Fuente: <a href="https://www.clevelandart.org/art/1945.383">Cleveland Museum of Art</a>). Siglo XIV. Dominio público, vía Wikimedia Commons'
 category: mito-y-automata-draft
-permalink: /reflections/mito-y-automata/lo-automatico-la-tecnologia-como-imitacion-de-lo-vivo
+permalink: /wiki/mito-y-automata/lo-automatico-la-tecnologia-como-imitacion-de-lo-vivo
 position: 3
 ---
 

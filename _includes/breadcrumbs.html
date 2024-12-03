@@ -1,4 +1,4 @@
-{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+{% assign crumbs = page.url | url_decode | remove:'/index.html' | split: '/' %}
 {% if crumbs.size > 0 %}
 <nav id="breadcrumbs">
 <a href="/"><strong>MiguelMJ</strong></a>

@@ -3,12 +3,11 @@ title: On technology
 description: Summary of my views on technology
 layout: main
 category: index
-permalink: /reflections/on-technology
 position: 0
 ---
 
 # On technology
-
+ 
 > The Critical Engineer considers Engineering to be the most transformative language of our time, shaping the way we move, communicate and think. It is the work of the Critical Engineer to study and exploit this language, exposing its influence.
 > 
 > -<cite>The Critical Engineering Manifesto</cite>
