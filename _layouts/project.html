@@ -1,0 +1,41 @@
+---
+layout: main
+position: 999
+---
+
+{% assign superproject = site.projects | where: "title", page.superproject | first %}
+
+<article>
+    <header>
+        <h1>{{ page.title }}</h1>
+        <ul>
+            {% for link in page.links %}
+            <li>
+                <a href="{{page.links[link.first]}}">{{link.first}}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </header>
+    <main>
+        {{ page.content }}
+    </main>
+    
+    {% if page.category == 'superproject' %}
+    {% assign subprojects = site.projects | where: "superproject", page.title %}
+    <footer>
+        Subprojects:
+        <ul>
+        {% for subproject in subprojects %}
+        <li><a href="{{subproject.url}}">{{subproject.title}}</a></li>
+        {% endfor %}
+        </ul>
+    </footer>
+    {% endif %}
+
+    {% if superproject %}
+    <footer>
+    <small>Part of <a href="{{superproject.url}}">{{superproject.title}}</a></small>
+    </footer>
+    {% endif %}
+
+</article>

@@ -1,0 +1,22 @@
+<!--ul class="nobullet">
+{% for project in include.projects %}
+<li class="card"><p>
+<a href="{{project.url}}">{{project.title}}</a><br/>
+{{project.description}}
+<br>
+<em>Links:</em> {% for link in project.links %}<small><a href="{{ project.links[link.first] }}">{{link.first}}</a></small>{%if forloop.last%}{%else%}, {%endif%}{% endfor %}
+</p>
+</li>
+{% endfor %}
+</ul-->
+<table>
+    <tbody>
+        {% for project in include.projects %}
+        <tr>
+            <td><a href="{{project.url}}">{{project.title}}</a></td>
+            <td>{{project.description}}</td>
+            <td><ul class="nobullet">{% for link in project.links %}<li><a href="{{ project.links[link.first] }}">{{link.first}}</a></li>{% endfor %}</ul></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

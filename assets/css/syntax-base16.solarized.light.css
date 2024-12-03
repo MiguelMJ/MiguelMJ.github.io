@@ -1,7 +1,8 @@
+pre.highlight {border: 1px solid var(--color-low); padding: 1em; overflow: scroll; }
 .highlight table td { padding: 5px; }
 .highlight table pre { margin: 0; }
 .highlight, .highlight .w {
-  color: #586e75;
+  color: var(--color);
 }
 .highlight .err {
   color: #002b36;

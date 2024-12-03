@@ -1,93 +1,31 @@
 ---
 layout: main
-extra_css: "/assets/css/post.css"
 ---
-
-<header style="padding-top: 2rem">
-    <nav aria-label="breadcrumb">
-        <ul>
-          <li><a href="../../">MiguelMJ</a></li>
-          <li><a href="../">Notebook</a></li>
-        </ul>
-    </nav>
-    {% if page.subtitle and page.subtitle != nil and page.subtitle != "" %}
-    <hgroup>
-        <h1>{{ page.title }}</h1>
-        <h2>{{ page.subtitle }}</h2>
-    </hgroup>
-    {% include avatar.html size="32px" %}
-    <span style="margin-left: 8px"><small>MiguelMJ - <date>{{ page.date }}</date></small></span>
-    {% else %}
-    <h1>{{ page.title }}</h1>
-    {% endif %}
-    <hr/>
-    {% if page.cover_image and page.cover_image != nil and page.cover_image != "" %}
-    <img width="1204" height="576" style="border-radius: 5px;" src="{{ page.cover_image }}" alt="{{ page.title }}">
+<article>
+    <header role="banner">
+        {% if page.cover_image and page.cover_image != nil and page.cover_image != "" %}
+        <img class="cover" width="1204" height="576" style="border-radius: 5px;" src="{{ page.cover_image }}" alt="{{ page.title }}">
         {% if page.cover_attribution and page.cover_attribution != nil and page.cover_attribution != "" %}
-            <small><em>Imágen de portada: {{ page.cover_attribution }}</em></small>
+        <small><em>{{ page.cover_attribution | markdownify }}</em></small>
         {% endif %}
-    <br>
-    {% endif %}
-    
-    
-</header>
+        {% endif %}
+        
+        <h1>{{ page.title }}</h1>
+        <h2 class="subtitle">{{ page.subtitle }}</h2>
+        {% assign postdate = page.date | date: "%Y-%m-%d" %}
+        <small>MiguelMJ - <date>{{ page.pseudodate | default: postdate }}</date></small>
+    </header>
+    <nav role="doc-index" id="toc" class="card">
+        {% include toc.html html=content h_min=page.toc_min h_max=3 %}
+    </nav>
 
-
-<main>
-    <aside>
-        <article id="toc">
-            <h3>Índice</h3>
-            {% include toc.html html=content h_min=2 h_max=3 %}
-        </article>
-    </aside>
-    {{ content | markdownify }}
+    <main>
+        {{ content | markdownify }}
+    </main>
+    {% if page.links %}
     <hr/>
     <footer>
-        <small>
-            This work is licensed under <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" title="CC BY NC 4.0" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
-        </small>
+    <p>Syndicated at {%for link in page.links%}<a href="{{page.links[link.first]}}">{{link.first}}</a>{%if forloop.last%}{%else%}, {%endif%}{%endfor%}</p>
     </footer>
-</main>
-
-
-<style>
-    #gototop {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        cursor: pointer;
-        border-radius: 50%;
-        width: auto;
-        aspect-ratio: 1 / 1;
-        animation: fadeleft .75s;
-    }
-
-    #gototop span {
-        border: solid var(--color);
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 5px;
-        transform: rotate(-135deg);
-        -webkit-transform: rotate(-135deg);
-
-    }
-</style>
-
-<button id="gototop"><span></span></button>
-
-<script>
-    const gototop = document.getElementById("gototop")
-    gototop.onclick = () => {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-    }
-    window.onscroll = () => {
-        if (document.body.scrollTop > window.innerHeight || document.documentElement.scrollTop > window.innerHeight) {
-            gototop.style.display = "block";
-        } else {
-            gototop.style.display = "none";
-        }
-    }
-</script>
+    {% endif %}
+</article>

@@ -1,0 +1,19 @@
+permalink: /:categories/:title
+
+collections:
+  projects:
+    output: true
+    sort_by: position
+  codex:
+    output: true
+    sort_by: position
+
+plugins:
+  - jekyll-minifier
+  - jekyll-katex
+
+highlighter: rouge
+
+jekyll-minifier:
+  uglifier_args:
+    harmony: true
