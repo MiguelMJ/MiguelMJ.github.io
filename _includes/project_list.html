@@ -1,15 +1,15 @@
-<!--ul class="nobullet">
+<dl>
 {% for project in include.projects %}
-<li class="card"><p>
-<a href="{{project.url}}">{{project.title}}</a><br/>
-{{project.description}}
+<dt>
+<a href="{{project.url}}">{{project.title}}</a>
+</dt> 
+<dd>{{project.description}}
 <br>
-<em>Links:</em> {% for link in project.links %}<small><a href="{{ project.links[link.first] }}">{{link.first}}</a></small>{%if forloop.last%}{%else%}, {%endif%}{% endfor %}
-</p>
-</li>
+<small>Links: {% for link in project.links %}<a href="{{ project.links[link.first] }}">{{link.first}}</a>{%if forloop.last%}{%else%}, {%endif%}{% endfor %}</small>
+</dd>
 {% endfor %}
-</ul-->
-<table>
+</dl>
+<!--table>
     <tbody>
         {% for project in include.projects %}
         <tr>
@@ -19,4 +19,4 @@
         </tr>
         {% endfor %}
     </tbody>
-</table>
+</table-->

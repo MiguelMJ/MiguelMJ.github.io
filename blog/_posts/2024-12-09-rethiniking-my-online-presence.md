@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Rethinking my online presence
+date: 2024-12-09
 ---
 
 ## The blog until now
 
 Soon, almost two years ago, I published a short [summary of my experience writing this blog](/blog/my-blogging-journey-until-now-i-m-moving-to-hashnode), with the idea that switching platforms would help me find an audience that connected better with me. What changed, however, was more my own attitude towards the activity of writing. 
 
-In these two years I have only written three blog posts (the period when I wrote weekly is long gone) and that has allowed me to focus on other more elaborate texts that had been on the back burner for some time. Unlike these publications, these texts have been written in Spanish and have taken me several weeks or months each, with a very small and close audience in mind. By separating them from my usual publications and writing them for myself, I have also been able to compare my writing with a new perspective. I have realised that different needs require different texts, and that part of the identity crisis of my blog so far came precisely from not being clear about its specific purpose.
+In these two years I have only written three blog posts (the period when I wrote weekly is long gone) and that has allowed me to focus on other more elaborate texts that had been on the back burner for some time. Unlike these publications, these texts have been written in Spanish and have taken me several weeks or months each, with a very small and close audience in mind. By separating them from my usual publications and writing them for myself, I have also been able to perceive my writing with a new perspective. I have realised that different needs require different texts, and that part of the identity crisis of my blog so far came precisely from not being clear about its specific purpose.
 
 Looking back over my past posts, I realised that sometimes I wanted to share my latest learnings, sometimes I wanted to produce content to serve as teaching material, often I wrote about ideas I wish I had received in my early stages of engineering education, and lately I was trying to explore new ways of presenting my more personal interests. My intention from now on is to separate these needs so that the blog serves a more relatable and contextualised type of text (what a blog traditionally is).
 
@@ -15,7 +16,7 @@ On the other hand, I have had to come to terms with the fact that I can't write 
 
 ## The blog and my website
 
-As I said in that post, I was trying to build a minimal online presence to compensate for the lack of work experience before I graduated. Predictably, this recent years of employement have changed that intention. I'm not sure if that presence was ever of any use, but what is clear to me is that that purpose is no longer what I want for my blog or, in general, for my website. I now intend to put it to a more complete and personal use. Moreover, having learned about the concept of POSSE I also want to make it the central node of my web presence. This, together with a new revamp of the site, which includes a new migration of the blog to self-hosting, constitutes my new way of approaching my online presence.
+As I said in that post, I was trying to build a minimal online presence to compensate for the lack of work experience before I graduated. Predictably, this recent years of employement have changed that intention. I'm not sure if that presence was ever of any use, but what is clear to me is that that purpose is no longer what I want for my blog or, in general, for my website. I now intend to put it to a more complete and personal use. Moreover, having learned about the concept of POSSE I also want to make it the central node of my web presence. This, together with a new revamp of the site, which includes a new migration of the blog to self-hosting, constitutes my new way of approaching my online presence. The revamp also includes a new section where I'll keep these other texts I mentioned earlier. 
 
 With a relaxed attitude towards what I write, I know I will enjoy running this blog more, focusing less on making myself employable or gaining an audience, and more on building a record of what I learn and what I want to share.
 

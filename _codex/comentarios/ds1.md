@@ -6,7 +6,6 @@ pseudodate: 2023-2024
 subtitle: Filosofía de Dark Souls
 category: comentarios
 position: 1
-permalink: /wiki/comentarios/dark-souls-1
 ---
 
 <div class="card">
