@@ -4,6 +4,7 @@ title: C notes
 category: dev-notes
 position: 1
 highlight: true
+excerpt: Random C notes.
 ---
 
 {% capture text %}

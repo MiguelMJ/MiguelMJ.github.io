@@ -1,0 +1,14 @@
+\usepackage{titlesec}
+\usepackage{colortbl}
+
+\newfontfamily\raleway{Raleway Bold}
+\definecolor{theme1}{HTML}{0056b3}
+\colorlet{theme2}{theme1!20!black!80}
+\arrayrulecolor{white}
+
+\renewcommand{\textbf}[1]{{\bfseries\color{theme2}#1}}
+\renewcommand{\arraystretch}{2}
+
+\titleformat*{\section}{\Large\raleway\color{theme1}}
+\titleformat*{\subsection}{\large\raleway\color{theme1}}
+\titleformat*{\subsubsection}{\large\raleway\color{theme1}}

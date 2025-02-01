@@ -5,9 +5,18 @@ description: Recipies for the command line
 category: dev-notes
 position: 1
 highlight: true
+excerpt: Recipies for the command line.
 ---
 
 {% capture text %}
+
+## ffmpeg
+
+Convert a `mkv` file to `mp4` ([source](https://stackoverflow.com/questions/63664953/converting-mkv-to-mp4#63665557)).
+
+```shell
+ffmpeg -i "vid.mkv" -map 0 -c copy -c:a aac "MP4/vid.mp4"
+```
 
 ## entr
 

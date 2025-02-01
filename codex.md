@@ -5,7 +5,7 @@ layout: main
 
 # Codex
 
-This is a sort of digital garden and personal wiki where I keep both small notes and elaborated texts on different topics. 
+This is a sort of digital garden and personal wiki where I keep both small notes and elaborated texts on different topics. You may find incomplete texts!
  
 {% assign links = site.codex | where: 'category', 'index' %}
 
