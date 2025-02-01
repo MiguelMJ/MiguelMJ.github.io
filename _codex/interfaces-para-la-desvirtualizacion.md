@@ -40,7 +40,7 @@ Las interfaces siempre tienen un aspecto material (tangible o no, pero material)
 
 <span class="card">Sujeto</span>⟷<span class="card">Interfaz</span>⮌
 
-Estos sistemas presentan, como apuntábamos antes, cierto grado de *irrealidad*, porque al otro lado de la interfaz no hay nada. La información que recibe el sujeto sólo tiene sentido en la medida en la que el el modelo de la interfaz se ajusta a un objeto del mundo real. En otras palabras: el sistema virtual sólo puede tener un carácter de simulación.
+Estos sistemas presentan, como apuntábamos antes, cierto grado de *irrealidad*, por la ausencia de un objeto al otro lado. La información que recibe el sujeto sólo tiene sentido en la medida en la que el modelo de la interfaz se ajusta a un objeto del mundo real. En otras palabras: el sistema virtual sólo puede tener un carácter de simulación.
 
 La información que el sujeto recibe del sistema proviene del conocimiento con el que se creó la interfaz, y los efectos de actuar sobre ella no se trasladan al mundo. En cambio, se limitan al componente físico de la interfaz, se transforman según el modelo que implementan, y se devuelven al sujeto. La única manera en la que un sistema virtual repercute en el mundo es a través de su repercusión en el sujeto. 
 
@@ -63,7 +63,15 @@ Antes de explorar esta cuestión, describiremos con más precisión las caracter
 > 
 > -- [Diccionario de la RAE](https://dle.rae.es/interfaz)
 
-Cuando nos referimos a las interfaces que usamos como seres humanos, hablamos de puntos de conexión entre nosotros como sujetos y un tercer sistema que llamamos objeto.
+Los sistemas que creamos los seres humanos a menudo escapan de nuestras posibilidades de interacción. A veces es por una imposibilidad física o por la carga cognitiva que conllevaría una relación de tal complejidad. Para recuperar la posibilidad de interacción, construimos *interfaces* con las que si podemos interaccionar y cuyo componente físico realiza la interacción con el objeto en nuestro lugar.
+
+Para que las operaciones sobre la interfaz y su información se correspondan con operaciones e información sobre el objeto, aquella debe tener un modelo del mismo. En la medida en la que este modelo se corresponda directamente con el componente físico de la interfaz, diremos que es un modelo **implícito**, y en la medida en la que este modelo tenga una estructura formal propia, lo llamaremos **explícito**.
+
+Un ejemplo claro de interfaz con modelo implícito es la de un coche. Las operaciones sobre el volante, los pedales y la palanca de cambios tienen una corresponencia directa con los mecanismos del vehículo. Lo mismo pasa con la información que nos muestran los pilotos del salpicadero. Un modelo tan fuertemente implícito permite poca virtualidad, porque la interfaz no añade apenas capas de abstracción formal.
+
+
+
+Mientras tanto, un departamento de operaciones constituye una relación con un modelo intermedio.
 
 ## Sistemas parcialmente virtuales
 
@@ -88,4 +96,8 @@ Para distinguir el componente virtual del objeto real en una interfaz hay que co
 
 Cuando existe informacioń teóricamente inobtenible u operaciones teóricamente irrealizables, entonces nos encontramos con que dicha interacción no se realizaba sobre el objeto, sino únicamente sobre el modelo proporcionado por la interfaz
 
+
+## Relacionado
+
+- [What "User Friendly" Means](https://www.over-yonder.net/~fullermd/rants/userfriendly/1) by Matt Fuller
 

@@ -1,7 +1,5 @@
 /* typesetting */
 
-
-
 body { 
   font-family: 'Source Serif 4', serif;
   font-size: 20px;
@@ -69,6 +67,9 @@ body {
   background-color: var(--background-color); 
   color: var(--color); 
 }
+h1, h2 {
+  color: var(--color-intense);
+}
 a:link, a:visited, summary, i { 
   color: var(--color-intense); 
 }
@@ -97,13 +98,27 @@ a[href^="https://"]::after
   margin-left: 4px; /* spacing*/
   padding-right: 11px; /* sizing */
 }
-
+.separator {
+  display: block;
+  line-height: 0.5rem;
+}
+.separator::after {
+  content: '⮟';
+  font-size: small;
+  color: var(--color-low);
+}
 a:link, a:visited, summary { 
   text-decoration: underline; 
   text-decoration-color: var(--color-low);
 }
 
-ul.nobullet > li { list-style-type: none;  }
+ul {
+  list-style-type: '⬥ ';
+}
+ul ul {
+  list-style-type: '⬦ ';
+}
+ul.nobullet { list-style-type: none;  }
 
 .card {
   border: 1pt solid var(--color-low);

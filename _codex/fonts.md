@@ -11,3 +11,4 @@ position: 50
 | Cahuenga Regular | Seen on Substack.
 | Computer Modern | Font by Donald Knuth made for TeX.
 | Source Serif | Found for the first time at https://gwern.net/ |
+| EB Garamond | https://en.wikipedia.org/wiki/EB_Garamond |
